@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationtraining.testmodel.Testmodel">
+      <class name="com.automationtraining.smokesuite.Form101">
         <methods>
           <include name="browser"/>
           <include name="actions"/>
         </methods>
-      </class> <!-- com.automationtraining.testmodel.Testmodel -->
+      </class> <!-- com.automationtraining.smokesuite.Form101 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

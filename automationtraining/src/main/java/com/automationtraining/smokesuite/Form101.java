@@ -3,7 +3,7 @@ package com.automationtraining.smokesuite;
 import org.testng.annotations.Test;
 
 import com.automationtraining.basetest.Basetest;
-import com.automationtraining.form.Form101Page;
+import com.automationtraining.pageobject.Form101Page;
 
 
 

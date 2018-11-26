@@ -8,6 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+
+import com.automationtraining.utilities.SeleniumUtils;
+
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -18,6 +21,8 @@ public class Form101Page{
 public static void log(WebDriver driver) throws InterruptedException
 {
 /****************************************************EMPLOYEE***************************************************************************/
+	
+	
 	driver.get("https://qadevpro2-azicawc-webforms.cs32.force.com/forms/Webform101_VF");
 	/** lastname **/
 	driver.findElement(By.xpath("//*[@id=\"j_id0:j_id5:j_id9:j_id14:j_id15:last\"]")).sendKeys("ethiraj");
@@ -127,12 +132,16 @@ public static void log(WebDriver driver) throws InterruptedException
 	
 	/**part of body injured table**/
 	driver.findElement(By.xpath("//*[@id=\"j_id0:j_id5:j_id9:j_id72:j_id114:partofbodyinjury_lkwgt\"]/img")).click();
-	Thread.sleep(10);
-	driver.switchTo().frame(1);
-	//driver.switchTo().frame("/html/frameset");
-	driver.switchTo().frame("searchFrame");
-	Thread.sleep(10);
-	driver.findElement(By.xpath("//*[@id=\"lksrch\"]")).sendKeys("head");
+	Thread.sleep(5000);
+	System.out.println("Hi");
+	SeleniumUtils.lookupwindowhandler();
+	//driver.switchTo().frame("searchFrame");
+	System.out.println("hello");
+    Thread.sleep(10);
+	
+	
+	
+	
 	
 	/**FATAL**/
 	  Select fatal = new Select(driver.findElement(By.id("j_id0:j_id5:j_id9:j_id72:j_id121:fatal")));
