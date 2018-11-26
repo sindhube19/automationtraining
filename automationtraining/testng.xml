@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    
+    <classes>
+   
+    <class name="com.automationtraining"/>
+    
+      <class name="com.automationtraining.form.Form"/>
+      <class name="com.automationtraining.automationtraining.AppTest"/>
+      <class name="com.automationtraining.pageobject.Pageobject"/>
+      <class name="com.automationtraining.basetest.Basetest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
