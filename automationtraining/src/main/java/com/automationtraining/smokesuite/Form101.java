@@ -1,5 +1,5 @@
 package com.automationtraining.smokesuite;
 
-public class Smokesuite {
+public class Form101 {
 
 }

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.automationtraining.browserfactory.Browserfactory;
 
-public class Pageobject extends Browserfactory {
+public class LoginPage extends Browserfactory {
 	@FindBy(how=How.ID, using="username")
 	WebElement username;
 	@FindBy(how=How.ID, using="password")
@@ -19,7 +19,7 @@ public class Pageobject extends Browserfactory {
 	@Test
 	public static void leadcreate()
 	{
-	Pageobject leadcrt = PageFactory.initElements(driver, Pageobject.class);
+	LoginPage leadcrt = PageFactory.initElements(driver, LoginPage.class);
 		leadcrt.username.sendKeys("sindhuja.e@mstsolutions.com");
 		leadcrt.password.sendKeys("S!ndhuja12");
 		leadcrt.Login.click();

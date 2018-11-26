@@ -1,4 +1,4 @@
-package com.automationtraining.form;
+package com.automationtraining.pageobject;
 
 //import java.util.Set;
 
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class Form{
+public class Form101Page{
 	public WebDriver driver;
 
 @Test
