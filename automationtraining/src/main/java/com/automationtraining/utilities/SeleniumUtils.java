@@ -9,7 +9,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import com.automationtraining.basetest.Basetest;
-
+/**
+ * @author Sindhuja Ethiraj
+ *
+ */
 public class SeleniumUtils extends Basetest {
 	public static void lookupwindowhandler() throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles(); 

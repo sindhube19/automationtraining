@@ -10,7 +10,10 @@ import com.automationtraining.pageobject.Form101Page;
 
 
 
-
+/**
+ * @author Sindhuja Ethiraj
+ *
+ */
 public class Form101 extends Basetest {
 	@Test
 	public static void actions() throws InterruptedException, InvalidFormatException, IOException
