@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -13,8 +14,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.automationtraining.browserfactory.Browserfactory;
+import com.automationtraining.utilities.SeleniumUtils;
 import com.automationtraining.utilities.Utilities;
 
 public class Test {
@@ -43,7 +46,8 @@ public class Test {
 		@FindBy(how=How.ID, using="//*[@id=\\\"j_id0:j_id5:j_id9:j_id14:j_id44:SEX\\\"]")
 		WebElement keytab;
 		@FindBy(how=How.XPATH, using="//*[@id=\\\"j_id0:j_id5:j_id9:j_id14:j_id46:MARITALSTATUS\\\"]")
-		WebElement maritalstatus;
+		
+		public WebElement maritalstatus;
 		@FindBy(how=How.XPATH, using="j_id0:j_id5:j_id9:j_id48:j_id49:EMPLOYERNAME")
 		WebElement employername;
 		@FindBy(how=How.XPATH, using="j_id0:j_id5:j_id9:j_id48:j_id52:FEINNUMBER")
@@ -84,12 +88,31 @@ public class Test {
 		WebElement treatedovernight;
 		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id152")
 		WebElement claimdoubted;
-		
-		
-		
-		public static void login(WebDriver driver) throws InvalidFormatException, IOException {
+/***Cause of accident**/		
+		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id156:what")
+		WebElement whathappend;
+		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id159:whatsus")
+		WebElement harmedemployee;
+		@FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id155:j_id162:nature_lkwgt\"]/img")
+		WebElement natureofinjury;
+		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id172:empdoing")
+		WebElement employeebeforeincidentoccured;
+        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id155:j_id177:workemp\"]")
+		WebElement workerinemployee;
+        @FindBy(how=How.XPATH, using="j_id0:j_id5:j_id9:j_id155:j_id179:datehire")
+		static
+		WebElement datehire;
+        @FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id181:j_id200:datehire")
+		WebElement grossearings;
+        @FindBy(how=How.ID, using="  j_id0:j_id5:j_id9:j_id227:j_id228:subemail")
+		WebElement submittermail;
+        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id11:bottom\"]/input")
+		WebElement submit;
+      
+     
+		public static void login(WebDriver driver) throws InvalidFormatException, IOException, InterruptedException {
 			/*driver.get("http://login.salesforce.com");
-			File fs = new File("C:\\Users\\MSTEMP194\\Desktop\\automation training\\salesforcelogin.xlsx");
+			File fs = new File("C:\Users\MSTEMP194\Desktop\Automation\\automationinputs.xlsx");
 		    FileInputStream in = new FileInputStream(fs);
 			XSSFWorkbook wb = new XSSFWorkbook(in);
 			XSSFSheet xworksheet = wb.getSheet("Sheet1");
@@ -107,7 +130,10 @@ public class Test {
 			sign.zipcode.sendKeys("90403");
 			sign.telephone.sendKeys("9094874306");
 			sign.keytab.sendKeys(Keys.TAB);
-			sign.maritalstatus.selectByIndex(1);
+			
+			Select marital = new Select(sign.maritalstatus);
+			marital.selectByIndex(1);
+		
 			sign.employername.sendKeys("Automation");
 			sign.feinnumber.sendKeys("98765432123");
 			sign.officeaddress.sendKeys("24 Yukon Ave. Avon, IN 46123.");
@@ -120,22 +146,46 @@ public class Test {
 			sign.Notified.sendKeys(Keys.TAB);
 			sign.afterinjury.sendKeys("25082006");
 			sign.afterinjury.sendKeys(Keys.TAB);
-			sign.afterinjury.sendKeys(Keys.TAB);
+			
 			sign.hasemployeereturnedhome.click();
 			sign.employeeoccupation.sendKeys("46123");
-		    sign.employeepremises.selectByVisibleText("Yes");
+		  
+		    Select employeepremises = new Select(sign.employeepremises);
+			marital.selectByIndex(1);
 		    sign.wastheinjuryorillness.sendKeys("injury");
 		    sign.bodyinjured.sendKeys("injury");
 		    sign.bodyinjured.sendKeys(Keys.TAB);
-		    sign.lookuppartofbodyinjured.click();
-		    sign.fatal.selectByVisibleText("Yes");
-		    sign.employeeemergency.selectByVisibleText("Yes");
-            sign.selectByVisibleText("Yes");
-            sign.treatedovernight("Yes");
-            sign.claim.selectByVisibleText("Yes");
-            
+		   //part of injury table 
+		    SeleniumUtils.lookupwindowhandler();
 		    
+		    Select fatal = new Select(sign.fatal);
+		    fatal.selectByIndex(1);
+		    
+		    Select employeeemergency = new Select(sign.employeeemergency);
+		    employeeemergency.selectByIndex(2);
+		    
+		    Select treatedovernight = new Select(sign.treatedovernight);
+		    treatedovernight.selectByIndex(2);
+		    Select claimdoubted = new Select(sign.claimdoubted);
+		    claimdoubted.selectByIndex(2);
+           /**** cause of accident **********/
+		    sign.whathappend.sendKeys("injury");
+		    sign.harmedemployee.sendKeys("harminleg");
+		    //nature of injury
+		  //  SeleniumUtils.natureofinjury();
+		    sign.employeebeforeincidentoccured.sendKeys("yes");
+		    Select workerinemployee = new Select(sign.workerinemployee);
+		    workerinemployee.selectByIndex(2);
+		    sign.workerinemployee.sendKeys(Keys.TAB);
+		    sign.datehire.sendKeys("19012000");
+		    sign.grossearings.sendKeys("30000");
+		    sign.submittermail.sendKeys("sindhube19.data@gmail.com");
+		    sign.submit.click();
 		    
 		}
+
+
+
+		
 		
 }

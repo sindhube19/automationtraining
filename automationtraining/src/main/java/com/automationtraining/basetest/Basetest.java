@@ -16,7 +16,7 @@ public class Basetest {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/MSTEMP194/Desktop/Automation/chromedriver.exe");
 		driver = new ChromeDriver();
        driver.manage().window().maximize();
-
+       driver.get("https://qadevpro2-azicawc-webforms.cs32.force.com/forms/Webform101_VF");
 
 }
 	/*@AfterMethod
