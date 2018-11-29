@@ -5,7 +5,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 //import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import com.automationtraining.basetest.Basetest;
+import com.automationtraining.basetest.BaseTest;
 import com.automationtraining.pageobject.Form101Page;
 
 
@@ -14,7 +14,7 @@ import com.automationtraining.pageobject.Form101Page;
  * @author Sindhuja Ethiraj
  *
  */
-public class Form101 extends Basetest {
+public class Form101 extends BaseTest {
 	@Test
 	public static void actions() throws InterruptedException, InvalidFormatException, IOException
 	{

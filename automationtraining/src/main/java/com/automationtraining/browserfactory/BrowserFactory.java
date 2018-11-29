@@ -11,18 +11,18 @@ import org.testng.annotations.BeforeMethod;
  * @author Sindhuja Ethiraj
  *
  */
-public class Browserfactory {
+public class BrowserFactory {
 	public static WebDriver driver;
 
 @BeforeMethod	
-public void browseropen() {
+public void browserOpen() {
 driver = new ChromeDriver();
 
 	
 }
 
 @AfterMethod
-public void browserclose() {
+public void browserClose() {
 	//driver.close();
 }
 }

@@ -14,12 +14,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.automationtraining.browserfactory.Browserfactory;
+import com.automationtraining.browserfactory.BrowserFactory;
 
 
 
 
-public class Utilities extends Browserfactory {
+public class Utilities extends BrowserFactory {
 	@FindBy(how=How.ID, using="username")
 	WebElement username;
 	@FindBy(how=How.ID, using="password")

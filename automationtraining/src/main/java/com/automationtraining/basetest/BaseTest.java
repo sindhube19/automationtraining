@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
  * @author Sindhuja Ethiraj
  *
  */
-public class Basetest {
+public class BaseTest {
 	public static WebDriver driver;
 	
 	@BeforeMethod

@@ -8,13 +8,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-import com.automationtraining.basetest.Basetest;
+import com.automationtraining.basetest.BaseTest;
 /**
  * @author Sindhuja Ethiraj
  *
  */
-public class SeleniumUtils extends Basetest {
-	public static void lookupwindowhandler() throws InterruptedException {
+public class SeleniumUtils extends BaseTest {
+	public static void lookupWindowhandler() throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles(); 
 		Iterator<String> it = windows.iterator();
 		String parentWindow = it.next();
@@ -36,7 +36,7 @@ public class SeleniumUtils extends Basetest {
 		
 }
 	
-	public static void natureofinjury() throws InterruptedException {
+	public static void natureofInjury() throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles(); 
 		Iterator<String> it = windows.iterator();
 		String parentWindow = it.next();
@@ -59,7 +59,7 @@ public class SeleniumUtils extends Basetest {
 	    dateBox.sendKeys(Keys.TAB);*/
 	}	
 	
-	public static void causeofinjury() throws InterruptedException {
+	public static void causeofInjury() throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles(); 
 		Iterator<String> it = windows.iterator();
 		String parentWindow = it.next();
