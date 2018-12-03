@@ -5,7 +5,7 @@
     <classes>
       <class name="com.automationtraining.smokesuite.Form101">
         <methods>
-          <include name="browser"/>
+          <include name="browserSetup"/>
           <include name="actions"/>
         </methods>
       </class> <!-- com.automationtraining.smokesuite.Form101 -->

@@ -10,15 +10,20 @@ import com.automationtraining.pageobject.Form101Page;
 
 
 
+
 /**
  * @author Sindhuja Ethiraj
  *
  */
 public class Form101 extends BaseTest {
 	@Test
-	public static void actions() throws InterruptedException, InvalidFormatException, IOException
+	public void formFilling101() throws Exception
 	{
-		Form101Page.login(driver);
+		String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+		String className = this.getClass().getSimpleName();
+		String tcName = "TCAT_101";
+		String Author="Sindhuja"; 
+		Form101Page.formFilling(methodName,tcName);
 	
 		
   

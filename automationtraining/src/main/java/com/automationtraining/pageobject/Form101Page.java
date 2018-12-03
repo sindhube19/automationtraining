@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -22,283 +22,215 @@ import org.testng.annotations.Test;
 
 import com.automationtraining.basetest.BaseTest;
 import com.automationtraining.browserfactory.BrowserFactory;
-
+import com.automationtraining.utilities.ExcelUtilities;
 import com.automationtraining.utilities.SeleniumUtils;
-import com.automationtraining.utilities.Utilities;
+
 
 /**
  * @author Sindhuja Ethiraj
  *
  */
 public class Form101Page extends BaseTest {
-	
-/******************************Employee*******************************************/
-	
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id15:last")
-		WebElement lastname; 
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id18:first")
-		WebElement firstname;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id23:social")
-		
-		WebElement socialsecuritynumber;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id26:birth")
-	    WebElement dob;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id29:home")
-		WebElement homeaddress;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id32:CITY")
-		WebElement city;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id35:STATE")
-		WebElement state;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id38:ZIPCODE")
-		WebElement zipcode;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id41:TELEPHONE")
-		WebElement telephone;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id44:SEX")
-		WebElement gender;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id44:SEX")
-		WebElement keytab;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id46:MARITALSTATUS")
-		WebElement maritalstatus;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id14:j_id46:MARITALSTATUS")
-		WebElement maritalkeytab;
-		
-/*******************Employer Details***************************************************/
-		
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id49:EMPLOYERNAME")
-		WebElement employername;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id52:FEINNUMBER")
-		WebElement feinnumber;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id57:officeadd")
-		WebElement officeaddress;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id60:officecity")
-		WebElement employercity;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id63:officstate")
-		WebElement employerstate;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id66:officzip")
-		WebElement employerzipcode;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id48:j_id69:telephone")
-		WebElement employertelephone;
-		
-/********************Accident Details*************************************************/
-		
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id73:doi")
-		WebElement DATEOFINJURY;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id76:empnotif")
-		WebElement Notified;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id81:lastday")
-		WebElement afterinjury;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id84:0")
-		WebElement hasemployeereturnedhome;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id88:empcontri")
-		WebElement employeeoccupation;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id96:empconpre")
-		WebElement employeepremises;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id109:injurill")
-		WebElement wastheinjuryorillness;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id112:partofbody")
-		WebElement bodyinjured;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id112:partofbody")
-		WebElement bodyinjuredkeytab;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id114:partofbodyinjury_lkwgt")
-		WebElement lookuppartofbodyinjured;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id121:fatal")
-		WebElement fatal;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id126:empemergency")
-		WebElement employeeemergency;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id139:overnight")
-		WebElement treatedovernight;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id72:j_id152")
-		WebElement claimdoubted;
-		
-/**********************Cause of accident*********************************/
-		
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id156:what")
-		WebElement whathappend;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id159:whatsus")
-		WebElement harmedemployee;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id159:whatsus")
-		WebElement harmedemployeekeytab;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id162:nature_lkwgt")
-		WebElement natureofinjury;
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id167:cause_lkwgt")
-		WebElement causeofinjury;
-		
-		@FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id172:empdoing")
-		WebElement employeebeforeincidentoccured;
-        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id155:j_id177:workemp\"]")
-		WebElement workerinemployee;
-        @FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id155:j_id179:datehire")
-		
-		WebElement datehire;
-        @FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id181:j_id200:datehire")
-		WebElement grossearings;
-        @FindBy(how=How.NAME, using="j_id0:j_id5:j_id9:j_id247")
-		WebElement agree;
 
-        @FindBy(how=How.ID, using="j_id0:j_id5:j_id9:j_id227:j_id228:subemail")
-		WebElement submittermail;
-        
-        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id11:bottom\"]/input")
-		WebElement submit;
-      
-        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id2:j_id6\"]/div/table/tbody/tr[2]/td")
-        WebElement content;
+	/******************************Employee*******************************************/
 
-        @FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id2:j_id3\"]/div/table/tbody/tr/td/p")
-        WebElement contentcolor;
-        
-       
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
+	static
+	WebElement lastname; 
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
+	static
+	WebElement firstname;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SOCIAL SECURITY NUMBER')]/following::input[1]")
+	static
 
-        
-		public static void login(WebDriver driver) throws InvalidFormatException, IOException, InterruptedException {
-			//File fs = new File("C:\\Users\\MSTEMP194\\Desktop\\Automation\\automationinputs.xlsx");
-			File fs = new File("C:\\Users\\MSTEMP194\\Desktop\\Automation\\automation.xlsx");
-			
-		    FileInputStream in = new FileInputStream(fs);
-			XSSFWorkbook wb = new XSSFWorkbook(in);
-			XSSFSheet xworksheet = wb.getSheet("Sheet1");
-            String lastname = xworksheet.getRow(1).getCell(0).getStringCellValue();
-			String firstname = xworksheet.getRow(1).getCell(1).getStringCellValue();
-	        String homehomeaddress = xworksheet.getRow(1).getCell(2).getStringCellValue();
-	        String employeecity = xworksheet.getRow(1).getCell(3).getStringCellValue();
-	        String employeestate = xworksheet.getRow(1).getCell(4).getStringCellValue();
-            String employeegender = xworksheet.getRow(1).getCell(5).getStringCellValue();
-		    String employemaritalstatus = xworksheet.getRow(1).getCell(6).getStringCellValue();
-		    String employername = xworksheet.getRow(1).getCell(7).getStringCellValue();
-            String employerofficeaddress = xworksheet.getRow(1).getCell(8).getStringCellValue();
-		    String employercity = xworksheet.getRow(1).getCell(9).getStringCellValue();
-		    String employerstate = xworksheet.getRow(1).getCell(10).getStringCellValue();
-		    String employeeoccupation = xworksheet.getRow(1).getCell(11).getStringCellValue();
-		    String employeepremesis = xworksheet.getRow(1).getCell(12).getStringCellValue();
-		    String injuryorillness = xworksheet.getRow(1).getCell(13).getStringCellValue();
-		    String partofbody = xworksheet.getRow(1).getCell(14).getStringCellValue();
-		    String fatal = xworksheet.getRow(1).getCell(15).getStringCellValue();
-		    String treatedinemergencyroom = xworksheet.getRow(1).getCell(16).getStringCellValue();
-		    String treatedovernight = xworksheet.getRow(1).getCell(17).getStringCellValue();
-		    String claimdoubted = xworksheet.getRow(1).getCell(18).getStringCellValue();
-		    String whathappend = xworksheet.getRow(1).getCell(19).getStringCellValue();
-		    String harmedemployee = xworksheet.getRow(1).getCell(20).getStringCellValue();
-		    String incidentoccured = xworksheet.getRow(1).getCell(21).getStringCellValue();
-		    String employwheninjured = xworksheet.getRow(1).getCell(22).getStringCellValue();
-			String socialsecuritynumber = xworksheet.getRow(1).getCell(23).getStringCellValue();
-			String employeedob = xworksheet.getRow(1).getCell(24).toString();
-			String employeezipcode = xworksheet.getRow(1).getCell(25).toString();
-			String employeetelephone = xworksheet.getRow(1).getCell(26).getStringCellValue();
-			String employerzipcode = xworksheet.getRow(1).getCell(27).toString();
-			String employertelephone =  xworksheet.getRow(1).getCell(28).getStringCellValue();
-			String grossearnings = xworksheet.getRow(1).getCell(29).toString();
-			String fiennumber = xworksheet.getRow(1).getCell(30).toString();
-			String dateofinjury = xworksheet.getRow(1).getCell(31).toString();
-			String notified = xworksheet.getRow(1).getCell(32).toString();
-			String afterinjury = xworksheet.getRow(1).getCell(33).toString();
-			String datehire = xworksheet.getRow(1).getCell(34).toString();
-			String submitteremail  = xworksheet.getRow(1).getCell(35).toString();
-		    Form101Page sign = PageFactory.initElements(driver,  Form101Page.class);
-		    /********Entering employee lastname*******************/
-	    	sign.lastname.sendKeys(lastname);
-	    	 /********Entering employee firstname*******************/
-			sign.firstname.sendKeys(firstname);
-			 /********Entering employee socialsecuritynumber*******************/
-			sign.socialsecuritynumber.sendKeys(socialsecuritynumber);
-			 /********Entering employee date of birth*******************/
-			sign.dob.sendKeys(employeedob);
-			sign.keytab.sendKeys(Keys.TAB);
-			 /********Entering employee home address*******************/
-			sign.homeaddress.sendKeys(homehomeaddress);
-			 /********Entering employee city*******************/
-			sign.city.sendKeys(employeecity);
-			 /********Entering employee state*******************/
-			sign.state.sendKeys(employeestate);
-			 /********Entering employee zipcode*******************/
-			sign.zipcode.sendKeys(employeezipcode);
-			 /********Entering employee telephone*******************/
-			sign.telephone.sendKeys(employeetelephone);
-			 /********Entering employee gender*******************/
-			sign.gender.sendKeys(employeegender);
-			 /********Entering employee maritalstatus*******************/
-			sign.maritalstatus.sendKeys(employemaritalstatus);
-			
-/*******************************Employer Details******************************/
-			
-			/****************Entering employer Name********************/
-			sign.employername.sendKeys(employername);
-			/****************Entering employer FIEN number***********/
-			sign.feinnumber.sendKeys(fiennumber);
-			/****************Entering employer office address***********/
-			sign.officeaddress.sendKeys(employerofficeaddress);
-			/****************Entering employer city***********/
-			sign.employercity.sendKeys(employercity);
-			/****************Entering employer state***********/
-			sign.employerstate.sendKeys(employerstate);
-			/****************Entering employer zipcode***********/
-			sign.employerzipcode.sendKeys(employerzipcode);
-			/****************Entering employer telephone***********/
-			sign.employertelephone.sendKeys(employertelephone);
-			
-/********************************Accident Details**********************/
-			/****************Entering employee date of injury***********/
-			sign.DATEOFINJURY.sendKeys(dateofinjury);
-			/****************Entering employee injury notified date***********/
-			sign.Notified.sendKeys(notified);
-			/****************Entering employee after injury date***********/
-			sign.afterinjury.sendKeys(afterinjury);
-			/****************Entering employee occupation***********/
-			sign.employeeoccupation.sendKeys(employeeoccupation);
-			/****************Entering employee premises***********/
-			sign.employeepremises.sendKeys(employeepremesis);
-			/****************Entering illness or injury info of an employee***********/
-			sign.wastheinjuryorillness.sendKeys(injuryorillness);
-			/****************Entering employee part of body injured***********/
-			sign.bodyinjured.sendKeys(partofbody);
-			sign.keytab.sendKeys(Keys.TAB);
-			/****************Selecting employee part of body injured table***********/
-			sign.lookuppartofbodyinjured.click();
-		    SeleniumUtils.lookupWindowhandler();
-		    /****************Entering employee fatal***********/
-			sign.fatal.sendKeys(fatal);
-			/****************Entering employee treated in emergency room info***********/
-            sign.employeeemergency.sendKeys(treatedinemergencyroom);
-            /****************Entering employee has treated overnight***********/
-			sign.treatedovernight.sendKeys(treatedovernight);
-			/****************Entering employee claimdoubted***********/
-			sign.claimdoubted.sendKeys(claimdoubted);
-			
-/******************************Causeofaccident************************/		
-			
-			/****************Entering wat happened to employee***********/	
-			sign.whathappend.sendKeys(whathappend);
-			/****************Entering is employee harmed***********/
-			sign.harmedemployee.sendKeys(harmedemployee);
-			/****************Entering wheather he/she is an employee before injury occured***********/
-			sign.employeebeforeincidentoccured.sendKeys(incidentoccured);
-			/****************Entering wheather he/she is an employee when injury occured***********/
-			sign.workerinemployee.sendKeys(employwheninjured);
-			/****************Entering nature of injury***********/
-			   sign.natureofinjury.click();
-				SeleniumUtils.natureofInjury();
-				sign.keytab.sendKeys(Keys.TAB);
-			/****************Entering employee cause of injury***********/
-				sign.causeofinjury.click();
-				SeleniumUtils.causeofInjury();
-			/****************Entering employee hired date***********/
-				sign.datehire.sendKeys(datehire);
-				/****************Entering employee gross earnings***********/
-				sign.grossearings.sendKeys(grossearnings);
-				/****************Entering employee email**********/
-				sign.submittermail.sendKeys(submitteremail);
-				/****************Clicking agree**********/
-				sign.agree.click();
-				/****************Clicking submit button**********/
-				 sign.submit.click();
-			
-				 JavascriptExecutor js = (JavascriptExecutor) driver;
-			        //use executeScript() method and pass the arguments 
-			        //Here i pass values based on css style. Yellow background color with solid red color border. 
-			 js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 2px solid red;');", sign.contentcolor);
-			 js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 2px solid red;');", sign.content);
-				 				 
-		}
-}
-			   
-			
-		 
+	WebElement socialsecuritynumber;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'BIRTH DATE')]/following::input[1]")
+	static
+	WebElement dob;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'HOME ADDRESS(NUMBER AND STREET')]/following::input[1]")
+	static
+	WebElement homeaddress;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'CITY')]/following::input[1]")
+	static
+	WebElement city;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'STATE')]/following::input[1]")
+	static
+	WebElement state;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'ZIP CODE')]/following::input[1]")
+	static
+	WebElement zipcode;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'TELEPHONE')]/following::input[1]")
+	static
+	WebElement telephone;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SEX')]/following::select[1]")
+	static
+	WebElement gender;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SEX')]/following::select[1]")
+	WebElement keytab;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'MARITAL STATUS')]/following::select[1]")
+	static
+	WebElement maritalstatus;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'MARITAL STATUS')]/following::select[1]")
+	WebElement maritalkeytab;
+
+	/*******************Employer Details***************************************************/
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::input[1]")
+	static
+	WebElement employername;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FEIN NUMBER' )]/following::input[1]")
+	static
+	WebElement feinnumber;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'OFFICE ADDRESS(NUMBER & STREET' )]/following::input[1]")
+	static
+	WebElement officeaddress;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'CITY')]/following::input[1]")
+	static
+	WebElement employercity;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'STATE')]/following::input[1]")
+	static
+	WebElement employerstate;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'ZIP CODE')]/following::input[1]")
+	static
+	WebElement employerzipcode;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'TELEPHONE')]/following::input[1]")
+	static
+	WebElement employertelephone;
+
+	/********************Accident Details*************************************************/
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'DATE OF INJURY OR ILLNESS')]/following::input[1]")
+	static
+	WebElement DATEOFINJURY;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'DATE EMPLOYER NOTIFIED OF INJURY')]/following::input[1]")
+	static
+	WebElement Notified;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'LAST DAY OF WORK AFTER INJURY')]/following::input[1]")
+	static
+	WebElement afterinjury;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'HAS EMPLOYEE RETURNED TO WORK?')]/following::input[1]")
+	WebElement hasemployeereturnedhome;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'OCCUPATION')]/following::input[1]")
+	static
+	WebElement employeeoccupation;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/.//label[contains(text(),'EMPLOYER PREMISES')]/following::select[1]")
+	static
+	WebElement employeepremises;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[3]/div['pbSubsection']/table/tbody/tr[15]/th/span/label[' WHAT WAS THE INJURY OR ILLNESS']/following::textarea[1]")
+	static
+	WebElement wastheinjuryorillness;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'PART OF BODY INJURED')]/following::input[1]")
+	static
+	WebElement bodyinjured;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'PART OF BODY INJURED')]/following::input[1]")
+	WebElement bodyinjuredkeytab;
+	@FindBy(how=How.XPATH, using=".//a[text()='Part of Body Injured List']/preceding::span[1]/a/img")
+	WebElement lookuppartofbodyinjured;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FATAL')]/following::select[1]")
+	static
+	WebElement fatal;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'WAS EMPLOYEE TREATED IN AN EMERGENCY                                              ROOM?')]/following::select[1]")
+	static
+	WebElement employeeemergency;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'WAS EMPLOYEE HOSPITALIZED OVERNIGHT AS                                              AN IN-PATIENT?')]/following::select[1]")
+	static
+	WebElement treatedovernight;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'IS VALIDITY OF CLAIM DOUBTED')]/following::select[1]")
+	static
+	WebElement claimdoubted;
+
+
+
+	/**********************Cause of accident*********************************/
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr/th/span/label[contains(text(),'WHAT HAPPENED')]/following::textarea[1]")
+	static
+	WebElement whathappend;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr/th/span/label[contains(text(),'WHAT OBJECT OR SUBSTANCE DIRECTLY HARMED THE EMPLOYEE')]/following::textarea[1]")
+	static
+	WebElement harmedemployee;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr/th/span/label[contains(text(),'WHAT OBJECT OR SUBSTANCE DIRECTLY HARMED THE EMPLOYEE')]/following::textarea[1]")
+	WebElement harmedemployeekeytab;
+	@FindBy(how=How.XPATH, using=".//a[text()='Nature of Injury List']/preceding::span[1]/a/img")
+	WebElement natureofinjury;
+	@FindBy(how=How.XPATH, using=".//a[text()='Cause of Injury List']/preceding::span[1]/a/img")
+	WebElement causeofinjury;
+
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),' INCIDENT OCCURRED')]/following::textarea[1]")
+	WebElement employeebeforeincidentoccured;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr[6]/th[1]/label[' WAS WORKER IN YOUR EMPLOY WHEN INJURED?']/following::select[1]")
+	WebElement workerinemployee;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr[6]/th[2]/label['DATE OF LAST HIRE']/following::input[1]")
+
+
+	WebElement datehire;
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'ACTUAL GROSS EARNINGS OF EMPLOYEE FOR THE 30 CALENDAR DAYS PRECEEDING INJURY')]/following::input[1]")
+	WebElement grossearings;
+	@FindBy(how=How.NAME, using="j_id0:j_id5:j_id9:j_id247")
+	WebElement agree;
+
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SUBMITTER EMAIL ADDRESS')]/following::input[1]")
+	WebElement submittermail;
+
+	@FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id11:bottom\"]/input")
+	WebElement submit;
+
+	@FindBy(how=How.XPATH, using=".//p[text()=' Thank you for your submission!']")
+	static
+	WebElement verifySuccess;
+
+	public static  void formFilling(String methodName,String tcName) throws Exception {
+		
+/******************************EMPLOYEE DETAILS *******************************************************/		
+		lastname.sendKeys(ExcelUtilities.excelData(methodName, tcName, "lastname"));     
+		firstname.sendKeys(ExcelUtilities.excelData(methodName, tcName, "firstname")); 
+		socialsecuritynumber.sendKeys(ExcelUtilities.excelData(methodName, tcName, "socialsecuritynumber"));
+		dob.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeedob"));
+		homeaddress.sendKeys(ExcelUtilities.excelData(methodName, tcName, "homeaddress"));
+		city.sendKeys(ExcelUtilities.excelData(methodName, tcName, "city"));
+		state.sendKeys(ExcelUtilities.excelData(methodName, tcName, "state"));
+		zipcode.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeezipcode"));
+		telephone.sendKeys(ExcelUtilities.excelData(methodName, tcName, "telephone"));
+		gender.sendKeys(ExcelUtilities.excelData(methodName, tcName, "sex"));
+		maritalstatus.sendKeys(ExcelUtilities.excelData(methodName, tcName, "marital status"));
+		
+/******************************EMPLOYER DETAILS********************************************************/		
+		employername.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employername")); 
+		feinnumber.sendKeys(ExcelUtilities.excelData(methodName, tcName, "fiennumber"));
+		officeaddress.sendKeys(ExcelUtilities.excelData(methodName, tcName, "officeaddress"));
+		employercity.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employercity"));
+		employerstate.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employerstate"));
+		employerzipcode.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employerzipcode"));
+		employertelephone.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employertelephone"));
+
+/******************************ACCIDENT DETAILS********************************************************/	
+		DATEOFINJURY.sendKeys(ExcelUtilities.excelData(methodName, tcName, "dateofinjury"));
+		Notified.sendKeys(ExcelUtilities.excelData(methodName, tcName, "Notified"));
+		afterinjury.sendKeys(ExcelUtilities.excelData(methodName, tcName, "afterinjury"));
+		employeeoccupation.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeeoccupation"));
+		employeepremises.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeepremesis"));
+		wastheinjuryorillness.sendKeys(ExcelUtilities.excelData(methodName, tcName, "wastheinjuryorillness"));
+		bodyinjured.sendKeys(ExcelUtilities.excelData(methodName, tcName, "bodyinjured"));
+		SeleniumUtils.lookupWindowhandler(data, driver);
+		fatal.sendKeys(ExcelUtilities.excelData(methodName, tcName, "fatal"));
+		employeeemergency.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeeemergency"));
+		treatedovernight.sendKeys(ExcelUtilities.excelData(methodName, tcName, "treatedovernight"));
+		claimdoubted.sendKeys(ExcelUtilities.excelData(methodName, tcName, "claimdoubted"));
+		
+/*****************************CAUSE OF ACCIDENT	*******************************************************/
+		whathappend.sendKeys(ExcelUtilities.excelData(methodName, tcName, "whathappend"));
+		harmedemployee.sendKeys(ExcelUtilities.excelData(methodName, tcName, "harmedemployee"));
+		SeleniumUtils.lookupWindowhandler(data, driver);
+		SeleniumUtils.lookupWindowhandler(data, driver);
+	}
+
+
+
+
+
+		
+
+	}
+
+
+

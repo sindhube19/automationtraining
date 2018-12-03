@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.automationtraining.constant.ConstantFile;
 /**
  * @author Sindhuja Ethiraj
  *
@@ -14,15 +16,16 @@ import org.testng.annotations.BeforeMethod;
 public class BrowserFactory {
 	public static WebDriver driver;
 
-@BeforeMethod	
-public void browserOpen() {
-driver = new ChromeDriver();
 
-	
+public static WebDriver getNewdriver() {
+
+System.setProperty("webdriver.chrome.driver", ConstantFile.driverchrome);
+return driver = new ChromeDriver();
 }
 
-@AfterMethod
-public void browserClose() {
-	//driver.close();
+public static WebDriver closeDriver() {
+	driver.close();
+	return null;
+	
 }
 }
