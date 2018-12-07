@@ -1,30 +1,15 @@
 package com.automationtraining.pageobject;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.List;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Cell;
-
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
 
+import com.automationtraining.abstractclasses.Driverclass;
 import com.automationtraining.basetest.BaseTest;
-import com.automationtraining.browserfactory.BrowserFactory;
 import com.automationtraining.utilities.ExcelUtilities;
 import com.automationtraining.utilities.SeleniumUtils;
-
 
 /**
  * @author Sindhuja Ethiraj
@@ -32,11 +17,22 @@ import com.automationtraining.utilities.SeleniumUtils;
  */
 public class Form101Page extends BaseTest {
 
+	/**
+	 * @param driver
+	 */
+	/*public Form101Page(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+*/
 	/******************************Employee*******************************************/
-
+	
+	
+	
+	
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
 	static
-	WebElement lastname; 
+	WebElement lastname1; 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
 	static
 	WebElement firstname;
@@ -123,8 +119,10 @@ public class Form101Page extends BaseTest {
 	static
 	WebElement bodyinjured;
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'PART OF BODY INJURED')]/following::input[1]")
+	static
 	WebElement bodyinjuredkeytab;
 	@FindBy(how=How.XPATH, using=".//a[text()='Part of Body Injured List']/preceding::span[1]/a/img")
+	static
 	WebElement lookuppartofbodyinjured;
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FATAL')]/following::select[1]")
 	static
@@ -150,87 +148,113 @@ public class Form101Page extends BaseTest {
 	static
 	WebElement harmedemployee;
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr/th/span/label[contains(text(),'WHAT OBJECT OR SUBSTANCE DIRECTLY HARMED THE EMPLOYEE')]/following::textarea[1]")
+	static
 	WebElement harmedemployeekeytab;
 	@FindBy(how=How.XPATH, using=".//a[text()='Nature of Injury List']/preceding::span[1]/a/img")
+	static
 	WebElement natureofinjury;
 	@FindBy(how=How.XPATH, using=".//a[text()='Cause of Injury List']/preceding::span[1]/a/img")
+	static
 	WebElement causeofinjury;
 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),' INCIDENT OCCURRED')]/following::textarea[1]")
+	static
 	WebElement employeebeforeincidentoccured;
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr[6]/th[1]/label[' WAS WORKER IN YOUR EMPLOY WHEN INJURED?']/following::select[1]")
+	static
 	WebElement workerinemployee;
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[4]/div[2]/table/tbody/tr[6]/th[2]/label['DATE OF LAST HIRE']/following::input[1]")
+	static
 
 
 	WebElement datehire;
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'ACTUAL GROSS EARNINGS OF EMPLOYEE FOR THE 30 CALENDAR DAYS PRECEEDING INJURY')]/following::input[1]")
+	static
 	WebElement grossearings;
-	@FindBy(how=How.NAME, using="j_id0:j_id5:j_id9:j_id247")
+	@FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id242\"]/div/table/tbody/tr[2]/td/input")
+	static
 	WebElement agree;
 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SUBMITTER EMAIL ADDRESS')]/following::input[1]")
+	static
 	WebElement submittermail;
 
-	@FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9:j_id11:bottom\"]/input")
+	@FindBy(how=How.XPATH, using="//*[@id=\"j_id0:j_id5:j_id9\"]/div[1]/div[15]/input")
+	static
 	WebElement submit;
 
 	@FindBy(how=How.XPATH, using=".//p[text()=' Thank you for your submission!']")
 	static
 	WebElement verifySuccess;
 
-	public static  void formFilling(String methodName,String tcName) throws Exception {
+	public static void formFilling(String methodName, String tcName) throws Exception {
 		
 /******************************EMPLOYEE DETAILS *******************************************************/		
-		lastname.sendKeys(ExcelUtilities.excelData(methodName, tcName, "lastname"));     
-		firstname.sendKeys(ExcelUtilities.excelData(methodName, tcName, "firstname")); 
-		socialsecuritynumber.sendKeys(ExcelUtilities.excelData(methodName, tcName, "socialsecuritynumber"));
-		dob.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeedob"));
-		homeaddress.sendKeys(ExcelUtilities.excelData(methodName, tcName, "homeaddress"));
-		city.sendKeys(ExcelUtilities.excelData(methodName, tcName, "city"));
-		state.sendKeys(ExcelUtilities.excelData(methodName, tcName, "state"));
-		zipcode.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeezipcode"));
-		telephone.sendKeys(ExcelUtilities.excelData(methodName, tcName, "telephone"));
-		gender.sendKeys(ExcelUtilities.excelData(methodName, tcName, "sex"));
-		maritalstatus.sendKeys(ExcelUtilities.excelData(methodName, tcName, "marital status"));
+		Form101Page getElementValues = PageFactory.initElements(driver,Form101Page.class);
 		
-/******************************EMPLOYER DETAILS********************************************************/		
-		employername.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employername")); 
-		feinnumber.sendKeys(ExcelUtilities.excelData(methodName, tcName, "fiennumber"));
-		officeaddress.sendKeys(ExcelUtilities.excelData(methodName, tcName, "officeaddress"));
-		employercity.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employercity"));
-		employerstate.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employerstate"));
-		employerzipcode.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employerzipcode"));
-		employertelephone.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employertelephone"));
+		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
+		
+		
+		//getElementValues.lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "firstname"));
+		//getElementValues.lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "firstname")); 
+		
+		firstname.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "firstname")); 
+		socialsecuritynumber.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"));
+		dob.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeedob"));
+		homeaddress.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"));
+		city.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "city"));
+		state.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "state"));
+		zipcode.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeezipcode"));
+		telephone.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "telephone"));
+		gender.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "sex"));
+		maritalstatus.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "marital status"));
+		
+/******************************EMPLOYER DETAILS********************************************************/	
+		employername.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employername")); 
+		feinnumber.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "fiennumber"));
+		officeaddress.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "officeaddress"));
+		employercity.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employercity"));
+		employerstate.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employerstate"));
+		employerzipcode.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employerzipcode"));
+		employertelephone.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employertelephone"));
 
 /******************************ACCIDENT DETAILS********************************************************/	
-		DATEOFINJURY.sendKeys(ExcelUtilities.excelData(methodName, tcName, "dateofinjury"));
-		Notified.sendKeys(ExcelUtilities.excelData(methodName, tcName, "Notified"));
-		afterinjury.sendKeys(ExcelUtilities.excelData(methodName, tcName, "afterinjury"));
-		employeeoccupation.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeeoccupation"));
-		employeepremises.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeepremesis"));
-		wastheinjuryorillness.sendKeys(ExcelUtilities.excelData(methodName, tcName, "wastheinjuryorillness"));
-		bodyinjured.sendKeys(ExcelUtilities.excelData(methodName, tcName, "bodyinjured"));
-		SeleniumUtils.lookupWindowhandler(data, driver);
-		fatal.sendKeys(ExcelUtilities.excelData(methodName, tcName, "fatal"));
-		employeeemergency.sendKeys(ExcelUtilities.excelData(methodName, tcName, "employeeemergency"));
-		treatedovernight.sendKeys(ExcelUtilities.excelData(methodName, tcName, "treatedovernight"));
-		claimdoubted.sendKeys(ExcelUtilities.excelData(methodName, tcName, "claimdoubted"));
+		DATEOFINJURY.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "dateofinjury"));
+		Notified.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "Notified"));
+		afterinjury.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "afterinjury"));
+		employeeoccupation.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeeoccupation"));
+		employeepremises.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeepremesis"));
+		wastheinjuryorillness.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "wastheinjuryorillness"));
+		bodyinjured.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "bodyinjured"));
+		bodyinjuredkeytab.sendKeys(Keys.TAB);
+		lookuppartofbodyinjured.click();
+		SeleniumUtils.lookupWindowhandler("head", driver);
+		fatal.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "fatal"));
+		employeeemergency.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeeemergency"));
+		treatedovernight.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "treatedovernight"));
+		claimdoubted.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "claimdoubted"));
 		
 /*****************************CAUSE OF ACCIDENT	*******************************************************/
-		whathappend.sendKeys(ExcelUtilities.excelData(methodName, tcName, "whathappend"));
-		harmedemployee.sendKeys(ExcelUtilities.excelData(methodName, tcName, "harmedemployee"));
-		SeleniumUtils.lookupWindowhandler(data, driver);
-		SeleniumUtils.lookupWindowhandler(data, driver);
+		whathappend.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "whathappend"));
+		harmedemployee.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "harmedemployee"));
+		harmedemployeekeytab.sendKeys(Keys.TAB);
+		natureofinjury.click();
+		SeleniumUtils.lookupWindowhandler("Multiple Injuries", driver);
+		causeofinjury.click();
+		SeleniumUtils.lookupWindowhandler("Motor Vehicle", driver);
+		employeebeforeincidentoccured.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "incidentoccured"));
+		workerinemployee.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employwheninjured"));
+		datehire.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "datehire"));
+		grossearings.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "grossearnings"));
+		submittermail.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "submitteremail"));
+		agree.click();
+		submit.click();
+		SeleniumUtils.highLightelements(verifySuccess, driver);
+
+
 	}
 
-
-
-
-
-		
-
-	}
+}
 
 
 
