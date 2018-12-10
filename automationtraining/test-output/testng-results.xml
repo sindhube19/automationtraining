@@ -2,23 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smokesuite" duration-ms="72693" started-at="2018-12-07T13:16:07Z" finished-at="2018-12-07T13:17:19Z">
+  <suite name="smokesuite" duration-ms="71649" started-at="2018-12-10T12:33:38Z" finished-at="2018-12-10T12:34:50Z">
     <groups>
     </groups>
-    <test name=" Smoke Test Candidates" duration-ms="72693" started-at="2018-12-07T13:16:07Z" finished-at="2018-12-07T13:17:19Z">
+    <test name=" Smoke Test Candidates" duration-ms="71649" started-at="2018-12-10T12:33:38Z" finished-at="2018-12-10T12:34:50Z">
       <class name="com.automationtraining.smokesuite.Form101">
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.automationtraining.smokesuite.Form101@1060b431]" name="browserSetup" is-config="true" duration-ms="12784" started-at="2018-12-07T13:16:07Z" finished-at="2018-12-07T13:16:19Z">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:com.automationtraining.smokesuite.Form101@2db7a79b]" name="browserSetup" is-config="true" duration-ms="12638" started-at="2018-12-10T12:33:38Z" finished-at="2018-12-10T12:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="formFilling101()[pri:0, instance:com.automationtraining.smokesuite.Form101@1060b431]" name="formFilling101" duration-ms="57777" started-at="2018-12-07T13:16:19Z" finished-at="2018-12-07T13:17:17Z">
+        <test-method status="PASS" signature="formFilling101()[pri:0, instance:com.automationtraining.smokesuite.Form101@2db7a79b]" name="formFilling101" duration-ms="56860" started-at="2018-12-10T12:33:51Z" finished-at="2018-12-10T12:34:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formFilling101 -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.automationtraining.smokesuite.Form101@1060b431]" name="browserClose" is-config="true" duration-ms="2100" started-at="2018-12-07T13:17:17Z" finished-at="2018-12-07T13:17:19Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.automationtraining.smokesuite.Form101@2db7a79b]" name="browserClose" is-config="true" duration-ms="2116" started-at="2018-12-10T12:34:48Z" finished-at="2018-12-10T12:34:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationtraining.smokesuite.Form101@2db7a79b]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-12-10T12:34:50Z" finished-at="2018-12-10T12:34:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.automationtraining.smokesuite.Form101 -->
     </test> <!--  Smoke Test Candidates -->
   </suite> <!-- smokesuite -->

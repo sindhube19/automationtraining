@@ -27,9 +27,9 @@ public class ExtentReportsClass
 	    ExtentTest logger=extent.createTest("LoginTest");
 	    
             // log method will add logs in report and provide the log steps which will come in report
-	    logger.log(Status.INFO, "Login to amazon");
+	    logger.log(Status.INFO, "Form101_Automation");
 	   
-	    logger.log(Status.PASS, "Title verified");
+	    logger.log(Status.PASS, "Successfully Submitted");
 	   
             // Flush method will write the test in report- This is mandatory step  
 	    extent.flush();
@@ -38,11 +38,11 @@ public class ExtentReportsClass
             // In our case we are calling twice which will add 2 testcases in our report
 	    ExtentTest logger2=extent.createTest("Logoff Test");
 	    
-	    logger2.log(Status.FAIL, "Title verified");
+	    logger2.log(Status.FAIL, "Successfully Submitted");
 	    
-	    logger2.fail("Failed because of some issues", MediaEntityBuilder.createScreenCaptureFromPath("/Users/mukeshotwani/Desktop/logo.jpg").build());
+	    logger2.fail("Failed because of some issues", MediaEntityBuilder.createScreenCaptureFromPath("C:/Users/MSTEMP194/Desktop/Automation/logo.jpg").build());
         
-	    logger2.pass("Failed because of some issues", MediaEntityBuilder.createScreenCaptureFromPath("/Users/mukeshotwani/Desktop/logo.jpg").build());
+	    logger2.pass("Failed because of some issues", MediaEntityBuilder.createScreenCaptureFromPath("C:/Users/MSTEMP194/Desktop/Automation/logo.jpg").build());
 
             // This will add another test in report
 	    extent.flush();

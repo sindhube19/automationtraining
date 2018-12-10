@@ -176,6 +176,7 @@ public class Form101Page extends BaseTest {
 	WebElement agree;
 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'SUBMITTER EMAIL ADDRESS')]/following::input[1]")
+	public
 	static
 	WebElement submittermail;
 
