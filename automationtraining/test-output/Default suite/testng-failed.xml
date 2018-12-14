@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationtraining.ExtentReportListener.ExtentReportsClass">
+      <class name="com.automationtraining.smokesuite.Form101">
         <methods>
-          <include name="skipTest"/>
-          <include name="getResult"/>
-          <include name="failTest"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
+          <include name="browserSetup"/>
+          <include name="formFilling101"/>
+          <include name="browserClose"/>
         </methods>
-      </class> <!-- com.automationtraining.ExtentReportListener.ExtentReportsClass -->
+      </class> <!-- com.automationtraining.smokesuite.Form101 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

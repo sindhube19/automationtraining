@@ -9,10 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">smokesuite</th></tr>
-<tr><td><a href="#t0"> Smoke Test Candidates</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">71,649</td><td></td><td></td></tr>
+<tr><td><a href="#t0"> Smoke Test Candidates</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,433</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">smokesuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Smoke Test Candidates &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationtraining.smokesuite.Form101</td><td><a href="#m0">formFilling101</a></td><td rowspan="1">1544445231397</td><td rowspan="1">56860</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">smokesuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Smoke Test Candidates &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automationtraining.smokesuite.Form101</td><td><a href="#m0">browserClose</a></td><td rowspan="1">1544793650066</td><td rowspan="1">2109</td></tr><tr><th colspan="4"> Smoke Test Candidates &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automationtraining.smokesuite.Form101</td><td><a href="#m1">formFilling101</a></td><td rowspan="1">1544793649945</td><td rowspan="1">114</td></tr></tbody>
 </table>
-<h2> Smoke Test Candidates</h2><h3 id="m0">com.automationtraining.smokesuite.Form101#formFilling101</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2> Smoke Test Candidates</h2><h3 id="m0">com.automationtraining.smokesuite.Form101#browserClose</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automationtraining.basetest.BaseTest.browserClose(BaseTest.java:78)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automationtraining.smokesuite.Form101#formFilling101</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at com.automationtraining.smokesuite.Form101.formFilling101(Form101.java:31)
+Caused by: java.lang.IllegalArgumentException: InputStream cannot be null
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at com.aventstack.extentreports.configuration.ConfigLoader.getConfigurationHash(ConfigLoader.java:64)
+	at com.aventstack.extentreports.reporter.AbstractReporter.loadXMLConfig(AbstractReporter.java:64)
+	at com.automationtraining.ExtentReportListener.ExtentReportFactory.getReporter(ExtentReportFactory.java:32)
+	at com.automationtraining.ExtentReportListener.ReportGenerator.&lt;clinit&gt;(ReportGenerator.java:24)
+	... 26 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

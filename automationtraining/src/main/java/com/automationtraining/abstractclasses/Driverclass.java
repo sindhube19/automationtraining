@@ -7,22 +7,21 @@ import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 /**
  * @author Sindhuja Ethiraj
  *
  * 05-Dec-2018
  */
-public class Driverclass {
-	protected WebDriver driver;
+public abstract class Driverclass  {
+	protected  WebDriver driver;
 
-	//public Driverclass(WebDriver driver) 
-	public void getElementvalue(WebDriver driver) throws InvalidFormatException, IOException {
-	//	PageFactory.initElements(driver, Driverclass.class);
-		/*this.driver=driver;
-		Driverclass getElementValues = PageFactory.initElements(driver,Driverclass.class);*/
-		// Signin sign = PageFactory.initElements(driver, Signin.class);
-		//System.out.println("driverclass"+getElementValues);
-		
+	public Driverclass(WebDriver driver) 
+	{
+		this.driver=driver;
+ PageFactory.initElements(driver,this);
+ 
+	
 	}
-}
+	}

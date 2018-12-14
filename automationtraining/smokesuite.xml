@@ -2,9 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="smokesuite">
  <test name=" Smoke Test Candidates">
- <parameter name="env" value="URL" />
- <parameter name="browserType" value="chrome" />
- <classes>
+ <parameter name="env" value="url101" />
+  <classes>
  <class name="com.automationtraining.smokesuite.Form101"/>
  </classes>
 

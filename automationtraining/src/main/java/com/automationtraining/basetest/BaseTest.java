@@ -1,5 +1,9 @@
 package com.automationtraining.basetest;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -27,64 +31,53 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
+import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.browserfactory.BrowserFactory;
+import com.automationtraining.constant.ConstantFile;
 import com.automationtraining.pageobject.Form101Page;
 
 import com.automationtraining.utilities.ExcelUtilities;
+import com.automationtraining.utilities.TestUtils;
+import com.automationtraining.pageobject.Loginpages;
 /**
  * @author Sindhuja Ethiraj
  *
  */
-public class BaseTest  {
-	
+public class BaseTest extends ExcelUtilities  {
+	protected Loginpages Loginpages;
+	protected String url;
 	protected Form101Page page101; 
-	public static WebDriver driver;
+	public  WebDriver driver;
+	protected ReportGenerator reporter;
 	//protected loginPages loginPages;
- 
+	 private Properties properties;
+	 private final String propertyFilePath= ConstantFile.propertyFilePath;
 	
 	@BeforeTest
-	public void browserSetup() throws Exception {
+	@Parameters("env")
+	public void browserSetup(String env) throws Exception {
 		
-	//	ExcelUtilities.openstream();
+	    ExcelUtilities.openstream();
+		url=TestUtils.getStringFromPropertyFile(env);
+	
 		 driver=BrowserFactory.getNewdriver();
+		 driver.navigate().to(url);
 		driver.manage().window().maximize();
-		
-		driver.get("https://qadevpro2-azicawc-webforms.cs32.force.com/forms/Webform101_VF");
-		//ExcelUtilities.setExcelFileSheet("automation");
-		/*loginPages= new loginPages(driver);
-		System.out.println("loginPagestest"+loginPages);
-*/
+		Loginpages= new Loginpages(driver);
+
+
 			
 	}
 	
   @AfterTest
       public void browserClose() throws Exception  {
 	 BrowserFactory.closeDriver();
+	ExcelUtilities.closeStream();
+	 reporter.flush();
    }
-  
-  @AfterSuite
 
-  public void tearDown(){
-	  WebElement Toemail =  Form101Page.submittermail;
-
-      sendPDFReportByGMail("sindhube19.data@gmail.com", "password", Toemail, "PDF Report", "");
-
-      }
-
-
-
-  /**
- * @param from
- * @param pass
- * @param toemail
- * @param subject
- * @param body
- */
-private void sendPDFReportByGMail(String from, String pass, WebElement toemail, String subject, String body) {
-	// TODO Auto-generated method stub
-	
-}
 
 
 	

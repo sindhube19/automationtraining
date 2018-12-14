@@ -25,7 +25,7 @@ return driver = new ChromeDriver();
 
 public static WebDriver closeDriver() {
 	driver.close();
-//	return null;
+
 	return driver;
 	
 }

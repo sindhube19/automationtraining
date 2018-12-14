@@ -16,7 +16,7 @@ import com.automationtraining.basetest.BaseTest;
  *
  */
 public class SeleniumUtils  {
-	public static void lookupWindowhandler(String data,WebDriver driver) throws InterruptedException {
+	public static  void lookupWindowhandler(String data,WebDriver driver) throws InterruptedException {
 		Set<String> windows = driver.getWindowHandles(); 
 		Iterator<String> it = windows.iterator();
 		String parentWindow = it.next();

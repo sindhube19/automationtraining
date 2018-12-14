@@ -36,35 +36,45 @@ public class ExcelUtilities {
     private static int totalRows = 0;
     private static int totalCols = 0;
 
+
 	public static void openstream() throws Exception
 	{
 		
 		file = new File(ConstantFile.testDataExcelFileName);
+		
         inputStream = new FileInputStream(file);
+     
         String fileExtensionName = ConstantFile.testDataExcelFileName.substring(ConstantFile.testDataExcelFileName.indexOf("."));
+    
  
         if (fileExtensionName.equals(".xlsx")) {
             workbook = new XSSFWorkbook(inputStream);
+           
+           
         } else if (fileExtensionName.equals(".xls")) {
             workbook = new HSSFWorkbook(inputStream);
-        }
+           
        
-
+        }
+        
+       
 	}
+	
 	public static void closeStream() throws IOException {
 		inputStream.close();
 	}
 
 	public static String readExcel(String sheetname,String TcName,String fieldname) throws Exception
 	{
-		   
-		openstream();
+	//	openstream();
+	
+		
 		Object result =new Object();
 		
 		try{
 			
 		sheet = workbook.getSheet(sheetname);
-	//	System.out.println(sheet.getSheetName());
+
 		totalRows = sheet.getLastRowNum();
 		row = sheet.getRow(0);
 		totalCols = row.getLastCellNum();
@@ -109,7 +119,7 @@ public class ExcelUtilities {
 							}
 						}
 					}
-				}
+							}
 			//	k = totalRows + 1;
 			}
 		}
@@ -124,6 +134,7 @@ public class ExcelUtilities {
 	}
 	
 }
+
 
 
 
