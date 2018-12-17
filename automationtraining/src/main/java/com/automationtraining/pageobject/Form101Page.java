@@ -28,10 +28,10 @@ public class Form101Page extends Driverclass {
 	}
 
 	/******************************Employee*******************************************/
-	
-	
-	
-	
+
+
+
+
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
 	public WebElement lastname1; 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
@@ -188,12 +188,12 @@ public class Form101Page extends Driverclass {
 	public
 	WebElement verifySuccess;
 
-	
+
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
-		
-/******************************EMPLOYEE DETAILS *******************************************************/		
+
+		/******************************EMPLOYEE DETAILS *******************************************************/		
 		generator.childReport("Entering the LastName");
-	    lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
+		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
 		generator.childReport("Entering the Firstname");
 		firstname.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "firstname")); 
 		generator.childReport("Entering the socialsecuritynumber");
@@ -214,8 +214,8 @@ public class Form101Page extends Driverclass {
 		gender.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "sex"));
 		generator.childReport("Entering the Employee maritalstatus");
 		maritalstatus.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "marital status"));
-		
-/******************************EMPLOYER DETAILS********************************************************/	
+
+		/******************************EMPLOYER DETAILS********************************************************/	
 		generator.childReport("Entering the Employer Name");
 		employername.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employername")); 
 		generator.childReport("Entering the Employer FIEN Number");
@@ -231,7 +231,7 @@ public class Form101Page extends Driverclass {
 		generator.childReport("Entering the Employer telephone");
 		employertelephone.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employertelephone"));
 
-/******************************ACCIDENT DETAILS********************************************************/	
+		/******************************ACCIDENT DETAILS********************************************************/	
 		generator.childReport("Entering the Date of Injury");
 		DATEOFINJURY.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "dateofinjury"));
 		generator.childReport("Entering the Date notified");
@@ -257,8 +257,8 @@ public class Form101Page extends Driverclass {
 		treatedovernight.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "treatedovernight"));
 		generator.childReport("Entering claim doubted");
 		claimdoubted.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "claimdoubted"));
-		
-/*****************************CAUSE OF ACCIDENT	*******************************************************/
+
+		/*****************************CAUSE OF ACCIDENT	*******************************************************/
 		generator.childReport("Entering the detail of what happened");
 		whathappend.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "whathappend"));
 		generator.childReport("Entering the info harm happened to emplyee");
@@ -287,8 +287,15 @@ public class Form101Page extends Driverclass {
 
 
 	}
-	public void validatingtheForm101() {
-		// need to do for failed test case
+	public void validatingtheForm101(String methodName, String tcName,ReportGenerator generator) throws Exception {
+		// need to do for failed test casegenerator.childReport("Entering the LastName");
+		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, ""));
+		generator.childReport("Accepting the agree");
+		agree.click();
+		generator.childReport("Submitting the button");
+		submit.click();
+		generator.childReport("Verifying the success message");
+		SeleniumUtils.FailedhighLightelements(verifySuccess, driver);
 	}
 
 }

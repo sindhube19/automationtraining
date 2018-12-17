@@ -17,7 +17,7 @@ import com.automationtraining.utilities.ExcelUtilities;
  * @author Sindhuja Ethiraj
  *
  */
-public class Form101 extends BaseTest{
+public class Form101 extends  BaseTest{
 	@Test
 	public void formFilling101() throws Exception
 	{
@@ -32,6 +32,7 @@ public class Form101 extends BaseTest{
 page101=Loginpages.formUrl101();
 		page101.formFilling(methodName,tcName,reporter);
 		//    ExtentReportsClass.loginTest();
+		
 
 
 

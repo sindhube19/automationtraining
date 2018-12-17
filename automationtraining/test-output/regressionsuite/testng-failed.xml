@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [smokesuite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regressionsuite]">
   <test thread-count="5" name=" Smoke Test Candidates(failed)">
-    <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
     <classes>
-      <class name="com.automationtraining.smokesuite.Form101">
+      <class name="com.automationtraining.smokesuite.Failedform101">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="browserSetup"/>
           <include name="formFilling101"/>
           <include name="browserClose"/>
-          <include name="tearDown"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- com.automationtraining.smokesuite.Form101 -->
+      </class> <!-- com.automationtraining.smokesuite.Failedform101 -->
     </classes>
   </test> <!--  Smoke Test Candidates(failed) -->
-</suite> <!-- Failed suite [smokesuite] -->
+</suite> <!-- Failed suite [regressionsuite] -->

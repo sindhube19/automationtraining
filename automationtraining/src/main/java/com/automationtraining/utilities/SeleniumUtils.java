@@ -46,10 +46,14 @@ public class SeleniumUtils  {
 js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 2px solid red;');", Element);
 
 }
+	
+	public static void FailedhighLightelements(WebElement Element,WebDriver driver) {
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+	    //use executeScript() method and pass the arguments 
+	    //Here i pass values based on css style. Yellow background color with solid red color border. 
+	js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid blue;');", Element);
 
-	/**
-	 * 
-	 */
+	}
 	
 
 }

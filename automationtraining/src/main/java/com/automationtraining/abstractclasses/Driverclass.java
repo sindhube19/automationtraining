@@ -16,12 +16,17 @@ import org.openqa.selenium.support.PageFactory;
  */
 public abstract class Driverclass  {
 	protected  WebDriver driver;
-
+	public static int lineno =0;
+	public static String classname = Thread.currentThread().getStackTrace()[1].getClassName().toString(); 
 	public Driverclass(WebDriver driver) 
 	{
 		this.driver=driver;
- PageFactory.initElements(driver,this);
- 
-	
+		PageFactory.initElements(driver,this);
+
+
 	}
-	}
+	public static void SetExceptionDetails(int lineno1, String classname1) {
+		lineno = lineno1;
+		classname = classname1;
+	} 
+}

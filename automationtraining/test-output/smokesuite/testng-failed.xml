@@ -2,13 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [smokesuite]">
   <test thread-count="5" name=" Smoke Test Candidates(failed)">
+    <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
     <classes>
       <class name="com.automationtraining.smokesuite.Form101">
         <methods>
+          <include name="beforeSuite"/>
           <include name="browserSetup"/>
           <include name="formFilling101"/>
           <include name="browserClose"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.automationtraining.smokesuite.Form101 -->
     </classes>

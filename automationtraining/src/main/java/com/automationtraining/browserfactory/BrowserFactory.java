@@ -17,16 +17,16 @@ public class BrowserFactory {
 	public static WebDriver driver;
 
 
-public static WebDriver getNewdriver() {
+	public static WebDriver getNewdriver() {
 
-System.setProperty("webdriver.chrome.driver", ConstantFile.driverchrome);
-return driver = new ChromeDriver();
-}
+		System.setProperty("webdriver.chrome.driver", ConstantFile.driverchrome);
+		return driver = new ChromeDriver();
+	}
 
-public static WebDriver closeDriver() {
-	driver.close();
+	public static WebDriver closeDriver() {
+		driver.close();
 
-	return driver;
-	
-}
+		return driver;
+
+	}
 }

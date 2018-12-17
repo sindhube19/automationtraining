@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="smokesuite">
- <test name=" Smoke Test Candidates">
- <parameter name="env" value="url101" />
-  <classes>
- <class name="com.automationtraining.smokesuite.Form101"/>
- </classes>
+<!-- 	<listeners>
+		<listener
+			class-name="com.automationtraining.listeners.RetryListener" />
+	</listeners> -->
+	<test name=" Smoke Test Candidates">
+		<parameter name="env" value="url101" />
+		<parameter name="userType" value="Qaadmin" />
+		<classes>
+			<class name="com.automationtraining.smokesuite.Form101" />
+		</classes>
+	</test>
 
-  </test> <!-- Test -->
+	<!-- <test name=" Smoke Test Candidates">
+		<parameter name="env" value="url101" />
+		<classes>
 
-</suite> <!-- SmokeSuite -->
+			<class name="com.automationtraining.smokesuite.Failedform101" />
+		</classes>
+
+	</test>
+	 -->
+
+</suite>  <!-- SmokeSuite -->

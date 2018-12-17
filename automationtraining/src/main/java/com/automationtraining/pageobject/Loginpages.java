@@ -26,7 +26,7 @@ public class Loginpages extends Driverclass {
 	 * @param driver
 	 */
 	public Form101Page formUrl101(){
-		 return new Form101Page(driver);
-} 
+		return new Form101Page(driver);
+	} 
 
 }
