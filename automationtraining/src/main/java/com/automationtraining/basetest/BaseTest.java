@@ -56,6 +56,8 @@ import java.lang.annotation.RetentionPolicy;
 public class BaseTest extends ExcelUtilities  {
 	protected Loginpages Loginpages;
 	protected String url;
+	protected String sfurl;
+	protected String usertype;
 	protected Form101Page page101; 
 	public  WebDriver driver;
 	protected ReportGenerator reporter;
@@ -68,19 +70,31 @@ public class BaseTest extends ExcelUtilities  {
 		ExcelUtilities.openstream();
 	}
 	@BeforeMethod
-	@Parameters({"env","userType"})
-	public void browserSetup(String env,@Optional("userType")String userType) throws Exception {
+	@Parameters({"env","userType","sflogin"})
+	public void browserSetup(String env,@Optional("sflogin")String userType, String sflogin) throws Exception {
 
 		ExcelUtilities.openstream();
 		url=TestUtils.getStringFromPropertyFile(env);
-
+        
 		driver=BrowserFactory.getNewdriver();
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
 		Loginpages= new Loginpages(driver);
-
-
+		
 	}
+	/*@BeforeMethod(dependsOnMethods="browserSetup")
+	@Parameters({"sflogin","userType"})
+	public void browserSignin(String sflogin,@Optional("userType")String userType) throws Exception  {
+sfurl=TestUtils.getStringFromPropertyFile(sflogin);
+        
+		driver=BrowserFactory.getNewdriver();
+		driver.navigate().to(sfurl);
+		driver.manage().window().maximize();
+		usertype=TestUtils.getStringFromPropertyFile(userType);
+		Loginpages= new Loginpages(driver);
+		
+	
+	}*/
 	@AfterMethod(alwaysRun = true)   
 	public void tearDown(ITestResult result) throws Exception 
 	{ 
@@ -110,7 +124,7 @@ public class BaseTest extends ExcelUtilities  {
 	public void browserClose() throws Exception  {
 		reporter.flush();
 		ExcelUtilities.closeStream();
-		BrowserFactory.closeDriver();
+		//BrowserFactory.closeDriver();
 
 	}
 

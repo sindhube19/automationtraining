@@ -28,5 +28,8 @@ public class Loginpages extends Driverclass {
 	public Form101Page formUrl101(){
 		return new Form101Page(driver);
 	} 
+	
+	
+
 
 }

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-smokesuite">
-              <span class="suite-name border-passed">smokesuite</span>
+              <span class="suite-name border-failed">smokesuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-smokesuite" class="hide-methods passed suite-smokesuite"> (hide)</a> <!-- hide-methods passed suite-smokesuite -->
-                      <a href="#" panel-name="suite-smokesuite" class="show-methods passed suite-smokesuite"> (show)</a> <!-- show-methods passed suite-smokesuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-smokesuite" class="hide-methods failed suite-smokesuite"> (hide)</a> <!-- hide-methods failed suite-smokesuite -->
+                      <a href="#" panel-name="suite-smokesuite" class="show-methods failed suite-smokesuite"> (show)</a> <!-- show-methods failed suite-smokesuite -->
                     </span>
-                    <div class="method-list-content passed suite-smokesuite">
+                    <div class="method-list-content failed suite-smokesuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-smokesuite" title="com.automationtraining.smokesuite.Form101" hash-for-method="formFilling101">formFilling101</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-smokesuite -->
+                    </div> <!-- method-list-content failed suite-smokesuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-smokesuite" class="hide-methods skipped suite-smokesuite"> (hide)</a> <!-- hide-methods skipped suite-smokesuite -->
+                      <a href="#" panel-name="suite-smokesuite" class="show-methods skipped suite-smokesuite"> (show)</a> <!-- show-methods skipped suite-smokesuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-smokesuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-smokesuite" title="com.automationtraining.smokesuite.Form101" hash-for-method="formFilling101">formFilling101</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-smokesuite" title="com.automationtraining.smokesuite.Form101" hash-for-method="formFilling101">formFilling101</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-smokesuite" title="com.automationtraining.smokesuite.Form101" hash-for-method="formFillingSignin">formFillingSignin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-smokesuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-smokesuite" class="panel smokesuite">
-          <div class="suite-smokesuite-class-passed">
+          <div class="suite-smokesuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.automationtraining.smokesuite.Form101</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,10 +152,126 @@
                   <a name="formFilling101">
                   </a> <!-- formFilling101 -->
                   <span class="method-name">formFilling101</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//p[text()=&apos; Thank you for your submission!&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 260 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MSTSYS0194&apos;, ip: &apos;10.10.100.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MSTEMP~1\AppData\Local\Temp\scoped_dir4952_18858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=71.0.3578.98, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0f8184f4f7707b0998e33e7546d70878
+*** Element info: {Using=xpath, value=.//p[text()=&apos; Thank you for your submission!&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:367)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:571)
+	at com.automationtraining.utilities.SeleniumUtils.highLightelements(SeleniumUtils.java:46)
+	at com.automationtraining.pageobject.Form101Page.formFilling(Form101Page.java:304)
+	at com.automationtraining.smokesuite.Form101.formFilling101(Form101.java:34)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-smokesuite-class-passed -->
+          </div> <!-- suite-smokesuite-class-failed -->
+          <div class="suite-smokesuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.automationtraining.smokesuite.Form101</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="formFilling101">
+                  </a> <!-- formFilling101 -->
+                  <span class="method-name">formFilling101</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//p[text()=&apos; Thank you for your submission!&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MSTSYS0194&apos;, ip: &apos;10.10.100.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MSTEMP~1\AppData\Local\Temp\scoped_dir20836_17433}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=71.0.3578.98, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 70a7528a4db888975ccd47234adecc57
+*** Element info: {Using=xpath, value=.//p[text()=&apos; Thank you for your submission!&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:367)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:571)
+	at com.automationtraining.utilities.SeleniumUtils.highLightelements(SeleniumUtils.java:46)
+	at com.automationtraining.pageobject.Form101Page.formFilling(Form101Page.java:304)
+	at com.automationtraining.smokesuite.Form101.formFilling101(Form101.java:34)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="formFilling101">
+                  </a> <!-- formFilling101 -->
+                  <span class="method-name">formFilling101</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.01 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;MSTSYS0194&apos;, ip: &apos;10.10.100.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MSTEMP~1\AppData\Local\Temp\scoped_dir20412_16532}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=71.0.3578.98, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 3f6320d59fe04f79e724be5c1f69044a
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:1010)
+	at com.automationtraining.utilities.SeleniumUtils.lookupWindowhandler(SeleniumUtils.java:32)
+	at com.automationtraining.pageobject.Form101Page.formFilling(Form101Page.java:269)
+	at com.automationtraining.smokesuite.Form101.formFilling101(Form101.java:34)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="formFillingSignin">
+                  </a> <!-- formFillingSignin -->
+                  <span class="method-name">formFillingSignin</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Form101.formFillingSignin(java.lang.String)[pri:0, instance:com.automationtraining.smokesuite.Form101@4671e53b] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smokesuite-class-skipped -->
         </div> <!-- panel smokesuite -->
         <div panel-name="test-xml-smokesuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -142,7 +282,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;smokesuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.automationtraining.listeners.RetryListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot; Smoke Test Candidates&quot;&gt;
+    &lt;parameter name=&quot;sflogin&quot; value=&quot;SFURL&quot;/&gt;
     &lt;parameter name=&quot;userType&quot; value=&quot;Qaadmin&quot;/&gt;
     &lt;parameter name=&quot;env&quot; value=&quot;url101&quot;/&gt;
     &lt;classes&gt;
@@ -186,16 +330,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'formFilling101')
 data.setCell(0, 2, 'com.automationtraining.smokesuite.Form101')
-data.setCell(0, 3, 67217);
+data.setCell(0, 3, 53230);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'formFilling101')
+data.setCell(1, 2, 'com.automationtraining.smokesuite.Form101')
+data.setCell(1, 3, 53000);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'formFilling101')
+data.setCell(2, 2, 'com.automationtraining.smokesuite.Form101')
+data.setCell(2, 3, 16435);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'formFillingSignin')
+data.setCell(3, 2, 'com.automationtraining.smokesuite.Form101')
+data.setCell(3, 3, 0);
 window.suiteTableData['smokesuite']= { tableData: data, tableDiv: 'times-div-smokesuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-smokesuite">
               </div> <!-- times-div-smokesuite -->
             </div> <!-- times-div -->
@@ -227,20 +383,46 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">browserSetup(url101, Qaadmin)</span>
-                <span class="method-start">638 ms</span>
+                <span class="method-name">browserSetup(url101, Qaadmin, SFURL)</span>
+                <span class="method-start">767 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">formFilling101</span>
-                <span class="method-start">11511 ms</span>
+                <span class="method-start">12922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=formFilling101 status=SUCCESS method=Form101.formFilling101()[pri:0, instance:com.a...)</span>
-                <span class="method-start">78731 ms</span>
+                <span class="method-name">tearDown([TestResult name=formFilling101 status=SKIP method=Form101.formFilling101()[pri:0, instance:com.auto...)</span>
+                <span class="method-start">66158 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserSetup(url101, Qaadmin, SFURL)</span>
+                <span class="method-start">66474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">formFilling101</span>
+                <span class="method-start">78517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=formFilling101 status=SKIP method=Form101.formFilling101()[pri:0, instance:com.auto...)</span>
+                <span class="method-start">94954 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserSetup(url101, Qaadmin, SFURL)</span>
+                <span class="method-start">95963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">formFilling101</span>
+                <span class="method-start">107158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=formFilling101 status=FAILURE method=Form101.formFilling101()[pri:0, instance:com.a...)</span>
+                <span class="method-start">160160 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">78774 ms</span>
+                <span class="method-start">162044 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

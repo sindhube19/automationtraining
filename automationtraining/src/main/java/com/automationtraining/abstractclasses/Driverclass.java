@@ -8,6 +8,9 @@ import java.io.IOException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
+
+import com.automationtraining.utilities.TestUtils;
 
 /**
  * @author Sindhuja Ethiraj
@@ -17,6 +20,7 @@ import org.openqa.selenium.support.PageFactory;
 public abstract class Driverclass  {
 	protected  WebDriver driver;
 	public static int lineno =0;
+//	protected String sfurl;
 	public static String classname = Thread.currentThread().getStackTrace()[1].getClassName().toString(); 
 	public Driverclass(WebDriver driver) 
 	{
@@ -29,4 +33,6 @@ public abstract class Driverclass  {
 		lineno = lineno1;
 		classname = classname1;
 	} 
+	
+	
 }

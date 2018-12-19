@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [smokesuite]">
+  <listeners>
+    <listener class-name="com.automationtraining.listeners.RetryListenerClass"/>
+  </listeners>
   <test thread-count="5" name=" Smoke Test Candidates(failed)">
+    <parameter name="sflogin" value="SFURL"/>
     <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
     <classes>
       <class name="com.automationtraining.smokesuite.Form101">
         <methods>
           <include name="beforeSuite"/>
+          <include name="formFillingSignin"/>
           <include name="browserSetup"/>
           <include name="formFilling101"/>
           <include name="browserClose"/>

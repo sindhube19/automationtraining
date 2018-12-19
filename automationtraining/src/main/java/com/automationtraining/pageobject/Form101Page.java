@@ -1,5 +1,7 @@
 package com.automationtraining.pageobject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +33,7 @@ public class Form101Page extends Driverclass {
 
 
 
-
+    
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
 	public WebElement lastname1; 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
@@ -187,7 +189,23 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//p[text()=' Thank you for your submission!']")
 	public
 	WebElement verifySuccess;
-
+	
+	
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'Username')]/following::input[1]")
+	public
+	WebElement lightningusername;
+	
+	@FindBy(how=How.XPATH, using=".//label[contains(text(),'Password')]/following::input[1]")
+	public
+	WebElement lightningpassword;
+	@FindBy(how=How.XPATH, using=".//form/input[2]")
+	public
+	WebElement loginbutton;
+	@FindBy(how=How.XPATH, using="//*[@id=\"oneHeader\"]/div[3]/one-appnav/div/one-app-nav-bar/nav/ul/li[5]/a")
+	public
+	WebElement documentclick;
+	
+	
 
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
@@ -287,17 +305,16 @@ public class Form101Page extends Driverclass {
 
 
 	}
-	public void validatingtheForm101(String methodName, String tcName,ReportGenerator generator) throws Exception {
-		// need to do for failed test casegenerator.childReport("Entering the LastName");
-		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, ""));
-		generator.childReport("Accepting the agree");
-		agree.click();
-		generator.childReport("Submitting the button");
-		submit.click();
-		generator.childReport("Verifying the success message");
-		SeleniumUtils.FailedhighLightelements(verifySuccess, driver);
+	public void formSignin() throws Exception {
+		
+		lightningusername.sendKeys("divya.k@mstsolutions.com");
+		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+		lightningpassword.sendKeys("welcome123");
+		loginbutton.click();
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
+		documentclick.click();
 	}
-
+	
 }
 
 

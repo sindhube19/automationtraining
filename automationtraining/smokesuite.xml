@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="smokesuite">
-<!-- 	<listeners>
-		<listener
-			class-name="com.automationtraining.listeners.RetryListener" />
-	</listeners> -->
+
+<listeners>
+        <listener class-name="com.automationtraining.listeners.RetryListenerClass" />
+        
+</listeners>
 	<test name=" Smoke Test Candidates">
 		<parameter name="env" value="url101" />
 		<parameter name="userType" value="Qaadmin" />
+		<parameter name="sflogin" value="SFURL" />
+		
 		<classes>
 			<class name="com.automationtraining.smokesuite.Form101" />
+			
 		</classes>
 	</test>
 
