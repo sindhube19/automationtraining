@@ -201,13 +201,25 @@ public class Form101Page extends Driverclass {
 	public
 	WebElement loginbutton;
 
-	@FindBy(how=How.XPATH, using=".//li/a[@title='Documents']")
+	@FindBy(how=How.XPATH, using=".//*[@id=\"oneHeader\"]/div[3]/one-appnav/div/div/div/nav")
 	public
-	WebElement documentclick;
-	
-	@FindBy(how=How.XPATH, using=".//form/div/div/div/div/div/table/tbody/tr[2]/td/div/div/table/tbody/tr/td/span/input")
+	WebElement menuiconclick;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='slds-section slds-is-open oneAppLauncherItemList']/div[2]/ul/li/a[@title='101']")
 	public
-	WebElement searchclick;
+	WebElement clickdata;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='slds-form-element__control slds-grow slds-input-has-icon slds-input-has-icon_left-right']/input")
+	public
+	WebElement search;
+
+	@FindBy(how=How.XPATH, using=".//table/tbody/tr[1]/th/span/a")
+	public
+	WebElement tabledata;
+
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Last Name')]/following::span[1]")
+	public
+	WebElement lastname_form;
 
 
 
@@ -215,7 +227,7 @@ public class Form101Page extends Driverclass {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
 		generator.childReport("Entering the LastName");
-		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
+	lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
 		Log.info("Entering the Lastname");
 
 		generator.childReport("Entering the Firstname");
@@ -375,13 +387,28 @@ public class Form101Page extends Driverclass {
 	public void formverification() throws Exception {
 		Log.info("Loging into the Lightning Successfully");
 		lightningusername.sendKeys("divya.k@mstsolutions.com");
-		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		lightningpassword.sendKeys("Welcome123");
+
+
+		lightningpassword.sendKeys("123welcome");
 		loginbutton.click();
 		Thread.sleep(20000);
-		documentclick.click();
-		Thread.sleep(30000);
-		searchclick.click();
+		
+		menuiconclick.click();
+		Thread.sleep(20000);
+		
+		clickdata.click();
+		Thread.sleep(20000);
+		
+		search.sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
+		
+		tabledata.click();
+		Thread.sleep(10000);
+		
+		String lastname = lastname_form.getText();
+		System.out.println(lastname);
+	
+
 	}
 
 }

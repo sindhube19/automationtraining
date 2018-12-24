@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationtraining.smokesuite.Form101">
+      <class name="com.automationtraining.smokesuite.Test_lightning">
         <methods>
-          <include name="browserSetup"/>
-          <include name="formFilling101"/>
-          <include name="browserClose"/>
+          <include name="lightning"/>
         </methods>
-      </class> <!-- com.automationtraining.smokesuite.Form101 -->
+      </class> <!-- com.automationtraining.smokesuite.Test_lightning -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
