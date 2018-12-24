@@ -4,21 +4,20 @@
   <listeners>
     <listener class-name="com.automationtraining.listeners.RetryListenerClass"/>
   </listeners>
-  <test thread-count="5" name=" Smoke Test Candidates(failed)">
+  <test thread-count="5" name=" Regression Test Candidates(failed)">
     <parameter name="sflogin" value="SFURL"/>
     <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
     <classes>
-      <class name="com.automationtraining.smokesuite.Form101">
+      <class name="com.automationtraining.RegressionSuite.Form101Verification">
         <methods>
           <include name="beforeSuite"/>
-          <include name="formFillingSignin"/>
           <include name="browserSetup"/>
-          <include name="formFilling101"/>
           <include name="browserClose"/>
           <include name="tearDown"/>
+          <include name="formFilling101" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- com.automationtraining.smokesuite.Form101 -->
+      </class> <!-- com.automationtraining.RegressionSuite.Form101Verification -->
     </classes>
-  </test> <!--  Smoke Test Candidates(failed) -->
+  </test> <!--  Regression Test Candidates(failed) -->
 </suite> <!-- Failed suite [smokesuite] -->

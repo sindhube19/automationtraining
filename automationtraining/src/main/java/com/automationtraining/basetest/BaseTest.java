@@ -45,6 +45,7 @@ import com.automationtraining.constant.ConstantFile;
 import com.automationtraining.pageobject.Form101Page;
 
 import com.automationtraining.utilities.ExcelUtilities;
+import com.automationtraining.utilities.Log;
 import com.automationtraining.utilities.TestUtils;
 import com.automationtraining.pageobject.Loginpages;
 import java.lang.annotation.Retention;
@@ -70,16 +71,19 @@ public class BaseTest extends ExcelUtilities  {
 		ExcelUtilities.openstream();
 	}
 	@BeforeMethod
-	@Parameters({"env","userType","sflogin"})
-	public void browserSetup(String env,@Optional("sflogin")String userType, String sflogin) throws Exception {
-
+	@Parameters({"env","userType"})
+	public void browserSetup(String env,@Optional("userType")String userType) throws Exception {
+      Log.startLog("Test is Starting");
 		ExcelUtilities.openstream();
 		url=TestUtils.getStringFromPropertyFile(env);
         
 		driver=BrowserFactory.getNewdriver();
 		driver.navigate().to(url);
+		Log.info("Navigating to url");
 		driver.manage().window().maximize();
+		
 		Loginpages= new Loginpages(driver);
+		Log.info("Opening the browser");
 		
 	}
 	/*@BeforeMethod(dependsOnMethods="browserSetup")
@@ -125,6 +129,9 @@ sfurl=TestUtils.getStringFromPropertyFile(sflogin);
 		reporter.flush();
 		ExcelUtilities.closeStream();
 		//BrowserFactory.closeDriver();
+		Log.endLog("Test is ending");
+		  
+
 
 	}
 

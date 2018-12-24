@@ -7,12 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
+
 
 import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.abstractclasses.Driverclass;
-import com.automationtraining.basetest.BaseTest;
 import com.automationtraining.utilities.ExcelUtilities;
+import com.automationtraining.utilities.Log;
 import com.automationtraining.utilities.SeleniumUtils;
 
 /**
@@ -33,7 +33,7 @@ public class Form101Page extends Driverclass {
 
 
 
-    
+
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
 	public WebElement lastname1; 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
@@ -189,113 +189,180 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//p[text()=' Thank you for your submission!']")
 	public
 	WebElement verifySuccess;
-	
-	
+
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'Username')]/following::input[1]")
 	public
 	WebElement lightningusername;
-	
+
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'Password')]/following::input[1]")
 	public
 	WebElement lightningpassword;
 	@FindBy(how=How.XPATH, using=".//form/input[2]")
 	public
 	WebElement loginbutton;
-	@FindBy(how=How.XPATH, using="//*[@id=\"oneHeader\"]/div[3]/one-appnav/div/one-app-nav-bar/nav/ul/li[5]/a")
+
+	@FindBy(how=How.XPATH, using=".//li/a[@title='Documents']")
 	public
 	WebElement documentclick;
 	
-	
+	@FindBy(how=How.XPATH, using=".//form/div/div/div/div/div/table/tbody/tr[2]/td/div/div/table/tbody/tr/td/span/input")
+	public
+	WebElement searchclick;
+
+
 
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
 		generator.childReport("Entering the LastName");
 		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
+		Log.info("Entering the Lastname");
+
 		generator.childReport("Entering the Firstname");
 		firstname.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "firstname")); 
+		Log.info("FirstName is Entered Successfully");
+
 		generator.childReport("Entering the socialsecuritynumber");
 		socialsecuritynumber.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"));
+		Log.info("socialsecuritynumber is Entered Successfully");
+
 		generator.childReport("Entering the employee date of birth");
 		dob.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeedob"));
+		Log.info("employee date of birth is Entered Successfully");
+
 		generator.childReport("Entering the Employee home address");
 		homeaddress.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"));
+		Log.info("Employee home address is Entered Successfully");
+
 		generator.childReport("Entering the Employee City");
 		city.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "city"));
+		Log.info("Employee City is Entered Successfully");
+
 		generator.childReport("Entering the Employee State");
 		state.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "state"));
+		Log.info("Employee State is Entered Successfully");
+
 		generator.childReport("Entering the Employee Zipcode");
 		zipcode.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeezipcode"));
+		Log.info("Employee Zipcode is Entered Successfully");
+
 		generator.childReport("Entering the Employee telephone");
 		telephone.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "telephone"));
+		Log.info("Employee telephone is Entered Successfully");
+
 		generator.childReport("Entering the Employee gender");
 		gender.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "sex"));
+		Log.info("Employee gender is Entered Successfully");
+
 		generator.childReport("Entering the Employee maritalstatus");
 		maritalstatus.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "marital status"));
 
 		/******************************EMPLOYER DETAILS********************************************************/	
 		generator.childReport("Entering the Employer Name");
 		employername.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employername")); 
+		Log.info("Employer Name is Entered Successfully");
+
 		generator.childReport("Entering the Employer FIEN Number");
 		feinnumber.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "fiennumber"));
+		Log.info("Employer FIEN Number is Entered Successfully");
+
 		generator.childReport("Entering the Employer office address");
 		officeaddress.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "officeaddress"));
+		Log.info("Employer office address is Entered Successfully");
+
 		generator.childReport("Entering the Employer City");
 		employercity.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employercity"));
+		Log.info("Employer City is Entered Successfully");
+
 		generator.childReport("Entering the Employer State");
 		employerstate.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employerstate"));
+		Log.info("Employer State is Entered Successfully");
+
 		generator.childReport("Entering the Employer Zipcode");
 		employerzipcode.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employerzipcode"));
+		Log.info("Employer Zipcode is Entered Successfully");
+
 		generator.childReport("Entering the Employer telephone");
 		employertelephone.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employertelephone"));
+		Log.info("Employer telephone is Entered Successfully");
 
 		/******************************ACCIDENT DETAILS********************************************************/	
 		generator.childReport("Entering the Date of Injury");
 		DATEOFINJURY.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "dateofinjury"));
+		Log.info("Employer Date of Injury is Entered Successfully");
+
 		generator.childReport("Entering the Date notified");
 		Notified.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "Notified"));
+		Log.info("Employer Date notified is Entered Successfully");
+
 		generator.childReport("Entering the Date of after injury");
 		afterinjury.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "afterinjury"));
+		Log.info("Employer Date of after injury is Entered Successfully");
+
 		generator.childReport("Entering the Employee occupation");
 		employeeoccupation.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeeoccupation"));
+		Log.info("Employee occupation is Entered Successfully");
+
 		generator.childReport("Entering the Employee premesis");
 		employeepremises.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeepremesis"));
+		Log.info("Employee premesis is Entered Successfully");
+
 		generator.childReport("Entering injury or illness");
 		wastheinjuryorillness.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "wastheinjuryorillness"));
+		Log.info("Employee injury or illness is Entered Successfully");
+
 		generator.childReport("Entering body injured");
 		bodyinjured.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "bodyinjured"));
+		Log.info("Employee body injured is Entered Successfully");
+
 		bodyinjuredkeytab.sendKeys(Keys.TAB);
+		Log.info("Employee lookuppartofbodyinjured is Entered Successfully");
+
 		lookuppartofbodyinjured.click();
 		SeleniumUtils.lookupWindowhandler("head", driver);
+
 		generator.childReport("Entering the fatal detail");
 		fatal.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "fatal"));
+		Log.info("Employee fatal detail is Entered Successfully");
+
 		generator.childReport("Entering the employee emergency");
+		Log.info("employee emergency is Entered Successfully");
 		employeeemergency.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employeeemergency"));
+
 		generator.childReport("Entering was the employee treated overnight");
 		treatedovernight.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "treatedovernight"));
+
 		generator.childReport("Entering claim doubted");
 		claimdoubted.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "claimdoubted"));
 
 		/*****************************CAUSE OF ACCIDENT	*******************************************************/
 		generator.childReport("Entering the detail of what happened");
 		whathappend.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "whathappend"));
+
 		generator.childReport("Entering the info harm happened to emplyee");
 		harmedemployee.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "harmedemployee"));
+
 		harmedemployeekeytab.sendKeys(Keys.TAB);
 		natureofinjury.click();
 		SeleniumUtils.lookupWindowhandler("Multiple Injuries", driver);
 		causeofinjury.click();
 		SeleniumUtils.lookupWindowhandler("Motor Vehicle", driver);
+
 		generator.childReport("Entering incident occured");
 		employeebeforeincidentoccured.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "incidentoccured"));
+
 		generator.childReport("Entering details of when employee got injured");
 		workerinemployee.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "employwheninjured"));
+
 		generator.childReport("Entering employee hiring date");
 		datehire.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "datehire"));
+
 		generator.childReport("Entering employee's gross earnings");
 		grossearings.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "grossearnings"));
+
 		generator.childReport("Entering employee email");
 		submittermail.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "submitteremail"));
+
 		generator.childReport("Accepting the agree");
 		agree.click();
 		generator.childReport("Submitting the button");
@@ -305,16 +372,18 @@ public class Form101Page extends Driverclass {
 
 
 	}
-	public void formSignin() throws Exception {
-		
+	public void formverification() throws Exception {
+		Log.info("Loging into the Lightning Successfully");
 		lightningusername.sendKeys("divya.k@mstsolutions.com");
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		lightningpassword.sendKeys("welcome123");
+		lightningpassword.sendKeys("Welcome123");
 		loginbutton.click();
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
+		Thread.sleep(20000);
 		documentclick.click();
+		Thread.sleep(30000);
+		searchclick.click();
 	}
-	
+
 }
 
 

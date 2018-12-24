@@ -6,6 +6,7 @@ import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.basetest.BaseTest;
 import com.automationtraining.browserfactory.BrowserFactory;
 import com.automationtraining.pageobject.Loginpages;
+import com.automationtraining.utilities.Log;
 import com.automationtraining.utilities.TestUtils;
 
 
@@ -18,7 +19,7 @@ import com.automationtraining.utilities.TestUtils;
 public class Form101 extends  BaseTest{
 
 
-//	@SuppressWarnings("javadoc")
+	//	@SuppressWarnings("javadoc")
 	@Test
 	public void formFilling101() throws Exception
 	{
@@ -32,8 +33,10 @@ public class Form101 extends  BaseTest{
 		reporter= new ReportGenerator(className,Author);
 		page101=Loginpages.formUrl101();
 		page101.formFilling(methodName,tcName,reporter);
-		 Assert.assertTrue(true);
-
+		Assert.assertTrue(true);
+	
+		Log.info("Running @Test methods");
+       
 		//    ExtentReportsClass.loginTest();
 
 
@@ -41,21 +44,10 @@ public class Form101 extends  BaseTest{
 
 
 	}
-	@Test (dependsOnMethods="formFilling101")
-	@Parameters("sflogin")
-	public void formFillingSignin(String sflogin) throws Exception
-	{
 
 
-		sfurl=TestUtils.getStringFromPropertyFile(sflogin);
 
-		driver=BrowserFactory.getNewdriver();
-		driver.navigate().to(sfurl);
-		driver.manage().window().maximize();
-		Loginpages= new Loginpages(driver);
-		page101=Loginpages.formUrl101();
-		page101.formSignin();
-	}
+
 }
 
 
