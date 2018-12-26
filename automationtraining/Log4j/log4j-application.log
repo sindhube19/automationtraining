@@ -732,3 +732,965 @@
 2018-12-24 10:26:36 INFO  Log:28 - employee emergency is Entered Successfully
 2018-12-24 10:27:21 INFO  Log:28 - Loging into the Lightning Successfully
 2018-12-24 10:27:48 INFO  Log:23 - Test is Ending...
+2018-12-24 11:11:53 INFO  Log:18 - Test is Starting...
+2018-12-24 11:12:13 INFO  Log:28 - Navigating to url
+2018-12-24 11:12:15 INFO  Log:28 - Opening the browser
+2018-12-24 11:12:16 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:12:16 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:12:16 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:12:16 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:12:16 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:12:17 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:12:18 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:12:19 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:12:19 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:12:19 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:12:19 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:12:19 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:12:34 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:12:34 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:13:17 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:13:48 INFO  Log:18 - Test is Starting...
+2018-12-24 11:13:57 INFO  Log:28 - Navigating to url
+2018-12-24 11:13:58 INFO  Log:28 - Opening the browser
+2018-12-24 11:13:58 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:13:59 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:13:59 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:14:00 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:14:00 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:14:00 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:14:00 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:14:00 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:14:01 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:14:02 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:14:02 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:14:02 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:14:02 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:14:02 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:14:17 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:14:17 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:15:00 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:15:23 INFO  Log:18 - Test is Starting...
+2018-12-24 11:15:33 INFO  Log:28 - Navigating to url
+2018-12-24 11:15:34 INFO  Log:28 - Opening the browser
+2018-12-24 11:15:35 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:15:35 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:15:35 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:15:35 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:15:36 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:15:37 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:15:37 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:15:37 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:15:37 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:15:38 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:15:39 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:15:39 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:15:39 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:15:39 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:15:39 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:16:58 INFO  Log:18 - Test is Starting...
+2018-12-24 11:17:07 INFO  Log:28 - Navigating to url
+2018-12-24 11:17:08 INFO  Log:28 - Opening the browser
+2018-12-24 11:17:09 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:17:09 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:17:09 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:17:09 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:17:09 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:17:09 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:17:10 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:17:11 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:17:12 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:17:12 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:17:12 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:17:12 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:17:12 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:17:27 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:17:27 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:18:11 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:19:05 INFO  Log:18 - Test is Starting...
+2018-12-24 11:24:43 INFO  Log:18 - Test is Starting...
+2018-12-24 11:24:59 INFO  Log:28 - Navigating to url
+2018-12-24 11:25:00 INFO  Log:28 - Opening the browser
+2018-12-24 11:25:01 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:25:01 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:25:01 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:25:01 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:25:01 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:25:02 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:25:03 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:25:04 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:25:20 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:25:20 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:26:03 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:26:39 INFO  Log:18 - Test is Starting...
+2018-12-24 11:26:47 INFO  Log:28 - Navigating to url
+2018-12-24 11:26:53 INFO  Log:28 - Opening the browser
+2018-12-24 11:26:53 INFO  Log:18 - Test is Starting...
+2018-12-24 11:27:06 INFO  Log:28 - Navigating to url
+2018-12-24 11:27:07 INFO  Log:28 - Opening the browser
+2018-12-24 11:27:07 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:27:07 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:27:07 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:27:08 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:27:09 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:27:10 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:27:11 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:27:11 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:27:11 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:27:26 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:27:26 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:36:55 INFO  Log:18 - Test is Starting...
+2018-12-24 11:37:07 INFO  Log:28 - Navigating to url
+2018-12-24 11:37:08 INFO  Log:28 - Opening the browser
+2018-12-24 11:37:08 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:37:09 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:37:09 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:37:09 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:37:09 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:37:09 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:37:09 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:37:10 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:37:10 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:37:10 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:37:10 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:37:10 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:37:11 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:37:12 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:37:27 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:37:27 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:38:12 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:38:46 INFO  Log:18 - Test is Starting...
+2018-12-24 11:38:56 INFO  Log:28 - Navigating to url
+2018-12-24 11:39:02 INFO  Log:28 - Opening the browser
+2018-12-24 11:39:02 INFO  Log:18 - Test is Starting...
+2018-12-24 11:46:19 INFO  Log:18 - Test is Starting...
+2018-12-24 11:46:34 INFO  Log:28 - Navigating to url
+2018-12-24 11:46:35 INFO  Log:28 - Opening the browser
+2018-12-24 11:46:36 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:46:36 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:46:36 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:46:36 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:46:37 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:46:38 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:46:39 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:46:54 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:46:54 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:47:37 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:48:02 INFO  Log:18 - Test is Starting...
+2018-12-24 11:48:15 INFO  Log:28 - Navigating to url
+2018-12-24 11:48:16 INFO  Log:28 - Opening the browser
+2018-12-24 11:48:16 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:48:16 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:48:16 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:48:17 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:48:18 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:48:19 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:48:36 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:48:36 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 11:49:19 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 11:49:43 INFO  Log:18 - Test is Starting...
+2018-12-24 11:49:59 INFO  Log:28 - Navigating to url
+2018-12-24 11:50:00 INFO  Log:28 - Opening the browser
+2018-12-24 11:50:00 INFO  Log:28 - Entering the Lastname
+2018-12-24 11:50:00 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 11:50:00 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 11:50:00 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 11:50:00 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 11:50:01 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 11:50:02 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 11:50:03 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 11:50:19 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 11:50:19 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 16:44:15 INFO  Log:18 - Test is Starting...
+2018-12-24 16:44:26 INFO  Log:28 - Navigating to url
+2018-12-24 16:44:27 INFO  Log:28 - Opening the browser
+2018-12-24 16:44:28 INFO  Log:28 - Entering the Lastname
+2018-12-24 16:44:28 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 16:44:28 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 16:44:28 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 16:44:29 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 16:44:30 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 16:44:31 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 16:44:47 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 16:44:47 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 16:45:30 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 16:46:57 INFO  Log:23 - Test is Ending...
+2018-12-24 17:01:29 INFO  Log:18 - Test is Starting...
+2018-12-24 17:01:40 INFO  Log:28 - Navigating to url
+2018-12-24 17:01:41 INFO  Log:28 - Opening the browser
+2018-12-24 17:01:42 INFO  Log:28 - Entering the Lastname
+2018-12-24 17:01:42 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 17:01:42 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 17:01:42 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 17:01:42 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 17:01:43 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 17:01:44 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 17:01:45 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 17:02:01 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 17:02:01 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 17:02:44 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-24 17:04:08 INFO  Log:23 - Test is Ending...
+2018-12-24 18:32:25 INFO  Log:18 - Test is Starting...
+2018-12-24 18:32:38 INFO  Log:28 - Navigating to url
+2018-12-24 18:32:39 INFO  Log:28 - Opening the browser
+2018-12-24 18:32:40 INFO  Log:28 - Entering the Lastname
+2018-12-24 18:32:40 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 18:32:40 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 18:32:40 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 18:32:41 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 18:32:42 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 18:32:43 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 18:32:59 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 18:32:59 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 18:33:34 INFO  Log:18 - Test is Starting...
+2018-12-24 18:33:46 INFO  Log:28 - Navigating to url
+2018-12-24 18:33:47 INFO  Log:28 - Opening the browser
+2018-12-24 18:33:47 INFO  Log:28 - Entering the Lastname
+2018-12-24 18:33:48 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 18:33:48 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 18:33:49 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 18:33:50 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 18:33:51 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 18:33:51 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 18:34:06 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 18:34:06 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 18:34:42 INFO  Log:18 - Test is Starting...
+2018-12-24 18:34:50 INFO  Log:28 - Navigating to url
+2018-12-24 18:34:56 INFO  Log:28 - Opening the browser
+2018-12-24 18:37:57 INFO  Log:18 - Test is Starting...
+2018-12-24 18:38:08 INFO  Log:28 - Navigating to url
+2018-12-24 18:38:09 INFO  Log:28 - Opening the browser
+2018-12-24 18:38:10 INFO  Log:28 - Entering the Lastname
+2018-12-24 18:38:10 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 18:38:10 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 18:38:10 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 18:38:10 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 18:38:10 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 18:38:10 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 18:38:11 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 18:38:12 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 18:38:13 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 18:38:13 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 18:38:13 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 18:38:28 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 18:38:28 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 18:39:03 INFO  Log:28 - Running @Test methods
+2018-12-24 18:39:04 INFO  Log:23 - Test is Ending...
+2018-12-24 18:40:39 INFO  Log:18 - Test is Starting...
+2018-12-24 18:40:50 INFO  Log:28 - Navigating to url
+2018-12-24 18:40:51 INFO  Log:28 - Opening the browser
+2018-12-24 18:40:52 INFO  Log:28 - Entering the Lastname
+2018-12-24 18:40:52 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 18:40:52 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 18:40:52 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 18:40:52 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 18:40:53 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 18:40:54 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 18:40:55 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 18:41:11 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 18:41:11 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 18:41:48 INFO  Log:28 - Running @Test methods
+2018-12-24 18:42:53 INFO  Log:18 - Test is Starting...
+2018-12-24 18:43:04 INFO  Log:28 - Navigating to url
+2018-12-24 18:43:05 INFO  Log:28 - Opening the browser
+2018-12-24 18:43:06 INFO  Log:28 - Entering the Lastname
+2018-12-24 18:43:06 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-24 18:43:06 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-24 18:43:06 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-24 18:43:06 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-24 18:43:06 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-24 18:43:06 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-24 18:43:07 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-24 18:43:08 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-24 18:43:09 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-24 18:43:09 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-24 18:43:09 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-24 18:43:09 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-24 18:43:24 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-24 18:43:24 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-24 18:43:59 INFO  Log:28 - Running @Test methods
+2018-12-24 18:44:00 INFO  Log:23 - Test is Ending...
+2018-12-26 10:04:39 INFO  Log:18 - Test is Starting...
+2018-12-26 10:05:02 INFO  Log:28 - Navigating to url
+2018-12-26 10:05:03 INFO  Log:28 - Opening the browser
+2018-12-26 10:05:04 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:05:04 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:05:04 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:05:04 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:05:04 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:05:04 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:05:05 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:05:06 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:05:07 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:05:24 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:05:24 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:05:33 INFO  Log:18 - Test is Starting...
+2018-12-26 10:05:43 INFO  Log:28 - Navigating to url
+2018-12-26 10:05:49 INFO  Log:28 - Opening the browser
+2018-12-26 10:05:49 INFO  Log:18 - Test is Starting...
+2018-12-26 10:06:04 INFO  Log:18 - Test is Starting...
+2018-12-26 10:06:16 INFO  Log:28 - Navigating to url
+2018-12-26 10:06:17 INFO  Log:28 - Opening the browser
+2018-12-26 10:06:17 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:06:18 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:06:18 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:06:18 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:06:18 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:06:18 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:06:18 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:06:19 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:06:19 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:06:19 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:06:19 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:06:19 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:06:20 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:06:21 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:06:37 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:06:37 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:07:12 INFO  Log:28 - Running @Test methods
+2018-12-26 10:07:12 INFO  Log:23 - Test is Ending...
+2018-12-26 10:07:38 INFO  Log:18 - Test is Starting...
+2018-12-26 10:07:52 INFO  Log:28 - Navigating to url
+2018-12-26 10:07:53 INFO  Log:28 - Opening the browser
+2018-12-26 10:07:54 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:07:54 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:07:54 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:07:55 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:07:56 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:07:57 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:07:57 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:07:57 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:08:12 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:08:12 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:08:55 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 10:09:59 INFO  Log:28 - Entering value in search box
+2018-12-26 10:10:09 INFO  Log:28 - selecting table data
+2018-12-26 10:10:21 INFO  Log:23 - Test is Ending...
+2018-12-26 10:20:03 INFO  Log:18 - Test is Starting...
+2018-12-26 10:20:19 INFO  Log:28 - Navigating to url
+2018-12-26 10:20:20 INFO  Log:28 - Opening the browser
+2018-12-26 10:20:20 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:20:20 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:20:20 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:20:21 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:20:22 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:20:23 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:20:24 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:20:24 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:20:39 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:20:39 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:21:22 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 10:22:26 INFO  Log:28 - Entering value in search box
+2018-12-26 10:29:48 INFO  Log:18 - Test is Starting...
+2018-12-26 10:30:00 INFO  Log:28 - Navigating to url
+2018-12-26 10:30:01 INFO  Log:28 - Opening the browser
+2018-12-26 10:30:02 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:30:02 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:30:02 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:30:02 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:30:02 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:30:03 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:30:04 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:30:05 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:30:05 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:30:05 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:30:05 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:30:20 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:30:20 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:31:01 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 10:31:24 INFO  Log:18 - Test is Starting...
+2018-12-26 10:31:34 INFO  Log:28 - Navigating to url
+2018-12-26 10:31:35 INFO  Log:28 - Opening the browser
+2018-12-26 10:31:35 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:31:36 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:31:36 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:31:36 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:31:36 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:31:36 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:31:36 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:31:37 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:31:37 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:31:37 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:31:37 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:31:37 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:31:38 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:31:39 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:31:39 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:31:39 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:31:39 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:31:39 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:31:54 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:31:54 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:32:39 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 10:33:01 INFO  Log:18 - Test is Starting...
+2018-12-26 10:33:12 INFO  Log:28 - Navigating to url
+2018-12-26 10:33:13 INFO  Log:28 - Opening the browser
+2018-12-26 10:33:13 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:33:13 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:33:13 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:33:14 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:33:15 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:33:15 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:33:15 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:33:15 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:33:16 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:33:17 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:33:17 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:33:17 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:33:17 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:33:17 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:33:32 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:33:32 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 10:34:16 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 10:34:42 INFO  Log:23 - Test is Ending...
+2018-12-26 10:59:20 INFO  Log:18 - Test is Starting...
+2018-12-26 10:59:32 INFO  Log:28 - Navigating to url
+2018-12-26 10:59:33 INFO  Log:28 - Opening the browser
+2018-12-26 10:59:34 INFO  Log:28 - Entering the Lastname
+2018-12-26 10:59:34 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 10:59:34 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 10:59:34 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 10:59:34 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 10:59:35 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 10:59:36 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 10:59:37 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 10:59:38 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 10:59:38 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 10:59:53 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 10:59:53 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:00:37 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:01:41 INFO  Log:28 - Entering value in search box
+2018-12-26 11:01:51 INFO  Log:28 - selecting table data
+2018-12-26 11:02:02 INFO  Log:23 - Test is Ending...
+2018-12-26 11:03:39 INFO  Log:18 - Test is Starting...
+2018-12-26 11:03:50 INFO  Log:28 - Navigating to url
+2018-12-26 11:03:51 INFO  Log:28 - Opening the browser
+2018-12-26 11:03:52 INFO  Log:28 - Entering the Lastname
+2018-12-26 11:03:52 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 11:03:52 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 11:03:52 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 11:03:52 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 11:03:53 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 11:03:54 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 11:03:55 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 11:04:11 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 11:04:11 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:04:58 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:06:01 INFO  Log:28 - Entering value in search box
+2018-12-26 11:06:12 INFO  Log:28 - selecting table data
+2018-12-26 11:06:22 INFO  Log:18 - Test is Starting...
+2018-12-26 11:08:52 INFO  Log:18 - Test is Starting...
+2018-12-26 11:09:02 INFO  Log:28 - Navigating to url
+2018-12-26 11:09:03 INFO  Log:28 - Opening the browser
+2018-12-26 11:09:04 INFO  Log:28 - Entering the Lastname
+2018-12-26 11:09:04 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 11:09:04 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 11:09:04 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 11:09:05 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 11:09:06 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 11:09:07 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 11:09:22 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 11:09:22 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:10:04 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:11:08 INFO  Log:28 - Entering value in search box
+2018-12-26 11:11:18 INFO  Log:28 - selecting table data
+2018-12-26 11:11:39 INFO  Log:18 - Test is Starting...
+2018-12-26 11:11:48 INFO  Log:28 - Navigating to url
+2018-12-26 11:11:49 INFO  Log:28 - Opening the browser
+2018-12-26 11:11:50 INFO  Log:28 - Entering the Lastname
+2018-12-26 11:11:50 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 11:11:50 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 11:11:50 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 11:11:50 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 11:11:51 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 11:11:52 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 11:11:53 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 11:12:09 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 11:12:09 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:12:54 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:13:45 INFO  Log:18 - Test is Starting...
+2018-12-26 11:15:21 INFO  Log:18 - Test is Starting...
+2018-12-26 11:15:32 INFO  Log:28 - Navigating to url
+2018-12-26 11:15:33 INFO  Log:28 - Opening the browser
+2018-12-26 11:15:34 INFO  Log:28 - Entering the Lastname
+2018-12-26 11:15:34 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 11:15:34 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 11:15:34 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 11:15:34 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 11:15:34 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 11:15:34 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 11:15:35 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 11:15:35 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 11:15:35 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 11:15:35 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 11:15:35 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 11:15:36 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 11:15:37 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 11:15:53 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 11:15:53 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:16:37 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:17:41 INFO  Log:28 - Entering value in search box
+2018-12-26 11:17:51 INFO  Log:28 - selecting table data
+2018-12-26 11:18:11 INFO  Log:23 - Test is Ending...
+2018-12-26 11:35:45 INFO  Log:18 - Test is Starting...
+2018-12-26 11:35:56 INFO  Log:28 - Navigating to url
+2018-12-26 11:35:57 INFO  Log:28 - Opening the browser
+2018-12-26 11:35:57 INFO  Log:28 - Entering the Lastname
+2018-12-26 11:35:57 INFO  Log:28 - FirstName is Entered Successfully
+2018-12-26 11:35:57 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - employee date of birth is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee home address is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee City is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee State is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee telephone is Entered Successfully
+2018-12-26 11:35:58 INFO  Log:28 - Employee gender is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer Name is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer office address is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer City is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer State is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2018-12-26 11:35:59 INFO  Log:28 - Employer telephone is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employer Date notified is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employee occupation is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employee premesis is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employee body injured is Entered Successfully
+2018-12-26 11:36:00 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2018-12-26 11:36:16 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2018-12-26 11:36:16 INFO  Log:28 - employee emergency is Entered Successfully
+2018-12-26 11:36:59 INFO  Log:28 - Loging into the Lightning Successfully
+2018-12-26 11:38:03 INFO  Log:28 - Entering value in search box
+2018-12-26 11:38:13 INFO  Log:28 - selecting table data
+2018-12-26 11:38:34 INFO  Log:23 - Test is Ending...

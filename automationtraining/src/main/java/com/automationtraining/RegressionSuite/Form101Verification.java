@@ -37,7 +37,7 @@ public class Form101Verification extends BaseTest{
 		String user =TestUtils.getStringFromPropertyFile(userType+".username");
 		String pwd = TestUtils.getStringFromPropertyFile(userType+".password"); 
 		SeleniumUtils.switchToNewTab(driver, Url2); 
-		page101.formverification();
+		page101.formverification(methodName,tcName,reporter);
 		
 	}
 }

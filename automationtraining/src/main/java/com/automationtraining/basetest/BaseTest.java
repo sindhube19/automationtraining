@@ -42,6 +42,7 @@ import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.abstractclasses.Driverclass;
 import com.automationtraining.browserfactory.BrowserFactory;
 import com.automationtraining.constant.ConstantFile;
+import com.automationtraining.emailreport.ReportbyEmail;
 import com.automationtraining.pageobject.Form101Page;
 
 import com.automationtraining.utilities.ExcelUtilities;
@@ -60,6 +61,7 @@ public class BaseTest extends ExcelUtilities  {
 	protected String sfurl;
 	protected String usertype;
 	protected Form101Page page101; 
+	protected ReportbyEmail email;
 	public  WebDriver driver;
 	protected ReportGenerator reporter;
 	//protected loginPages loginPages;
@@ -126,12 +128,15 @@ sfurl=TestUtils.getStringFromPropertyFile(sflogin);
 
 	@AfterSuite
 	public void browserClose() throws Exception  {
+	//	email.tearDown();
 		reporter.flush();
 		ExcelUtilities.closeStream();
 		//BrowserFactory.closeDriver();
 		Log.endLog("Test is ending");
 		  
+		
 
+		    
 
 	}
 

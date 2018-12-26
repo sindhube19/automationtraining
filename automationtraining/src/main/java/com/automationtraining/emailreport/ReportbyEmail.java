@@ -25,7 +25,6 @@ public class ReportbyEmail extends BaseTest {
 
 //After complete execution send pdf report by email
 
-    @AfterSuite
 
     public void tearDown(){
 

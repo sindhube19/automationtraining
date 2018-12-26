@@ -2,6 +2,7 @@ package com.automationtraining.pageobject;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -221,13 +222,26 @@ public class Form101Page extends Driverclass {
 	public
 	WebElement lastname_form;
 
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'First Name')]/following::span[1]")
+	public
+	WebElement firstname_form;
 
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Social Security Number')]/following::span[2]")
+	public
+	WebElement socialsecurity_form;
 
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Date of Birth')]/following::span[1]")
+	public
+	WebElement datofbirth_form;
+
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Home Address')]/following::span[1]")
+	public
+	WebElement homeaddress_form;
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
 		generator.childReport("Entering the LastName");
-	lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
+		lastname1.sendKeys(ExcelUtilities.readExcel(methodName, tcName, "lastname"));
 		Log.info("Entering the Lastname");
 
 		generator.childReport("Entering the Firstname");
@@ -384,7 +398,8 @@ public class Form101Page extends Driverclass {
 
 
 	}
-	public void formverification() throws Exception {
+	public void formverification(String methodName, String tcName,ReportGenerator generator) throws Exception {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Log.info("Loging into the Lightning Successfully");
 		lightningusername.sendKeys("divya.k@mstsolutions.com");
 
@@ -392,26 +407,61 @@ public class Form101Page extends Driverclass {
 		lightningpassword.sendKeys("123welcome");
 		loginbutton.click();
 		Thread.sleep(20000);
-		
+
 		menuiconclick.click();
 		Thread.sleep(20000);
-		
+
 		clickdata.click();
 		Thread.sleep(20000);
-		
+
+		Log.info("Entering value in search box");
+		search.sendKeys("ethiraj");
 		search.sendKeys(Keys.ENTER);
 		Thread.sleep(10000);
-		
+
+		Log.info("selecting table data");
 		tabledata.click();
 		Thread.sleep(10000);
-		
+
 		String lastname = lastname_form.getText();
-		System.out.println(lastname);
-	
+		String firstname = firstname_form.getText();
+		String socialsecurity = socialsecurity_form.getText();
+		String dob = datofbirth_form.getText();
+		String homeaddress = homeaddress_form.getText();
+
+		Thread.sleep(10000);
+		/***************Last Name****************************/
+		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "lastname"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", lastname_form);
+		}
+		/***************First Name****************************/
+		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", firstname_form);
+		}
+		/***************Social security number****************************/
+		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", socialsecurity_form);
+		}
+		/***************Date of birth****************************/
+
+		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", datofbirth_form);
+		}
+
+		/***********************Home Address************************************/
+		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", homeaddress_form);
+		}
+
+
 
 	}
 
 }
-
 
 
