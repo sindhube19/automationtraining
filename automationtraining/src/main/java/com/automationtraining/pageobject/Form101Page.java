@@ -238,10 +238,28 @@ public class Form101Page extends Driverclass {
 	public
 	WebElement homeaddress_form;
 	
-	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Home Address')]/following::span[1]")
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[7]")
 	public
-	WebElement
-	city_form;
+	WebElement city_form;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[8]")
+	public
+	WebElement state_form;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[9]")
+	public
+	WebElement zipcode_form;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[10]")
+	public
+	WebElement telephone_form;
+	
+	@FindBy(how=How.XPATH, using="")
+	public
+	WebElement gender_form;
+	
+	
+	
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
@@ -434,43 +452,67 @@ public class Form101Page extends Driverclass {
 		String dob = datofbirth_form.getText();
 		String homeaddress = homeaddress_form.getText();
 		String city = city_form.getText();
+		String state = state_form.getText();
+		String zipcode = zipcode_form.getText();
+		String telephone = telephone_form.getText();
+		String gender = gender_form.getText();
 		Thread.sleep(10000);
 		/***************Last Name****************************/
 		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "lastname"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", lastname_form);
 		}
+		Thread.sleep(10000);
 		/***************First Name****************************/
 		if(firstname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", firstname_form);
 		}
+		Thread.sleep(10000);
 		/***************Social security number****************************/
 		if(socialsecurity.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", socialsecurity_form);
 		}
+		Thread.sleep(10000);
 		/***************Date of birth****************************/
 
 		if(dob.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", datofbirth_form);
 		}
+		Thread.sleep(10000);
 
 		/***********************Home Address************************************/
 		if(homeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", homeaddress_form);
 		}
+		Thread.sleep(10000);
 		
 		/************************City*****************/
-		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
+		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "city"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", city_form);
 		}
+		
+		/*******************State*********************/
+		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "state"))) {
 
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", state_form);
+		}
+		
+		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "zipcode"))) {
 
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", zipcode_form);
+		}
+		
+		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "telephone"))) {
 
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", telephone_form);
+		}
+
+		
 
 	}
 
