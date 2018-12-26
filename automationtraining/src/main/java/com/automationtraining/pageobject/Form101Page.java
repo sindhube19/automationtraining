@@ -237,6 +237,11 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Home Address')]/following::span[1]")
 	public
 	WebElement homeaddress_form;
+	
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Home Address')]/following::span[1]")
+	public
+	WebElement
+	city_form;
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
@@ -428,7 +433,7 @@ public class Form101Page extends Driverclass {
 		String socialsecurity = socialsecurity_form.getText();
 		String dob = datofbirth_form.getText();
 		String homeaddress = homeaddress_form.getText();
-
+		String city = city_form.getText();
 		Thread.sleep(10000);
 		/***************Last Name****************************/
 		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "lastname"))) {
@@ -436,27 +441,34 @@ public class Form101Page extends Driverclass {
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", lastname_form);
 		}
 		/***************First Name****************************/
-		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
+		if(firstname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", firstname_form);
 		}
 		/***************Social security number****************************/
-		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
+		if(socialsecurity.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", socialsecurity_form);
 		}
 		/***************Date of birth****************************/
 
-		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
+		if(dob.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", datofbirth_form);
 		}
 
 		/***********************Home Address************************************/
-		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
+		if(homeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", homeaddress_form);
 		}
+		
+		/************************City*****************/
+		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", city_form);
+		}
+
 
 
 

@@ -15,7 +15,7 @@
           <include name="browserSetup"/>
           <include name="browserClose"/>
           <include name="tearDown"/>
-          <include name="formFilling101" invocation-numbers="0 0 0"/>
+          <include name="formFilling101" invocation-numbers="0 0"/>
         </methods>
       </class> <!-- com.automationtraining.RegressionSuite.Form101Verification -->
     </classes>
