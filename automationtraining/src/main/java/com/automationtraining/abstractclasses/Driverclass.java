@@ -20,8 +20,7 @@ import com.automationtraining.utilities.TestUtils;
 public abstract class Driverclass  {
 	protected  WebDriver driver;
 	public static int lineno =0;
-//	protected String sfurl;
-	public static String classname = Thread.currentThread().getStackTrace()[1].getClassName().toString(); 
+    public static String classname = Thread.currentThread().getStackTrace()[1].getClassName().toString(); 
 	public Driverclass(WebDriver driver) 
 	{
 		this.driver=driver;

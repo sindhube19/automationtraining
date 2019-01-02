@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smokesuite" duration-ms="168250" started-at="2018-12-26T06:05:45Z" finished-at="2018-12-26T06:08:33Z">
+  <suite name="smokesuite" duration-ms="188987" started-at="2018-12-27T13:23:44Z" finished-at="2018-12-27T13:26:53Z">
     <groups>
     </groups>
-    <test name=" Regression Test Candidates" duration-ms="168250" started-at="2018-12-26T06:05:45Z" finished-at="2018-12-26T06:08:33Z">
+    <test name=" Regression Test Candidates" duration-ms="188987" started-at="2018-12-27T13:23:44Z" finished-at="2018-12-27T13:26:53Z">
       <class name="com.automationtraining.RegressionSuite.Form101Verification">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="beforeSuite" is-config="true" duration-ms="603" started-at="2018-12-26T06:05:44Z" finished-at="2018-12-26T06:05:45Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="beforeSuite" is-config="true" duration-ms="627" started-at="2018-12-27T13:23:43Z" finished-at="2018-12-27T13:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="browserSetup(java.lang.String, java.lang.String)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="browserSetup" is-config="true" duration-ms="11882" started-at="2018-12-26T06:05:45Z" finished-at="2018-12-26T06:05:57Z">
+        <test-method status="PASS" signature="browserSetup(java.lang.String, java.lang.String)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="browserSetup" is-config="true" duration-ms="11301" started-at="2018-12-27T13:23:44Z" finished-at="2018-12-27T13:23:55Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="formFilling101(java.lang.String, java.lang.String)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="formFilling101" duration-ms="156342" started-at="2018-12-26T06:05:57Z" finished-at="2018-12-26T06:08:33Z">
+        <test-method status="PASS" signature="formFilling101(java.lang.String, java.lang.String)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="formFilling101" duration-ms="177658" started-at="2018-12-27T13:23:55Z" finished-at="2018-12-27T13:26:53Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formFilling101 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="tearDown" is-config="true" duration-ms="2" started-at="2018-12-26T06:08:33Z" finished-at="2018-12-26T06:08:33Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-12-27T13:26:53Z" finished-at="2018-12-27T13:26:53Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="browserClose" is-config="true" duration-ms="380" started-at="2018-12-26T06:08:33Z" finished-at="2018-12-26T06:08:34Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.automationtraining.RegressionSuite.Form101Verification@4671e53b]" name="browserClose" is-config="true" duration-ms="487" started-at="2018-12-27T13:26:53Z" finished-at="2018-12-27T13:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->

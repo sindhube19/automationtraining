@@ -75,32 +75,20 @@ public class BaseTest extends ExcelUtilities  {
 	@BeforeMethod
 	@Parameters({"env","userType"})
 	public void browserSetup(String env,@Optional("userType")String userType) throws Exception {
-      Log.startLog("Test is Starting");
+		Log.startLog("Test is Starting");
 		ExcelUtilities.openstream();
 		url=TestUtils.getStringFromPropertyFile(env);
-        
+
 		driver=BrowserFactory.getNewdriver();
 		driver.navigate().to(url);
 		Log.info("Navigating to url");
 		driver.manage().window().maximize();
-		
+
 		Loginpages= new Loginpages(driver);
 		Log.info("Opening the browser");
-		
+
 	}
-	/*@BeforeMethod(dependsOnMethods="browserSetup")
-	@Parameters({"sflogin","userType"})
-	public void browserSignin(String sflogin,@Optional("userType")String userType) throws Exception  {
-sfurl=TestUtils.getStringFromPropertyFile(sflogin);
-        
-		driver=BrowserFactory.getNewdriver();
-		driver.navigate().to(sfurl);
-		driver.manage().window().maximize();
-		usertype=TestUtils.getStringFromPropertyFile(userType);
-		Loginpages= new Loginpages(driver);
-		
-	
-	}*/
+
 	@AfterMethod(alwaysRun = true)   
 	public void tearDown(ITestResult result) throws Exception 
 	{ 
@@ -128,15 +116,13 @@ sfurl=TestUtils.getStringFromPropertyFile(sflogin);
 
 	@AfterSuite
 	public void browserClose() throws Exception  {
-	//	email.tearDown();
 		reporter.flush();
 		ExcelUtilities.closeStream();
-		//BrowserFactory.closeDriver();
 		Log.endLog("Test is ending");
-		  
-		
 
-		    
+
+
+
 
 	}
 

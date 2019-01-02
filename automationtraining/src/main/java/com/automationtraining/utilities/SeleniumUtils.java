@@ -27,7 +27,6 @@ public class SeleniumUtils  {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"lksrch\"]")).sendKeys(data);
 		driver.findElement(By.name("go")).click();
-
 		Thread.sleep(5000);
 		driver.switchTo().defaultContent();
 		Thread.sleep(1000);
@@ -37,8 +36,6 @@ public class SeleniumUtils  {
 		driver.switchTo().window(parentWindow);
 
 	}
-
-
 	public static void highLightelements(WebElement Element,WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		//use executeScript() method and pass the arguments 

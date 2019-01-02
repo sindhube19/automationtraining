@@ -1,15 +1,10 @@
 package com.automationtraining.pageobject;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
-
 import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.abstractclasses.Driverclass;
 import com.automationtraining.utilities.ExcelUtilities;
@@ -237,29 +232,112 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Home Address')]/following::span[1]")
 	public
 	WebElement homeaddress_form;
-	
-	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[7]")
+
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[7]/div/div/div[2]/span")
 	public
 	WebElement city_form;
-	
-	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[8]")
+
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[8]/div/div/div[2]/span")
 	public
 	WebElement state_form;
-	
-	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[9]")
+
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[9]//div/div/div[2]/span")
 	public
 	WebElement zipcode_form;
-	
-	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[10]")
+
+	@FindBy(how=How.XPATH, using=".//div[@class='full forcePageBlock forceRecordLayout']/div[2]/div/div[@class='slds-form slds-form_stacked ']/div[10]/div/div/div[2]/span")
 	public
 	WebElement telephone_form;
-	
-	@FindBy(how=How.XPATH, using="")
+
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Sex')]/following::span[1]")
 	public
 	WebElement gender_form;
-	
-	
-	
+
+	@FindBy(how=How.XPATH, using=".//span[contains(text(),'Marital Status')]/following::span[1]")
+	public
+	WebElement maritalstatus_form;
+
+	/********Employer Lightning form *************/
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[1]/div[1]/div/div[2]/span")
+	public
+	WebElement employername_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[2]/div[1]/div/div[2]/span")
+	public
+	WebElement fiennumber_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[4]/div[1]/div/div[2]/span")
+	public
+	WebElement officeaddress_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[5]/div[1]/div/div[2]/span")
+	public
+	WebElement employercity_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[6]/div[1]/div/div[2]/span")
+	public
+	WebElement employerstate_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[7]/div[1]/div/div[2]/span")
+	public
+	WebElement employerzipcode_form;
+
+	@FindBy(how=How.XPATH, using=".//div[3][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[8]/div[1]/div/div[2]/span")
+	public
+	WebElement employertelephone_form;
+
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[5]/div[1]/div/div[2]/span")
+	public
+	WebElement jobtitle_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[8]/div[1]/div/div[2]/span")
+	public
+	WebElement premises_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[8]/div[1]/div/div[2]/span")
+	public
+	WebElement injury_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[15]/div[1]/div/div[2]/span")
+	public
+	WebElement partofbody_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[16]/div[1]/div/div[2]/span")
+	public
+	WebElement fatal_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[17]/div[1]/div/div[2]/span")
+	public
+	WebElement emptreatedinemgroom_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[23]/div[1]/div/div[2]/span")
+	public
+	WebElement hospitalizedovernight_form;
+
+	@FindBy(how=How.XPATH, using=".//div[4][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[29]/div[1]/div/div[2]/span")
+	public
+	WebElement claimdoubted_form;
+
+	@FindBy(how=How.XPATH, using=".//div[5][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[1]/div/div/div[2]/span")
+	public
+	WebElement whathappened_form;
+
+	@FindBy(how=How.XPATH, using=".//div[5][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[2]/div/div/div[2]/span")
+	public
+	WebElement harmedemployee_form;
+
+	@FindBy(how=How.XPATH, using=".//div[5][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[4]/div/div/div[2]/span")
+	public
+	WebElement employeebeforeaccident_form;
+
+	@FindBy(how=How.XPATH, using=".//div[5][@class='test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView']/div/div/div[6]/div/div/div[2]/span")
+	public
+	WebElement employeewheninjured_form;
+
+
+
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
 
 		/******************************EMPLOYEE DETAILS *******************************************************/		
@@ -456,63 +534,225 @@ public class Form101Page extends Driverclass {
 		String zipcode = zipcode_form.getText();
 		String telephone = telephone_form.getText();
 		String gender = gender_form.getText();
+		String maritalstatus = maritalstatus_form.getText();
 		Thread.sleep(10000);
 		/***************Last Name****************************/
 		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "lastname"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", lastname_form);
 		}
-		Thread.sleep(10000);
+
 		/***************First Name****************************/
 		if(firstname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", firstname_form);
 		}
-		Thread.sleep(10000);
+
 		/***************Social security number****************************/
 		if(socialsecurity.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", socialsecurity_form);
 		}
-		Thread.sleep(10000);
+
 		/***************Date of birth****************************/
 
 		if(dob.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", datofbirth_form);
 		}
-		Thread.sleep(10000);
+
 
 		/***********************Home Address************************************/
 		if(homeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", homeaddress_form);
 		}
-		Thread.sleep(10000);
-		
+
+
 		/************************City*****************/
 		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "city"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", city_form);
 		}
-		
+
 		/*******************State*********************/
-		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "state"))) {
+		if(state.equals(ExcelUtilities.readExcel(methodName, tcName, "state"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", state_form);
 		}
-		
-		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "zipcode"))) {
+
+		/*******************Zipcode*********************/
+		if(zipcode.equals(ExcelUtilities.readExcel(methodName, tcName, "employeezipcode"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", zipcode_form);
 		}
-		
-		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "telephone"))) {
+
+		/*******************telephone*********************/
+		if(telephone.equals(ExcelUtilities.readExcel(methodName, tcName, "telephone"))) {
 
 			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", telephone_form);
 		}
 
-		
+		/*******************gender*********************/
+		if(gender.equals(ExcelUtilities.readExcel(methodName, tcName, "sex"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", gender_form);
+		}
+
+		/*******************marital Status*********************/
+		if(maritalstatus.equals(ExcelUtilities.readExcel(methodName, tcName, "marital status"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", maritalstatus_form);
+		}
+		Thread.sleep(10000);
+
+		/**************************Employer Details*******************************/
+		String Employername = employername_form.getText();
+		String fiennumber = fiennumber_form.getText();
+		String officeaddress = officeaddress_form.getText();
+		String emplyercity = employercity_form.getText();
+		String employerstate = employerstate_form.getText();
+		String employerzipcode = employerzipcode_form.getText();
+		String employertelephone = employertelephone_form.getText();
+
+		/******************Employer name***************************/
+		if(Employername.equals(ExcelUtilities.readExcel(methodName, tcName, "employername"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employername_form);
+		}
+
+		/********************FIEN Number***************************/
+		if(fiennumber.equals(ExcelUtilities.readExcel(methodName, tcName, "fiennumber"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", fiennumber_form);
+		}
+
+		/********************Office address***************************/
+		if(officeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "officeaddress"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", officeaddress_form);
+		}
+
+		/********************City***************************/
+		if(emplyercity.equals(ExcelUtilities.readExcel(methodName, tcName, "employercity"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employercity_form);
+		}
+
+		/********************State***************************/
+		if(employerstate.equals(ExcelUtilities.readExcel(methodName, tcName, "employerstate"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employerstate_form);
+		}
+
+		/*******************Zipcode***************************/
+		if(employerzipcode.equals(ExcelUtilities.readExcel(methodName, tcName, "employerzipcode"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employerzipcode_form);
+		}
+
+		/********************Telephone***************************/
+		if(employertelephone.equals(ExcelUtilities.readExcel(methodName, tcName, "employertelephone"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employertelephone_form);
+		}
+		/***********************Accident Information**********************/
+		String employeejobtitle = jobtitle_form.getText();
+		String employeepremises = premises_form.getText();
+		String injury = injury_form.getText();
+		String partofbodyinjured = partofbody_form.getText();
+		String fatal = fatal_form.getText();
+		String treatedinemergencyroom = emptreatedinemgroom_form.getText();
+		String hospitalizedovernight = hospitalizedovernight_form.getText();
+		String claimdoubted = claimdoubted_form.getText();
+
+		/********************Employee job title***************************/
+		if(employeejobtitle.equals(ExcelUtilities.readExcel(methodName, tcName, "employeeoccupation"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", jobtitle_form);
+		}
+
+		/********************Employee premises***************************/
+		if(employeepremises.equals(ExcelUtilities.readExcel(methodName, tcName, "employeepremesis"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", premises_form);
+		}
+
+		/********************was illnessororinjury***************************/
+		if(injury.equals(ExcelUtilities.readExcel(methodName, tcName, "wastheinjuryorillness"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", injury_form);
+		}
+
+		/********************partofbodyinjured***************************/
+		if(partofbodyinjured.equals(ExcelUtilities.readExcel(methodName, tcName, "bodyinjured"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", partofbody_form);
+		}
+
+		/********************fatal***************************/
+		if(fatal.equals(ExcelUtilities.readExcel(methodName, tcName, "fatal"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", fatal_form);
+		}
+
+		/********************employeeemergency***************************/
+		if(treatedinemergencyroom.equals(ExcelUtilities.readExcel(methodName, tcName, "employeeemergency"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", emptreatedinemgroom_form);
+		}
+
+		/********************treatedovernight***************************/
+		if(hospitalizedovernight.equals(ExcelUtilities.readExcel(methodName, tcName, "treatedovernight"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", hospitalizedovernight_form);
+		}
+
+		/********************treatedovernight***************************/
+		if(claimdoubted.equals(ExcelUtilities.readExcel(methodName, tcName, "claimdoubted"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", claimdoubted_form);
+		}
+		Thread.sleep(10000);
+
+		/*********************Cause of accident************************/
+		String whathappend = whathappened_form.getText();
+		System.out.println("whathappend"+whathappend);
+		String harmedemployee = harmedemployee_form.getText();
+		System.out.println("harmedemployee"+harmedemployee);
+		String employeebeforeaccident = employeebeforeaccident_form.getText();
+		System.out.println("employeebeforeaccident"+employeebeforeaccident);
+		String employeewheninjured = employeewheninjured_form.getText();
+		System.out.println("employeewheninjured"+employeewheninjured);
+
+		/********************whathappened***************************/
+		if(whathappend.equals(ExcelUtilities.readExcel(methodName, tcName, "whathappend"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", whathappened_form);
+		}
+
+		/********************harmedemployee***************************/
+		if(harmedemployee.equals(ExcelUtilities.readExcel(methodName, tcName, "harmedemployee"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", harmedemployee_form);
+		}
+
+		/********************employeewheninjured***************************/
+		if(employeebeforeaccident.equals(ExcelUtilities.readExcel(methodName, tcName, "incidentoccured"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employeebeforeaccident_form);
+		}
+
+		/********************employeewheninjured***************************/
+		if(employeewheninjured.equals(ExcelUtilities.readExcel(methodName, tcName, "employwheninjured"))) {
+
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employeewheninjured_form);
+		}
+
+
+
+
+
 
 	}
 

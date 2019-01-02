@@ -9,9 +9,6 @@ import com.automationtraining.pageobject.Loginpages;
 import com.automationtraining.utilities.Log;
 import com.automationtraining.utilities.TestUtils;
 
-
-
-
 /**
  * @author Sindhuja Ethiraj
  *
@@ -19,7 +16,7 @@ import com.automationtraining.utilities.TestUtils;
 public class Form101 extends  BaseTest{
 
 
-	//	@SuppressWarnings("javadoc")
+
 	@Test
 	public void formFilling101() throws Exception
 	{
@@ -34,21 +31,10 @@ public class Form101 extends  BaseTest{
 		page101=Loginpages.formUrl101();
 		page101.formFilling(methodName,tcName,reporter);
 		Assert.assertTrue(true);
-	
-	
 		Log.info("Running @Test methods");
-		
-       
-		//    ExtentReportsClass.loginTest();
-
-
-
 
 
 	}
-
-
-
 
 }
 
