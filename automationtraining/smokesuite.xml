@@ -6,25 +6,33 @@
         <listener class-name="com.automationtraining.listeners.RetryListenerClass" />
         
 </listeners>
-	<test name=" Smoke Test Candidates">
+<test name=" Smoke Test Candidates">
 		<parameter name="env" value="url101" />
 		<parameter name="userType" value="Qaadmin" />
 		<parameter name="sflogin" value="SFURL" />
-		
+		<parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.automationtraining.smokesuite.Form101" />
 			
 		</classes>
-	</test>
-
-	<!-- <test name=" Smoke Test Candidates">
+	</test> 
+	
+	 <test name="Firefox Test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.automationtraining.smokesuite.Form101" />
+    </classes>
+  </test> 
+  
+   
+	<!--  <test name=" Smoke Test Candidates">
 		<parameter name="env" value="url101" />
 		<classes>
 
-			<class name="com.automationtraining.smokesuite.Failedform101" />
+			<class name="com.automationtraining.smokesuite.Form101validation" />
 		</classes>
 
-	</test>
-	 -->
+	</test> -->
+
 
 </suite>  <!-- SmokeSuite -->

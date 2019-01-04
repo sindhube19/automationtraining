@@ -336,6 +336,161 @@ public class Form101Page extends Driverclass {
 	public
 	WebElement employeewheninjured_form;
 
+	/**************************Employee Error Message*********************************/
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[1]/td[1]/div[1]/div[2]")
+	public
+	WebElement error_lastname;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[2]/td/div/div[2]")
+	public
+	WebElement error_firstname;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[4]/td/div/div[2]")
+	public
+	WebElement error_socialsecuritynumber;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[5]/td/div/div[2]")
+	public
+	WebElement error_dob;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[6]/td/div/div[2]")
+	public
+	WebElement error_homeaddress;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[7]/td/div/div[2]")
+	public
+	WebElement error_city;
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[8]/td/div/div[2]")
+	public
+	WebElement error_state;
+
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[9]/td/div/div[2]")
+	public
+	WebElement error_zipcode;
+
+
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[10]/td/div/div[2]")
+	public
+	WebElement error_telephone;
+	@FindBy(how=How.XPATH, using=".//*[@class='pbSubsection']/table/tbody/tr[11]/td/div/div[2]")
+	public
+	WebElement error_gender;
+
+
+	/**************************Employee Error Message*********************************/
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[1]")
+	public
+	WebElement error_employername;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[2]")
+	public
+	WebElement error_feinnumber;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[3]")
+	public
+	WebElement error_officeaddress;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[4]")
+	public
+	WebElement error_employercity;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[5]")
+	public
+	WebElement error_employerstate;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[6]")
+	public
+	WebElement error_employerzipcode;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[7]")
+	public
+	WebElement error_employertelephone;
+
+
+	/******************************Accident Details*************************************/
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[8]")
+	public
+	WebElement error_dateofinjury;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[9]")
+	public
+	WebElement 	error_Notified;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[10]")
+	public
+	WebElement 	error_afterinjury;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[11]")
+	public
+	WebElement 	error_employeeoccupation;
+
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[12]")
+	public
+	WebElement 	error_employeepremesis;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[13]")
+	public
+	WebElement 	error_injuryorillness;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[14]")
+	public
+	WebElement 	error_bodyinjured;
+
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[15]")
+	public
+	WebElement 	error_partofbodyinjured;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[16]")
+	public
+	WebElement 	error_fatal;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[17]")
+	public
+	WebElement 	error_employeeemergency;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[18]")
+	public
+	WebElement 	error_treatedovernight;
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[19]")
+	public
+	WebElement 	error_claimdoubted;
+
+	/**********************************Cause of incident**********************************/
+	
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[20]")
+	public
+	WebElement 	error_whathappend;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[21]")
+	public
+	WebElement 	error_harmedemployee;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[22]")
+	public
+	WebElement 	error_employeebeforeincidentoccured;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[23]")
+	public
+	WebElement 	error_workerinemployee;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[24]")
+	public
+	WebElement 	error_datehire;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[25]")
+	public
+	WebElement 	error_grossearings;
+	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[26]")
+	public
+	WebElement 	error_submittermail;
+
+
+
+
+
+
+
+
+
 
 
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
@@ -756,6 +911,148 @@ public class Form101Page extends Driverclass {
 
 	}
 
+	public void formvalidation() {
+
+		/*******************************Employee Details*******************************/
+		lastname1.sendKeys("");
+		Log.info("Entering lastname as null");
+		firstname.sendKeys("");
+		Log.info("Entering first as null");
+		socialsecuritynumber.sendKeys("");
+		Log.info("Entering socialsecuritynumber as null");
+		dob.sendKeys("");
+		Log.info("Entering dob as null");
+		homeaddress.sendKeys("");
+		Log.info("Entering homeaddress as null");
+		city.sendKeys("");
+		Log.info("Entering city as null");
+		state.sendKeys("");
+		Log.info("Entering state as null");
+		zipcode.sendKeys("");
+		Log.info("Entering zipcode as null");
+		telephone.sendKeys("");
+		Log.info("Entering telephone as null");
+		gender.sendKeys("");
+		Log.info("Entering gender as null");
+
+
+		/******************************Employer Details********************************/
+		employername.sendKeys("");
+		Log.info("Entering emplyer name as null");
+		feinnumber.sendKeys("");
+		Log.info("Entering feinnumber as null");
+		officeaddress.sendKeys("");
+		Log.info("Entering officeaddress as null");
+		employercity.sendKeys("");
+		Log.info("Entering employercity as null");
+		employerstate.sendKeys("");
+		Log.info("Entering employerstate as null");
+		employerzipcode.sendKeys("");
+		Log.info("Entering employerzipcode as null");
+		employertelephone.sendKeys("");
+		Log.info("Entering employertelephone as null");
+
+		/**********************************Accident Details******************************/
+		DATEOFINJURY.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(DATEOFINJURY,driver);
+		Notified.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(Notified,driver);
+		afterinjury.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(afterinjury,driver);
+		employeeoccupation.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(employeeoccupation,driver);
+		employeepremises.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(employeepremises,driver);
+		wastheinjuryorillness.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(wastheinjuryorillness,driver);
+		bodyinjured.sendKeys("");
+		Log.info("Entering bodyinjured as null");
+		SeleniumUtils.FailedhighLightelements(bodyinjured,driver);
+
+		fatal.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(fatal,driver);
+		employeeemergency.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(employeeemergency,driver);
+		treatedovernight.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(treatedovernight,driver);
+		claimdoubted.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(claimdoubted,driver);
+		Notified.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(Notified,driver);
+
+		/*********************************Cause of accident*********************************/
+		whathappend.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(whathappend,driver);
+		harmedemployee.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(harmedemployee,driver);
+
+		employeebeforeincidentoccured.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(employeebeforeincidentoccured,driver);
+		workerinemployee.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(workerinemployee,driver);
+		datehire.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(datehire,driver);
+		grossearings.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(grossearings,driver);
+		agree.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(agree,driver);
+		submittermail.sendKeys("");
+		SeleniumUtils.FailedhighLightelements(submittermail,driver);
+		submit.click();
+		SeleniumUtils.FailedhighLightelements(submit,driver);
+
+		/*********************Employee Details************************************/
+
+		SeleniumUtils.FailedhighLightelements(error_lastname,driver);
+		SeleniumUtils.FailedhighLightelements(error_firstname,driver);
+		SeleniumUtils.FailedhighLightelements(error_socialsecuritynumber,driver);
+		SeleniumUtils.FailedhighLightelements(error_dob,driver);
+		SeleniumUtils.FailedhighLightelements(error_homeaddress,driver);
+		SeleniumUtils.FailedhighLightelements(error_city,driver);
+		SeleniumUtils.FailedhighLightelements(error_state,driver);
+		SeleniumUtils.FailedhighLightelements(error_zipcode,driver);
+		SeleniumUtils.FailedhighLightelements(error_telephone,driver);
+		SeleniumUtils.FailedhighLightelements(error_gender,driver);
+
+		/******************************Employer Details********************************/
+
+		SeleniumUtils.FailedhighLightelements(error_employername,driver);
+		SeleniumUtils.FailedhighLightelements(error_feinnumber,driver);
+		SeleniumUtils.FailedhighLightelements(error_officeaddress,driver);
+		SeleniumUtils.FailedhighLightelements(error_employercity,driver);
+		SeleniumUtils.FailedhighLightelements(error_employerstate,driver);
+		SeleniumUtils.FailedhighLightelements(error_employerzipcode,driver);
+		SeleniumUtils.FailedhighLightelements(error_employertelephone,driver);
+
+		/**********************************Accident Details******************************/
+
+		SeleniumUtils.FailedhighLightelements(error_dateofinjury,driver);
+		SeleniumUtils.FailedhighLightelements(error_Notified,driver);
+		SeleniumUtils.FailedhighLightelements(error_afterinjury,driver);
+		SeleniumUtils.FailedhighLightelements(error_employeeoccupation,driver);
+		SeleniumUtils.FailedhighLightelements(error_employeepremesis,driver);
+		SeleniumUtils.FailedhighLightelements(error_injuryorillness,driver);
+		SeleniumUtils.FailedhighLightelements(error_bodyinjured,driver);
+		SeleniumUtils.FailedhighLightelements(error_partofbodyinjured,driver);
+		SeleniumUtils.FailedhighLightelements(error_fatal,driver);
+		SeleniumUtils.FailedhighLightelements(error_employeeemergency,driver);
+		SeleniumUtils.FailedhighLightelements(error_treatedovernight,driver);
+		SeleniumUtils.FailedhighLightelements(error_claimdoubted,driver);
+
+
+		/*********************************Cause of accident*********************************/
+		SeleniumUtils.FailedhighLightelements(error_whathappend,driver);
+		SeleniumUtils.FailedhighLightelements(error_harmedemployee,driver);
+		SeleniumUtils.FailedhighLightelements(error_employeebeforeincidentoccured,driver);
+		SeleniumUtils.FailedhighLightelements(error_workerinemployee,driver);
+		SeleniumUtils.FailedhighLightelements(error_datehire,driver);
+		SeleniumUtils.FailedhighLightelements(error_grossearings,driver);
+		SeleniumUtils.FailedhighLightelements(agree,driver);
+		SeleniumUtils.FailedhighLightelements(error_submittermail,driver);
+
+
+	}
+	
+
+
 }
-
-

@@ -55,6 +55,14 @@ public class Loginpages extends Driverclass {
 		loginbutton.click();
 	
 	}
+
+	/**
+	 * @return
+	 */
+	public Form101verification formFilling101() {
+		// TODO Auto-generated method stub
+		return new Form101verification(driver);
+	}
 	
 	
 

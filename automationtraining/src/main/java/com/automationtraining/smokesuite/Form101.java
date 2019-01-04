@@ -20,6 +20,7 @@ public class Form101 extends  BaseTest{
 	@Test
 	public void formFilling101() throws Exception
 	{
+		
 		String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
 
 		String className = this.getClass().getSimpleName();
@@ -32,9 +33,11 @@ public class Form101 extends  BaseTest{
 		page101.formFilling(methodName,tcName,reporter);
 		Assert.assertTrue(true);
 		Log.info("Running @Test methods");
+		
 
 
 	}
+	
 
 }
 

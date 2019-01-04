@@ -2366,3 +2366,630 @@
 2018-12-27 18:56:00 INFO  Log:28 - Entering value in search box
 2018-12-27 18:56:11 INFO  Log:28 - selecting table data
 2018-12-27 18:56:54 INFO  Log:23 - Test is Ending...
+2019-01-03 10:16:34 INFO  Log:18 - Test is Starting...
+2019-01-03 10:16:44 INFO  Log:28 - Navigating to url
+2019-01-03 10:16:45 INFO  Log:28 - Opening the browser
+2019-01-03 10:16:45 INFO  Log:28 - Entering the Lastname
+2019-01-03 10:16:45 INFO  Log:28 - Running @Test methods
+2019-01-03 10:19:46 INFO  Log:18 - Test is Starting...
+2019-01-03 10:19:56 INFO  Log:28 - Navigating to url
+2019-01-03 10:19:57 INFO  Log:28 - Opening the browser
+2019-01-03 10:19:57 INFO  Log:28 - Entering the Lastname
+2019-01-03 10:19:57 INFO  Log:28 - Running @Test methods
+2019-01-03 10:37:02 INFO  Log:18 - Test is Starting...
+2019-01-03 10:37:11 INFO  Log:28 - Navigating to url
+2019-01-03 10:37:12 INFO  Log:28 - Opening the browser
+2019-01-03 10:37:12 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:37:14 INFO  Log:18 - Test is Starting...
+2019-01-03 10:37:23 INFO  Log:28 - Navigating to url
+2019-01-03 10:37:29 INFO  Log:28 - Opening the browser
+2019-01-03 10:37:29 INFO  Log:18 - Test is Starting...
+2019-01-03 10:39:40 INFO  Log:18 - Test is Starting...
+2019-01-03 10:39:50 INFO  Log:28 - Navigating to url
+2019-01-03 10:39:51 INFO  Log:28 - Opening the browser
+2019-01-03 10:39:56 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:39:58 INFO  Log:18 - Test is Starting...
+2019-01-03 10:40:05 INFO  Log:28 - Navigating to url
+2019-01-03 10:40:06 INFO  Log:28 - Opening the browser
+2019-01-03 10:40:06 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:40:08 INFO  Log:18 - Test is Starting...
+2019-01-03 10:40:18 INFO  Log:28 - Navigating to url
+2019-01-03 10:40:19 INFO  Log:28 - Opening the browser
+2019-01-03 10:40:19 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:41:51 INFO  Log:18 - Test is Starting...
+2019-01-03 10:42:00 INFO  Log:28 - Navigating to url
+2019-01-03 10:42:01 INFO  Log:28 - Opening the browser
+2019-01-03 10:42:01 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:42:04 INFO  Log:18 - Test is Starting...
+2019-01-03 10:42:12 INFO  Log:28 - Navigating to url
+2019-01-03 10:42:14 INFO  Log:28 - Opening the browser
+2019-01-03 10:42:14 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:42:16 INFO  Log:18 - Test is Starting...
+2019-01-03 10:42:27 INFO  Log:28 - Navigating to url
+2019-01-03 10:42:29 INFO  Log:28 - Opening the browser
+2019-01-03 10:42:29 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:45:39 INFO  Log:18 - Test is Starting...
+2019-01-03 10:45:50 INFO  Log:28 - Navigating to url
+2019-01-03 10:45:51 INFO  Log:28 - Opening the browser
+2019-01-03 10:45:51 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:45:53 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 10:45:53 INFO  Log:18 - Test is Starting...
+2019-01-03 10:46:03 INFO  Log:28 - Navigating to url
+2019-01-03 10:46:04 INFO  Log:28 - Opening the browser
+2019-01-03 10:46:04 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:46:06 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 10:46:06 INFO  Log:18 - Test is Starting...
+2019-01-03 10:56:29 INFO  Log:18 - Test is Starting...
+2019-01-03 10:56:38 INFO  Log:28 - Navigating to url
+2019-01-03 10:56:39 INFO  Log:28 - Opening the browser
+2019-01-03 10:56:39 INFO  Log:28 - Entering lastname as null
+2019-01-03 10:56:41 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 10:56:42 INFO  Log:18 - Test is Starting...
+2019-01-03 10:56:56 INFO  Log:18 - Test is Starting...
+2019-01-03 10:57:07 INFO  Log:28 - Navigating to url
+2019-01-03 10:57:08 INFO  Log:28 - Opening the browser
+2019-01-03 10:57:09 INFO  Log:28 - Entering the Lastname
+2019-01-03 10:57:09 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-03 10:57:09 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-03 10:57:09 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-03 10:57:09 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-03 10:57:09 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-03 10:57:10 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-03 10:57:11 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-03 10:57:12 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-03 10:57:27 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2019-01-03 10:57:27 INFO  Log:28 - employee emergency is Entered Successfully
+2019-01-03 10:58:38 INFO  Log:18 - Test is Starting...
+2019-01-03 10:58:42 INFO  Log:28 - Navigating to url
+2019-01-03 10:58:49 INFO  Log:28 - Opening the browser
+2019-01-03 10:58:49 INFO  Log:18 - Test is Starting...
+2019-01-03 11:07:18 INFO  Log:18 - Test is Starting...
+2019-01-03 11:07:29 INFO  Log:28 - Navigating to url
+2019-01-03 11:07:30 INFO  Log:28 - Opening the browser
+2019-01-03 11:07:30 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:07:32 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:07:33 INFO  Log:18 - Test is Starting...
+2019-01-03 11:07:42 INFO  Log:28 - Navigating to url
+2019-01-03 11:07:44 INFO  Log:28 - Opening the browser
+2019-01-03 11:07:44 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:07:46 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:07:46 INFO  Log:18 - Test is Starting...
+2019-01-03 11:07:58 INFO  Log:28 - Navigating to url
+2019-01-03 11:07:59 INFO  Log:28 - Opening the browser
+2019-01-03 11:07:59 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:08:01 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:13:03 INFO  Log:18 - Test is Starting...
+2019-01-03 11:13:13 INFO  Log:28 - Navigating to url
+2019-01-03 11:13:14 INFO  Log:28 - Opening the browser
+2019-01-03 11:13:14 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:13:17 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:13:18 INFO  Log:28 - Running @Test methods
+2019-01-03 11:14:43 INFO  Log:18 - Test is Starting...
+2019-01-03 11:14:51 INFO  Log:28 - Navigating to url
+2019-01-03 11:14:53 INFO  Log:28 - Opening the browser
+2019-01-03 11:14:53 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:14:55 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:14:58 INFO  Log:28 - Running @Test methods
+2019-01-03 11:31:43 INFO  Log:18 - Test is Starting...
+2019-01-03 11:31:54 INFO  Log:28 - Navigating to url
+2019-01-03 11:31:55 INFO  Log:28 - Opening the browser
+2019-01-03 11:31:55 INFO  Log:28 - Entering lastname as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering first as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering dob as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering city as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering state as null
+2019-01-03 11:31:55 INFO  Log:28 - Entering zipcode as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering telephone as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering gender as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering employercity as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering employerstate as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 11:31:56 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 11:31:57 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 11:32:01 INFO  Log:28 - Running @Test methods
+2019-01-03 12:27:21 INFO  Log:18 - Test is Starting...
+2019-01-03 12:27:32 INFO  Log:28 - Navigating to url
+2019-01-03 12:27:33 INFO  Log:28 - Opening the browser
+2019-01-03 12:27:33 INFO  Log:28 - Entering lastname as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering first as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering dob as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering city as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering state as null
+2019-01-03 12:27:33 INFO  Log:28 - Entering zipcode as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering telephone as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering gender as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering employercity as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering employerstate as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 12:27:34 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 12:27:35 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 12:27:41 INFO  Log:28 - Running @Test methods
+2019-01-03 12:41:58 INFO  Log:18 - Test is Starting...
+2019-01-03 12:42:09 INFO  Log:28 - Navigating to url
+2019-01-03 12:42:11 INFO  Log:28 - Opening the browser
+2019-01-03 12:42:11 INFO  Log:28 - Entering lastname as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering first as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering dob as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering city as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering state as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering zipcode as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering telephone as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering gender as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 12:42:11 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 12:42:12 INFO  Log:28 - Entering employercity as null
+2019-01-03 12:42:12 INFO  Log:28 - Entering employerstate as null
+2019-01-03 12:42:12 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 12:42:12 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 12:42:12 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 12:42:20 INFO  Log:28 - Running @Test methods
+2019-01-03 12:56:31 INFO  Log:18 - Test is Starting...
+2019-01-03 12:56:40 INFO  Log:28 - Navigating to url
+2019-01-03 12:56:42 INFO  Log:28 - Opening the browser
+2019-01-03 12:56:42 INFO  Log:28 - Entering lastname as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering first as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering dob as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering city as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering state as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering zipcode as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering telephone as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering gender as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 12:56:42 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 12:56:43 INFO  Log:28 - Entering employercity as null
+2019-01-03 12:56:43 INFO  Log:28 - Entering employerstate as null
+2019-01-03 12:56:43 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 12:56:43 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 12:56:43 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 12:56:50 INFO  Log:28 - Running @Test methods
+2019-01-03 13:09:45 INFO  Log:18 - Test is Starting...
+2019-01-03 13:10:45 INFO  Log:28 - Navigating to url
+2019-01-03 13:10:46 INFO  Log:28 - Opening the browser
+2019-01-03 13:10:46 INFO  Log:18 - Test is Starting...
+2019-01-03 13:12:24 INFO  Log:18 - Test is Starting...
+2019-01-03 13:12:36 INFO  Log:28 - Navigating to url
+2019-01-03 13:12:37 INFO  Log:28 - Opening the browser
+2019-01-03 13:12:37 INFO  Log:28 - Entering lastname as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering first as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering dob as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering city as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering state as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering zipcode as null
+2019-01-03 13:12:37 INFO  Log:28 - Entering telephone as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering gender as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering employercity as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering employerstate as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 13:12:38 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 13:12:39 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 13:12:43 INFO  Log:28 - Running @Test methods
+2019-01-03 15:00:10 INFO  Log:18 - Test is Starting...
+2019-01-03 15:00:25 INFO  Log:28 - Navigating to url
+2019-01-03 15:00:26 INFO  Log:28 - Opening the browser
+2019-01-03 15:00:27 INFO  Log:28 - Entering lastname as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering first as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering dob as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering city as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering state as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering zipcode as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering telephone as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering gender as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 15:00:27 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 15:00:28 INFO  Log:28 - Entering employercity as null
+2019-01-03 15:00:28 INFO  Log:28 - Entering employerstate as null
+2019-01-03 15:00:28 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 15:00:28 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 15:00:28 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 15:00:35 INFO  Log:28 - Running @Test methods
+2019-01-03 15:33:14 INFO  Log:18 - Test is Starting...
+2019-01-03 15:33:26 INFO  Log:28 - Navigating to url
+2019-01-03 15:33:27 INFO  Log:28 - Opening the browser
+2019-01-03 15:33:27 INFO  Log:28 - Entering lastname as null
+2019-01-03 15:33:27 INFO  Log:28 - Entering first as null
+2019-01-03 15:33:27 INFO  Log:28 - Entering socialsecuritynumber as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering dob as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering homeaddress as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering city as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering state as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering zipcode as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering telephone as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering gender as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering emplyer name as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering feinnumber as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering officeaddress as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering employercity as null
+2019-01-03 15:33:28 INFO  Log:28 - Entering employerstate as null
+2019-01-03 15:33:29 INFO  Log:28 - Entering employerzipcode as null
+2019-01-03 15:33:29 INFO  Log:28 - Entering employertelephone as null
+2019-01-03 15:33:29 INFO  Log:28 - Entering bodyinjured as null
+2019-01-03 15:33:34 INFO  Log:28 - Running @Test methods
+2019-01-03 16:54:56 INFO  Log:18 - Test is Starting...
+2019-01-03 16:55:06 INFO  Log:28 - Navigating to url
+2019-01-03 16:55:07 INFO  Log:28 - Opening the browser
+2019-01-03 16:55:07 INFO  Log:28 - Entering the Lastname
+2019-01-03 17:04:43 INFO  Log:18 - Test is Starting...
+2019-01-03 17:04:53 INFO  Log:28 - Navigating to url
+2019-01-03 17:04:54 INFO  Log:28 - Opening the browser
+2019-01-03 17:04:55 INFO  Log:28 - Entering the Lastname
+2019-01-03 17:10:41 INFO  Log:18 - Test is Starting...
+2019-01-03 17:10:51 INFO  Log:28 - Navigating to url
+2019-01-03 17:10:52 INFO  Log:28 - Opening the browser
+2019-01-03 17:10:52 INFO  Log:28 - Entering the Lastname
+2019-01-03 17:41:06 INFO  Log:18 - Test is Starting...
+2019-01-03 17:41:16 INFO  Log:28 - Navigating to url
+2019-01-03 17:41:17 INFO  Log:28 - Opening the browser
+2019-01-03 17:41:17 INFO  Log:28 - Entering the Lastname
+2019-01-03 17:47:16 INFO  Log:18 - Test is Starting...
+2019-01-03 17:47:27 INFO  Log:28 - Navigating to url
+2019-01-03 17:47:28 INFO  Log:28 - Opening the browser
+2019-01-03 17:47:28 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:48:45 INFO  Log:18 - Test is Starting...
+2019-01-03 17:48:55 INFO  Log:28 - Navigating to url
+2019-01-03 17:48:56 INFO  Log:28 - Opening the browser
+2019-01-03 17:48:56 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:50:32 INFO  Log:18 - Test is Starting...
+2019-01-03 17:50:46 INFO  Log:28 - Navigating to url
+2019-01-03 17:50:48 INFO  Log:28 - Opening the browser
+2019-01-03 17:50:48 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:52:43 INFO  Log:18 - Test is Starting...
+2019-01-03 17:52:52 INFO  Log:28 - Navigating to url
+2019-01-03 17:52:53 INFO  Log:28 - Opening the browser
+2019-01-03 17:52:53 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:56:10 INFO  Log:18 - Test is Starting...
+2019-01-03 17:56:20 INFO  Log:28 - Navigating to url
+2019-01-03 17:56:21 INFO  Log:28 - Opening the browser
+2019-01-03 17:56:21 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:58:23 INFO  Log:18 - Test is Starting...
+2019-01-03 17:58:34 INFO  Log:28 - Navigating to url
+2019-01-03 17:58:35 INFO  Log:28 - Opening the browser
+2019-01-03 17:58:35 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 17:58:35 INFO  Log:28 - Verified
+2019-01-03 18:00:33 INFO  Log:18 - Test is Starting...
+2019-01-03 18:00:45 INFO  Log:28 - Navigating to url
+2019-01-03 18:00:46 INFO  Log:28 - Opening the browser
+2019-01-03 18:00:47 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:00:47 INFO  Log:28 - Title Verified
+2019-01-03 18:04:53 INFO  Log:18 - Test is Starting...
+2019-01-03 18:05:04 INFO  Log:28 - Navigating to url
+2019-01-03 18:05:06 INFO  Log:28 - Opening the browser
+2019-01-03 18:05:06 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:05:06 INFO  Log:28 - Title Verified
+2019-01-03 18:11:16 INFO  Log:18 - Test is Starting...
+2019-01-03 18:11:27 INFO  Log:28 - Navigating to url
+2019-01-03 18:11:28 INFO  Log:28 - Opening the browser
+2019-01-03 18:11:28 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:11:28 INFO  Log:28 - Title Verified
+2019-01-03 18:11:28 INFO  Log:18 - Test is Starting...
+2019-01-03 18:11:40 INFO  Log:28 - Navigating to url
+2019-01-03 18:11:41 INFO  Log:28 - Opening the browser
+2019-01-03 18:11:41 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:11:41 INFO  Log:28 - Title Verified
+2019-01-03 18:11:41 INFO  Log:18 - Test is Starting...
+2019-01-03 18:11:59 INFO  Log:28 - Navigating to url
+2019-01-03 18:12:00 INFO  Log:28 - Opening the browser
+2019-01-03 18:12:00 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:12:00 INFO  Log:28 - Title Verified
+2019-01-03 18:12:52 INFO  Log:18 - Test is Starting...
+2019-01-03 18:13:02 INFO  Log:28 - Navigating to url
+2019-01-03 18:13:03 INFO  Log:28 - Opening the browser
+2019-01-03 18:13:03 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:13:03 INFO  Log:28 - Title Verified
+2019-01-03 18:13:03 INFO  Log:18 - Test is Starting...
+2019-01-03 18:13:13 INFO  Log:28 - Navigating to url
+2019-01-03 18:13:15 INFO  Log:28 - Opening the browser
+2019-01-03 18:13:15 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:13:15 INFO  Log:28 - Title Verified
+2019-01-03 18:13:15 INFO  Log:18 - Test is Starting...
+2019-01-03 18:15:09 INFO  Log:18 - Test is Starting...
+2019-01-03 18:15:19 INFO  Log:28 - Navigating to url
+2019-01-03 18:15:20 INFO  Log:28 - Opening the browser
+2019-01-03 18:15:20 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:15:20 INFO  Log:28 - Title Verified
+2019-01-03 18:15:20 INFO  Log:18 - Test is Starting...
+2019-01-03 18:15:31 INFO  Log:28 - Navigating to url
+2019-01-03 18:15:32 INFO  Log:28 - Opening the browser
+2019-01-03 18:15:32 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:15:32 INFO  Log:28 - Title Verified
+2019-01-03 18:15:32 INFO  Log:18 - Test is Starting...
+2019-01-03 18:15:34 INFO  Log:28 - Navigating to url
+2019-01-03 18:15:40 INFO  Log:28 - Opening the browser
+2019-01-03 18:17:29 INFO  Log:18 - Test is Starting...
+2019-01-03 18:17:39 INFO  Log:28 - Navigating to url
+2019-01-03 18:17:40 INFO  Log:28 - Opening the browser
+2019-01-03 18:17:41 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:17:41 INFO  Log:28 - Title Verified
+2019-01-03 18:17:41 INFO  Log:18 - Test is Starting...
+2019-01-03 18:17:50 INFO  Log:28 - Navigating to url
+2019-01-03 18:17:51 INFO  Log:28 - Opening the browser
+2019-01-03 18:17:51 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:17:51 INFO  Log:28 - Title Verified
+2019-01-03 18:17:51 INFO  Log:18 - Test is Starting...
+2019-01-03 18:18:19 INFO  Log:18 - Test is Starting...
+2019-01-03 18:18:30 INFO  Log:28 - Navigating to url
+2019-01-03 18:18:31 INFO  Log:28 - Opening the browser
+2019-01-03 18:18:32 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:18:32 INFO  Log:28 - Title Verified
+2019-01-03 18:19:20 INFO  Log:18 - Test is Starting...
+2019-01-03 18:19:30 INFO  Log:28 - Navigating to url
+2019-01-03 18:19:31 INFO  Log:28 - Opening the browser
+2019-01-03 18:19:31 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:19:31 INFO  Log:28 - Title Verified
+2019-01-03 18:19:31 INFO  Log:18 - Test is Starting...
+2019-01-03 18:19:40 INFO  Log:28 - Navigating to url
+2019-01-03 18:19:41 INFO  Log:28 - Opening the browser
+2019-01-03 18:19:41 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:19:42 INFO  Log:28 - Title Verified
+2019-01-03 18:19:42 INFO  Log:18 - Test is Starting...
+2019-01-03 18:19:52 INFO  Log:28 - Navigating to url
+2019-01-03 18:19:53 INFO  Log:28 - Opening the browser
+2019-01-03 18:19:53 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:19:53 INFO  Log:28 - Title Verified
+2019-01-03 18:23:42 INFO  Log:18 - Test is Starting...
+2019-01-03 18:23:52 INFO  Log:28 - Navigating to url
+2019-01-03 18:23:54 INFO  Log:28 - Opening the browser
+2019-01-03 18:23:54 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:23:54 INFO  Log:28 - Title Verified
+2019-01-03 18:23:54 INFO  Log:18 - Test is Starting...
+2019-01-03 18:24:03 INFO  Log:28 - Navigating to url
+2019-01-03 18:24:05 INFO  Log:28 - Opening the browser
+2019-01-03 18:24:05 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:24:05 INFO  Log:28 - Title Verified
+2019-01-03 18:24:05 INFO  Log:18 - Test is Starting...
+2019-01-03 18:24:16 INFO  Log:28 - Navigating to url
+2019-01-03 18:24:17 INFO  Log:28 - Opening the browser
+2019-01-03 18:24:17 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:24:17 INFO  Log:28 - Title Verified
+2019-01-03 18:26:27 INFO  Log:18 - Test is Starting...
+2019-01-03 18:26:37 INFO  Log:28 - Navigating to url
+2019-01-03 18:26:39 INFO  Log:28 - Opening the browser
+2019-01-03 18:26:39 INFO  Log:28 - Entering the Lastname
+2019-01-03 18:26:40 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-03 18:26:40 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-03 18:26:40 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-03 18:26:40 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-03 18:26:40 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-03 18:26:40 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-03 18:26:41 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-03 18:26:41 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-03 18:26:41 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-03 18:26:41 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-03 18:26:41 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-03 18:26:42 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-03 18:26:43 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-03 18:26:58 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2019-01-03 18:26:58 INFO  Log:28 - employee emergency is Entered Successfully
+2019-01-03 18:27:43 INFO  Log:28 - Loging into the Lightning Successfully
+2019-01-03 18:28:05 INFO  Log:18 - Test is Starting...
+2019-01-03 18:28:14 INFO  Log:28 - Navigating to url
+2019-01-03 18:28:20 INFO  Log:28 - Opening the browser
+2019-01-03 18:28:20 INFO  Log:18 - Test is Starting...
+2019-01-03 18:28:56 INFO  Log:18 - Test is Starting...
+2019-01-03 18:29:06 INFO  Log:28 - Navigating to url
+2019-01-03 18:29:07 INFO  Log:28 - Opening the browser
+2019-01-03 18:29:07 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:29:07 INFO  Log:28 - Title Verified
+2019-01-03 18:29:08 INFO  Log:18 - Test is Starting...
+2019-01-03 18:29:17 INFO  Log:28 - Navigating to url
+2019-01-03 18:29:18 INFO  Log:28 - Opening the browser
+2019-01-03 18:29:18 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:29:18 INFO  Log:28 - Title Verified
+2019-01-03 18:29:18 INFO  Log:18 - Test is Starting...
+2019-01-03 18:29:29 INFO  Log:28 - Navigating to url
+2019-01-03 18:29:30 INFO  Log:28 - Opening the browser
+2019-01-03 18:29:30 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:29:30 INFO  Log:28 - Title Verified
+2019-01-03 18:32:50 INFO  Log:18 - Test is Starting...
+2019-01-03 18:33:00 INFO  Log:28 - Navigating to url
+2019-01-03 18:33:02 INFO  Log:28 - Opening the browser
+2019-01-03 18:33:02 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:33:02 INFO  Log:28 - Title Verified
+2019-01-03 18:46:08 INFO  Log:18 - Test is Starting...
+2019-01-03 18:46:17 INFO  Log:28 - Navigating to url
+2019-01-03 18:46:18 INFO  Log:28 - Opening the browser
+2019-01-03 18:46:18 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:46:18 INFO  Log:28 - Title Verified
+2019-01-03 18:51:39 INFO  Log:18 - Test is Starting...
+2019-01-03 18:51:49 INFO  Log:28 - Navigating to url
+2019-01-03 18:51:51 INFO  Log:28 - Opening the browser
+2019-01-03 18:51:51 INFO  Log:28 - Selecting the part of body injured
+2019-01-03 18:51:51 INFO  Log:28 - Title Verified
+2019-01-04 09:48:43 INFO  Log:18 - Test is Starting...
+2019-01-04 09:48:55 INFO  Log:28 - Navigating to url
+2019-01-04 09:48:56 INFO  Log:28 - Opening the browser
+2019-01-04 09:48:56 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 09:48:56 INFO  Log:28 - Title Verified
+2019-01-04 09:51:20 INFO  Log:18 - Test is Starting...
+2019-01-04 09:51:32 INFO  Log:28 - Navigating to url
+2019-01-04 09:51:33 INFO  Log:28 - Opening the browser
+2019-01-04 09:51:33 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 09:51:33 INFO  Log:28 - Title Verified
+2019-01-04 09:54:44 INFO  Log:18 - Test is Starting...
+2019-01-04 09:54:55 INFO  Log:28 - Navigating to url
+2019-01-04 09:54:56 INFO  Log:28 - Opening the browser
+2019-01-04 09:54:56 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 09:54:56 INFO  Log:28 - Title Verified
+2019-01-04 10:03:35 INFO  Log:18 - Test is Starting...
+2019-01-04 10:03:46 INFO  Log:28 - Navigating to url
+2019-01-04 10:03:47 INFO  Log:28 - Opening the browser
+2019-01-04 10:03:47 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 10:03:47 INFO  Log:28 - Title Verified
+2019-01-04 10:04:24 INFO  Log:18 - Test is Starting...
+2019-01-04 10:04:34 INFO  Log:28 - Navigating to url
+2019-01-04 10:04:35 INFO  Log:28 - Opening the browser
+2019-01-04 10:04:35 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 10:04:35 INFO  Log:28 - Title Verified
+2019-01-04 10:08:53 INFO  Log:18 - Test is Starting...
+2019-01-04 10:09:08 INFO  Log:28 - Navigating to url
+2019-01-04 10:09:09 INFO  Log:28 - Opening the browser
+2019-01-04 10:09:09 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 10:09:09 INFO  Log:28 - Title Verified
+2019-01-04 10:09:09 INFO  Log:28 - Closing the child window
+2019-01-04 10:11:28 INFO  Log:18 - Test is Starting...
+2019-01-04 10:11:43 INFO  Log:28 - Navigating to url
+2019-01-04 10:11:44 INFO  Log:28 - Opening the browser
+2019-01-04 10:11:44 INFO  Log:28 - NAture of injury title verified
+2019-01-04 10:14:11 INFO  Log:18 - Test is Starting...
+2019-01-04 10:14:23 INFO  Log:28 - Navigating to url
+2019-01-04 10:14:24 INFO  Log:28 - Opening the browser
+2019-01-04 10:14:24 INFO  Log:28 - NAture of injury title verified
+2019-01-04 10:19:14 INFO  Log:18 - Test is Starting...
+2019-01-04 10:19:25 INFO  Log:28 - Navigating to url
+2019-01-04 10:19:26 INFO  Log:28 - Opening the browser
+2019-01-04 10:19:26 INFO  Log:28 - Nature of injury title verified
+2019-01-04 10:19:57 INFO  Log:18 - Test is Starting...
+2019-01-04 10:20:07 INFO  Log:28 - Navigating to url
+2019-01-04 10:20:09 INFO  Log:28 - Opening the browser
+2019-01-04 10:20:09 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 10:20:09 INFO  Log:28 - Title Verified
+2019-01-04 10:20:09 INFO  Log:28 - Closing the child window
+2019-01-04 10:20:14 INFO  Log:28 - Nature of injury title verified
+2019-01-04 10:25:11 INFO  Log:18 - Test is Starting...
+2019-01-04 10:25:23 INFO  Log:28 - Navigating to url
+2019-01-04 10:25:24 INFO  Log:28 - Opening the browser
+2019-01-04 10:25:24 INFO  Log:28 - Selecting the part of body injured
+2019-01-04 10:25:24 INFO  Log:28 - Title Verified
+2019-01-04 10:25:30 INFO  Log:28 - Nature of injury title verified
+2019-01-04 10:25:35 INFO  Log:28 - Cause of injury title verified
+2019-01-04 11:55:29 INFO  Log:18 - Test is Starting...
+2019-01-04 11:55:44 INFO  Log:28 - Navigating to url
+2019-01-04 11:55:45 INFO  Log:28 - Opening the browser
+2019-01-04 11:55:46 INFO  Log:28 - Entering the Lastname
+2019-01-04 11:55:46 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-04 11:55:46 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-04 11:55:47 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-04 11:55:48 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-04 11:55:48 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-04 11:55:48 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-04 11:55:48 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-04 11:55:48 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-04 11:55:49 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-04 11:55:50 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-04 11:55:50 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-04 11:55:50 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-04 11:55:50 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-04 11:55:52 INFO  Log:18 - Test is Starting...
+2019-01-04 11:56:04 INFO  Log:28 - Navigating to url
+2019-01-04 11:56:05 INFO  Log:28 - Opening the browser
+2019-01-04 11:56:05 INFO  Log:28 - Entering the Lastname
+2019-01-04 11:56:06 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-04 11:56:06 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-04 11:56:07 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-04 11:56:08 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-04 11:56:09 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-04 11:56:09 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-04 11:56:09 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-04 11:56:24 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2019-01-04 11:56:24 INFO  Log:28 - employee emergency is Entered Successfully
+2019-01-04 11:57:09 INFO  Log:28 - Running @Test methods
+2019-01-04 11:57:09 INFO  Log:23 - Test is Ending...
+2019-01-04 12:53:59 INFO  Log:18 - Test is Starting...
+2019-01-04 12:54:13 INFO  Log:28 - Navigating to url
+2019-01-04 12:54:14 INFO  Log:28 - Opening the browser
+2019-01-04 12:54:14 INFO  Log:28 - Entering the Lastname
+2019-01-04 12:54:15 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-04 12:54:15 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-04 12:54:15 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-04 12:54:15 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-04 12:54:15 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-04 12:54:16 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-04 12:54:16 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-04 12:54:16 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-04 12:54:16 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-04 12:54:17 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-04 12:54:18 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-04 12:54:19 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-04 12:54:19 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-04 12:54:34 INFO  Log:28 - Employee fatal detail is Entered Successfully
+2019-01-04 12:54:34 INFO  Log:28 - employee emergency is Entered Successfully
+2019-01-04 12:55:11 INFO  Log:28 - Running @Test methods

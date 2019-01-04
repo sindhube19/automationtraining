@@ -44,7 +44,7 @@ import com.automationtraining.browserfactory.BrowserFactory;
 import com.automationtraining.constant.ConstantFile;
 import com.automationtraining.emailreport.ReportbyEmail;
 import com.automationtraining.pageobject.Form101Page;
-
+import com.automationtraining.pageobject.Form101verification;
 import com.automationtraining.utilities.ExcelUtilities;
 import com.automationtraining.utilities.Log;
 import com.automationtraining.utilities.TestUtils;
@@ -61,6 +61,7 @@ public class BaseTest extends ExcelUtilities  {
 	protected String sfurl;
 	protected String usertype;
 	protected Form101Page page101; 
+	protected Form101verification page102;
 	protected ReportbyEmail email;
 	public  WebDriver driver;
 	protected ReportGenerator reporter;
@@ -73,13 +74,13 @@ public class BaseTest extends ExcelUtilities  {
 		ExcelUtilities.openstream();
 	}
 	@BeforeMethod
-	@Parameters({"env","userType"})
-	public void browserSetup(String env,@Optional("userType")String userType) throws Exception {
+	@Parameters({"browser","env","userType"})
+	public void browserSetup(String browser,String env,@Optional("userType")String userType) throws Exception {
 		Log.startLog("Test is Starting");
 		ExcelUtilities.openstream();
 		url=TestUtils.getStringFromPropertyFile(env);
 
-		driver=BrowserFactory.getNewdriver();
+		driver=BrowserFactory.getNewdriver(browser);
 		driver.navigate().to(url);
 		Log.info("Navigating to url");
 		driver.manage().window().maximize();
