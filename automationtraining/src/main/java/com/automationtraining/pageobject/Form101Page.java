@@ -28,8 +28,6 @@ public class Form101Page extends Driverclass {
 	/******************************Employee*******************************************/
 
 
-
-
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'LAST NAME')]/following::input[1]")
 	public WebElement lastname1; 
 	@FindBy(how=How.XPATH, using=".//label[contains(text(),'FIRST')]/following::input[1]")
@@ -446,21 +444,21 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[16]")
 	public
 	WebElement 	error_fatal;
-	
+
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[17]")
 	public
 	WebElement 	error_employeeemergency;
-	
+
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[18]")
 	public
 	WebElement 	error_treatedovernight;
-	
+
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[19]")
 	public
 	WebElement 	error_claimdoubted;
 
 	/**********************************Cause of incident**********************************/
-	
+
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[20]")
 	public
 	WebElement 	error_whathappend;
@@ -482,15 +480,6 @@ public class Form101Page extends Driverclass {
 	@FindBy(how=How.XPATH, using=".//div[@class='bodyDiv brdPalette brandPrimaryBrd']/table/tbody/tr/td/form/div[2]/div[@class='editPage']/div/div/div[2]/div[@class='pbSubsection']/table/tbody/tr/th/label[contains(text(),'EMPLOYER')]/following::strong[26]")
 	public
 	WebElement 	error_submittermail;
-
-
-
-
-
-
-
-
-
 
 
 	public void formFilling(String methodName, String tcName,ReportGenerator generator) throws Exception {
@@ -691,75 +680,53 @@ public class Form101Page extends Driverclass {
 		String gender = gender_form.getText();
 		String maritalstatus = maritalstatus_form.getText();
 		Thread.sleep(10000);
-		/***************Last Name****************************/
-		if(lastname.equals(ExcelUtilities.readExcel(methodName, tcName, "lastname"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", lastname_form);
-		}
+		/***************Highlighting Last Name****************************/
 
-		/***************First Name****************************/
-		if(firstname.equals(ExcelUtilities.readExcel(methodName, tcName, "firstname"))) {
+		SeleniumUtils.highLightelements(lastname_form, driver);
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", firstname_form);
-		}
+		/***************Highlighting First Name****************************/
 
-		/***************Social security number****************************/
-		if(socialsecurity.equals(ExcelUtilities.readExcel(methodName, tcName, "socialsecuritynumber"))) {
+		SeleniumUtils.highLightelements(firstname_form, driver);
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", socialsecurity_form);
-		}
+		/***************Highlighting Social security number****************************/
 
-		/***************Date of birth****************************/
-
-		if(dob.equals(ExcelUtilities.readExcel(methodName, tcName, "employeedob"))) {
-
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", datofbirth_form);
-		}
+		SeleniumUtils.highLightelements(socialsecurity_form, driver);
 
 
-		/***********************Home Address************************************/
-		if(homeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "homeaddress"))) {
+		/***************Highlighting Date of birth****************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", homeaddress_form);
-		}
+		SeleniumUtils.highLightelements(datofbirth_form, driver);
 
 
-		/************************City*****************/
-		if(city.equals(ExcelUtilities.readExcel(methodName, tcName, "city"))) {
+		/***********************Highlighting Home Address************************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", city_form);
-		}
+		SeleniumUtils.highLightelements(homeaddress_form, driver);
 
-		/*******************State*********************/
-		if(state.equals(ExcelUtilities.readExcel(methodName, tcName, "state"))) {
+		/************************Highlighting City*****************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", state_form);
-		}
+		SeleniumUtils.highLightelements(city_form, driver);
 
-		/*******************Zipcode*********************/
-		if(zipcode.equals(ExcelUtilities.readExcel(methodName, tcName, "employeezipcode"))) {
+		/*******************Highlighting State*********************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", zipcode_form);
-		}
+		SeleniumUtils.highLightelements(state_form, driver);
 
-		/*******************telephone*********************/
-		if(telephone.equals(ExcelUtilities.readExcel(methodName, tcName, "telephone"))) {
+		/*******************Highlighting Zipcode*********************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", telephone_form);
-		}
+		SeleniumUtils.highLightelements(zipcode_form, driver);
 
-		/*******************gender*********************/
-		if(gender.equals(ExcelUtilities.readExcel(methodName, tcName, "sex"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", gender_form);
-		}
+		/******************* Highlighting telephone*********************/
 
-		/*******************marital Status*********************/
-		if(maritalstatus.equals(ExcelUtilities.readExcel(methodName, tcName, "marital status"))) {
+		SeleniumUtils.highLightelements(telephone_form, driver);
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", maritalstatus_form);
-		}
-		Thread.sleep(10000);
+		/*******************Highlighting gender*********************/
+
+		SeleniumUtils.highLightelements(gender_form, driver);
+
+		/*******************Highlighting marital Status*********************/
+
+		SeleniumUtils.highLightelements(maritalstatus_form, driver);
 
 		/**************************Employer Details*******************************/
 		String Employername = employername_form.getText();
@@ -770,47 +737,35 @@ public class Form101Page extends Driverclass {
 		String employerzipcode = employerzipcode_form.getText();
 		String employertelephone = employertelephone_form.getText();
 
-		/******************Employer name***************************/
-		if(Employername.equals(ExcelUtilities.readExcel(methodName, tcName, "employername"))) {
+		/******************Highlighting Employer name***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employername_form);
-		}
+		SeleniumUtils.highLightelements(employername_form, driver);
 
-		/********************FIEN Number***************************/
-		if(fiennumber.equals(ExcelUtilities.readExcel(methodName, tcName, "fiennumber"))) {
+		/********************Highlighting FIEN Number***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", fiennumber_form);
-		}
+		SeleniumUtils.highLightelements(fiennumber_form, driver);
 
-		/********************Office address***************************/
-		if(officeaddress.equals(ExcelUtilities.readExcel(methodName, tcName, "officeaddress"))) {
+		/********************Highlighting Office address***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", officeaddress_form);
-		}
+		SeleniumUtils.highLightelements(officeaddress_form, driver);
 
-		/********************City***************************/
-		if(emplyercity.equals(ExcelUtilities.readExcel(methodName, tcName, "employercity"))) {
+		/********************Highlighting City***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employercity_form);
-		}
+		SeleniumUtils.highLightelements(employercity_form, driver);
 
-		/********************State***************************/
-		if(employerstate.equals(ExcelUtilities.readExcel(methodName, tcName, "employerstate"))) {
+		/********************Highlighting State***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employerstate_form);
-		}
+		SeleniumUtils.highLightelements(employerstate_form, driver);
 
-		/*******************Zipcode***************************/
-		if(employerzipcode.equals(ExcelUtilities.readExcel(methodName, tcName, "employerzipcode"))) {
+		/*******************Highlighting Zipcode***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employerzipcode_form);
-		}
+		SeleniumUtils.highLightelements(employerzipcode_form, driver);
 
-		/********************Telephone***************************/
-		if(employertelephone.equals(ExcelUtilities.readExcel(methodName, tcName, "employertelephone"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employertelephone_form);
-		}
+		/********************Highlighting Telephone***************************/
+
+		SeleniumUtils.highLightelements(employertelephone_form, driver);
+
 		/***********************Accident Information**********************/
 		String employeejobtitle = jobtitle_form.getText();
 		String employeepremises = premises_form.getText();
@@ -821,54 +776,37 @@ public class Form101Page extends Driverclass {
 		String hospitalizedovernight = hospitalizedovernight_form.getText();
 		String claimdoubted = claimdoubted_form.getText();
 
-		/********************Employee job title***************************/
-		if(employeejobtitle.equals(ExcelUtilities.readExcel(methodName, tcName, "employeeoccupation"))) {
+		/********************Highlighting Employee job title***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", jobtitle_form);
-		}
+		SeleniumUtils.highLightelements(jobtitle_form, driver);
 
-		/********************Employee premises***************************/
-		if(employeepremises.equals(ExcelUtilities.readExcel(methodName, tcName, "employeepremesis"))) {
+		/********************Highlighting Employee premises***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", premises_form);
-		}
+		SeleniumUtils.highLightelements(premises_form, driver);
 
-		/********************was illnessororinjury***************************/
-		if(injury.equals(ExcelUtilities.readExcel(methodName, tcName, "wastheinjuryorillness"))) {
+		/********************Highlighting was illnessororinjury***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", injury_form);
-		}
+		SeleniumUtils.highLightelements(injury_form, driver);
 
-		/********************partofbodyinjured***************************/
-		if(partofbodyinjured.equals(ExcelUtilities.readExcel(methodName, tcName, "bodyinjured"))) {
+		/********************Highlighting partofbodyinjured***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", partofbody_form);
-		}
+		SeleniumUtils.highLightelements(partofbody_form, driver);
 
-		/********************fatal***************************/
-		if(fatal.equals(ExcelUtilities.readExcel(methodName, tcName, "fatal"))) {
+		/********************Highlighting fatal***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", fatal_form);
-		}
+		SeleniumUtils.highLightelements(fatal_form, driver);
 
-		/********************employeeemergency***************************/
-		if(treatedinemergencyroom.equals(ExcelUtilities.readExcel(methodName, tcName, "employeeemergency"))) {
+		/********************Highlighting employeeemergency***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", emptreatedinemgroom_form);
-		}
+		SeleniumUtils.highLightelements(emptreatedinemgroom_form, driver);
 
-		/********************treatedovernight***************************/
-		if(hospitalizedovernight.equals(ExcelUtilities.readExcel(methodName, tcName, "treatedovernight"))) {
+		/********************Highlighting treatedovernight***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", hospitalizedovernight_form);
-		}
+		SeleniumUtils.highLightelements(hospitalizedovernight_form, driver);
 
-		/********************treatedovernight***************************/
-		if(claimdoubted.equals(ExcelUtilities.readExcel(methodName, tcName, "claimdoubted"))) {
+		/********************Highlighting employee claim doubted***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", claimdoubted_form);
-		}
-		Thread.sleep(10000);
+		SeleniumUtils.highLightelements(claimdoubted_form, driver);
 
 		/*********************Cause of accident************************/
 		String whathappend = whathappened_form.getText();
@@ -880,33 +818,22 @@ public class Form101Page extends Driverclass {
 		String employeewheninjured = employeewheninjured_form.getText();
 		System.out.println("employeewheninjured"+employeewheninjured);
 
-		/********************whathappened***************************/
-		if(whathappend.equals(ExcelUtilities.readExcel(methodName, tcName, "whathappend"))) {
+		/********************Highlighting whathappened***************************/
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", whathappened_form);
-		}
+		SeleniumUtils.highLightelements(whathappened_form, driver);
+
 
 		/********************harmedemployee***************************/
-		if(harmedemployee.equals(ExcelUtilities.readExcel(methodName, tcName, "harmedemployee"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", harmedemployee_form);
-		}
+		SeleniumUtils.highLightelements(harmedemployee_form, driver);
 
 		/********************employeewheninjured***************************/
-		if(employeebeforeaccident.equals(ExcelUtilities.readExcel(methodName, tcName, "incidentoccured"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employeebeforeaccident_form);
-		}
+		SeleniumUtils.highLightelements(employeebeforeaccident_form, driver);
 
 		/********************employeewheninjured***************************/
-		if(employeewheninjured.equals(ExcelUtilities.readExcel(methodName, tcName, "employwheninjured"))) {
 
-			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", employeewheninjured_form);
-		}
-
-
-
-
+		SeleniumUtils.highLightelements(employeewheninjured_form, driver);
 
 
 	}
@@ -968,7 +895,6 @@ public class Form101Page extends Driverclass {
 		bodyinjured.sendKeys("");
 		Log.info("Entering bodyinjured as null");
 		SeleniumUtils.FailedhighLightelements(bodyinjured,driver);
-
 		fatal.sendKeys("");
 		SeleniumUtils.FailedhighLightelements(fatal,driver);
 		employeeemergency.sendKeys("");
@@ -1052,7 +978,4 @@ public class Form101Page extends Driverclass {
 
 
 	}
-	
-
-
 }

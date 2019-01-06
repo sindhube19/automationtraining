@@ -6,6 +6,7 @@
   </listeners>
   <test thread-count="5" name=" Regression Test Candidates(failed)">
     <parameter name="sflogin" value="SFURL"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
     <classes>
@@ -15,9 +16,23 @@
           <include name="browserSetup"/>
           <include name="browserClose"/>
           <include name="tearDown"/>
-          <include name="formFilling101" invocation-numbers="0 0 0"/>
+          <include name="formFilling101" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.automationtraining.RegressionSuite.Form101Verification -->
     </classes>
   </test> <!--  Regression Test Candidates(failed) -->
+  <test thread-count="5" name="Firefox Test(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.automationtraining.smokesuite.Form101">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="browserSetup"/>
+          <include name="formFilling101"/>
+          <include name="browserClose"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationtraining.smokesuite.Form101 -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [smokesuite] -->

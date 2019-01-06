@@ -2993,3 +2993,32 @@
 2019-01-04 12:54:34 INFO  Log:28 - Employee fatal detail is Entered Successfully
 2019-01-04 12:54:34 INFO  Log:28 - employee emergency is Entered Successfully
 2019-01-04 12:55:11 INFO  Log:28 - Running @Test methods
+2019-01-06 11:23:43 INFO  Log:18 - Test is Starting...
+2019-01-06 11:24:23 INFO  Log:28 - Navigating to url
+2019-01-06 11:24:24 INFO  Log:28 - Opening the browser
+2019-01-06 11:24:25 INFO  Log:28 - Entering the Lastname
+2019-01-06 11:24:25 INFO  Log:28 - FirstName is Entered Successfully
+2019-01-06 11:24:25 INFO  Log:28 - socialsecuritynumber is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - employee date of birth is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee home address is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee City is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee State is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee Zipcode is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee telephone is Entered Successfully
+2019-01-06 11:24:26 INFO  Log:28 - Employee gender is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer Name is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer FIEN Number is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer office address is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer City is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer State is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer Zipcode is Entered Successfully
+2019-01-06 11:24:27 INFO  Log:28 - Employer telephone is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employer Date of Injury is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employer Date notified is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employer Date of after injury is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employee occupation is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employee premesis is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employee injury or illness is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employee body injured is Entered Successfully
+2019-01-06 11:24:28 INFO  Log:28 - Employee lookuppartofbodyinjured is Entered Successfully
+2019-01-06 11:24:38 INFO  Log:18 - Test is Starting...
