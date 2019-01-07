@@ -1,6 +1,7 @@
 package com.automationtraining.basetest;
 
 import java.util.Properties;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -54,7 +55,7 @@ public class BaseTest extends ExcelUtilities  {
 
 		driver=BrowserFactory.getNewdriver(browser);
 		driver.navigate().to(url);
-		Log.info("Navigating to url");
+		Log.info("\"Chrome Browser Initialized in Headless Mode\"");
 		driver.manage().window().maximize();
 
 		Loginpages= new Loginpages(driver);
