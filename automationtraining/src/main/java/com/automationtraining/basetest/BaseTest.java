@@ -49,13 +49,14 @@ public class BaseTest extends ExcelUtilities  {
 	@BeforeMethod
 	@Parameters({"browser","env","userType"})
 	public void browserSetup(String browser,String env,@Optional("userType")String userType) throws Exception {
+	
 		Log.startLog("Test is Starting");
 		ExcelUtilities.openstream();
 		url=TestUtils.getStringFromPropertyFile(env);
 
 		driver=BrowserFactory.getNewdriver(browser);
 		driver.navigate().to(url);
-		Log.info("\"Chrome Browser Initialized in Headless Mode\"");
+		Log.info("Chrome Browser Initialized in Headless Mode");
 		driver.manage().window().maximize();
 
 		Loginpages= new Loginpages(driver);

@@ -2,39 +2,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="smokesuite">
 
-<listeners>
-        <listener class-name="com.automationtraining.listeners.RetryListenerClass" />
-        
-</listeners>
-<test name=" Smoke Test Candidates">
+	<listeners>
+		<listener
+			class-name="com.automationtraining.listeners.RetryListenerClass" />
+
+	</listeners>
+	<test name=" Smoke Test Candidates">
+		<parameter name="browser" value="chrome" />
 		<parameter name="env" value="url101" />
 		<parameter name="userType" value="Qaadmin" />
 		<parameter name="sflogin" value="SFURL" />
-		<parameter name="browser" value="chrome"/>
+
 		<classes>
 			<class name="com.automationtraining.smokesuite.Form101" />
+
+		</classes>
+	</test>
+
+
+
+<test name=" Smoke Test Candidates verification">
+		<parameter name="env" value="url101" />
+		<parameter name="userType" value="Qaadmin" />
+		<parameter name="sflogin" value="SFURL" />
+		
+		<classes>
+			<class name="com.automationtraining.smokesuite.Form101verification" />
 			
 		</classes>
 	</test> 
-	
-	 <test name="Firefox Test">
-  <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="com.automationtraining.smokesuite.Form101" />
-    </classes>
-  </test> 
-  
-  
-  
-   
-	<!--  <test name=" Smoke Test Candidates">
-		<parameter name="env" value="url101" />
-		<classes>
 
-			<class name="com.automationtraining.smokesuite.Form101validation" />
-		</classes>
-
-	</test> -->
+	 <test name=" Smoke Test Candidates validation"> <parameter name="env" value="url101" 
+		/> <classes> <class name="com.automationtraining.smokesuite.Form101validation" 
+		/> </classes> </test> 
 
 
 </suite>  <!-- SmokeSuite -->

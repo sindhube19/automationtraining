@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
 
+import com.automationtraining.headlessbrowser.HeadlessBrowser;
 import com.automationtraining.utilities.TestUtils;
 
 /**

@@ -4,25 +4,11 @@
   <listeners>
     <listener class-name="com.automationtraining.listeners.RetryListenerClass"/>
   </listeners>
-  <test thread-count="5" name=" Regression Test Candidates(failed)">
+  <test thread-count="5" name=" Smoke Test Candidates(failed)">
     <parameter name="sflogin" value="SFURL"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="userType" value="Qaadmin"/>
     <parameter name="env" value="url101"/>
-    <classes>
-      <class name="com.automationtraining.RegressionSuite.Form101Verification">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="browserSetup"/>
-          <include name="browserClose"/>
-          <include name="tearDown"/>
-          <include name="formFilling101" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.automationtraining.RegressionSuite.Form101Verification -->
-    </classes>
-  </test> <!--  Regression Test Candidates(failed) -->
-  <test thread-count="5" name="Firefox Test(failed)">
-    <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="com.automationtraining.smokesuite.Form101">
         <methods>
@@ -34,5 +20,35 @@
         </methods>
       </class> <!-- com.automationtraining.smokesuite.Form101 -->
     </classes>
-  </test> <!-- Firefox Test(failed) -->
+  </test> <!--  Smoke Test Candidates(failed) -->
+  <test thread-count="5" name=" Smoke Test Candidates verification(failed)">
+    <parameter name="sflogin" value="SFURL"/>
+    <parameter name="userType" value="Qaadmin"/>
+    <parameter name="env" value="url101"/>
+    <classes>
+      <class name="com.automationtraining.smokesuite.Form101verification">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="browserSetup"/>
+          <include name="browserClose"/>
+          <include name="formFilling101"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationtraining.smokesuite.Form101verification -->
+    </classes>
+  </test> <!--  Smoke Test Candidates verification(failed) -->
+  <test thread-count="5" name=" Smoke Test Candidates validation(failed)">
+    <parameter name="env" value="url101"/>
+    <classes>
+      <class name="com.automationtraining.smokesuite.Form101validation">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="formFilling101"/>
+          <include name="browserSetup"/>
+          <include name="browserClose"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automationtraining.smokesuite.Form101validation -->
+    </classes>
+  </test> <!--  Smoke Test Candidates validation(failed) -->
 </suite> <!-- Failed suite [smokesuite] -->

@@ -16,4 +16,5 @@ public class ConstantFile {
 	public static final String REPORTPATH= "C:/Users/MSTEMP194/git/automationtraining/automationtraining/Reports/reports.html";
 	public static final String SCREENSHOTPATH = "Reports/screenshot/"; 
 	public static String driverfirefox="C:/Users/MSTEMP194/Desktop/Automation/geckodriver.exe";
+	public static String headless="C:/Users/MSTEMP194/Desktop/Automation/phantomjs.exe";
 }
