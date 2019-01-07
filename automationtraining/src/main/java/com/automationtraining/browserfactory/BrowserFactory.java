@@ -4,7 +4,7 @@ package com.automationtraining.browserfactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.automationtraining.constant.ConstantFile;
 import com.automationtraining.headlessbrowser.HeadlessBrowser;
@@ -28,6 +28,8 @@ public class BrowserFactory extends HeadlessBrowser{
 
 		case "firefox":
 			System.setProperty("webdriver.gecko.driver", ConstantFile.driverfirefox);
+			driver = HeadlessBrowser.headLess();
+			driver = new FirefoxDriver();
 		}
 		return driver;
 }
