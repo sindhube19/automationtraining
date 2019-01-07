@@ -53,7 +53,7 @@ public class SeleniumUtils  {
 	}
 
 	public static void switchToNewTab(WebDriver driver, String url) {
-      
+
 		driver.findElement(By.cssSelector("Body")).sendKeys(Keys.CONTROL+"t");
 		driver.get(url);
 	} 

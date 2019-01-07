@@ -1,10 +1,17 @@
 package com.automationtraining.pageobject;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.automationtraining.ExtentReportListener.ReportGenerator;
 import com.automationtraining.abstractclasses.Driverclass;
 import com.automationtraining.utilities.ExcelUtilities;
@@ -683,50 +690,76 @@ public class Form101Page extends Driverclass {
 
 		/***************Highlighting Last Name****************************/
 
+		if(lastname.equals(lastname_form))
+		{
 		SeleniumUtils.highLightelements(lastname_form, driver);
+		}
 
 		/***************Highlighting First Name****************************/
+		if(firstname.equals(firstname_form)) {
 
 		SeleniumUtils.highLightelements(firstname_form, driver);
+		}
 
 		/***************Highlighting Social security number****************************/
+		if(socialsecurity.equals(socialsecurity_form)) {
 
 		SeleniumUtils.highLightelements(socialsecurity_form, driver);
 
-
+		}
 		/***************Highlighting Date of birth****************************/
+		if(dob.equals(datofbirth_form)) {
 
 		SeleniumUtils.highLightelements(datofbirth_form, driver);
 
-
+		}
 		/***********************Highlighting Home Address************************************/
-
+		
+		if(homeaddress.equals(homeaddress_form)) {
+			
 		SeleniumUtils.highLightelements(homeaddress_form, driver);
-
+		}
 		/************************Highlighting City*****************/
 
+		if(city.equals(city_form)) {
 		SeleniumUtils.highLightelements(city_form, driver);
-
+		}
 		/*******************Highlighting State*********************/
+		
+		if(state.equals(state_form)) {
 
 		SeleniumUtils.highLightelements(state_form, driver);
+		}
 
 		/*******************Highlighting Zipcode*********************/
+		
+		if(zipcode.equals(zipcode_form)) {
 
 		SeleniumUtils.highLightelements(zipcode_form, driver);
-
+		}
 
 		/******************* Highlighting telephone*********************/
-
+		
+		if(telephone.equals(telephone_form)) {
+			
 		SeleniumUtils.highLightelements(telephone_form, driver);
+		}
 
 		/*******************Highlighting gender*********************/
+		
+		if(gender.equals(gender_form)) {
 
 		SeleniumUtils.highLightelements(gender_form, driver);
+		
+		}
 
 		/*******************Highlighting marital Status*********************/
+		
+		if(maritalstatus.equals(maritalstatus_form)) {
 
 		SeleniumUtils.highLightelements(maritalstatus_form, driver);
+		
+		}
 
 		/**************************Employer Details*******************************/
 		String Employername = employername_form.getText();
@@ -738,33 +771,59 @@ public class Form101Page extends Driverclass {
 		String employertelephone = employertelephone_form.getText();
 
 		/******************Highlighting Employer name***************************/
+		
+		if(Employername.equals(employername_form)) {
 
 		SeleniumUtils.highLightelements(employername_form, driver);
-
+		
+		}
 		/********************Highlighting FIEN Number***************************/
+		
+		if(fiennumber.equals(fiennumber_form)) {
 
 		SeleniumUtils.highLightelements(fiennumber_form, driver);
+		
+		}
 
 		/********************Highlighting Office address***************************/
+		
+		if(officeaddress.equals(officeaddress_form)) {
 
 		SeleniumUtils.highLightelements(officeaddress_form, driver);
+		
+		}
 
 		/********************Highlighting City***************************/
+		
+		if(emplyercity.equals(employercity_form)) {
 
 		SeleniumUtils.highLightelements(employercity_form, driver);
+		
+		}
 
 		/********************Highlighting State***************************/
-
+		if(employerstate.equals(employerstate_form)) {
+			
+		
 		SeleniumUtils.highLightelements(employerstate_form, driver);
+		}
 
 		/*******************Highlighting Zipcode***************************/
+		
+		if(employerzipcode.equals(employerzipcode_form)) {
 
 		SeleniumUtils.highLightelements(employerzipcode_form, driver);
+		}
 
 
 		/********************Highlighting Telephone***************************/
 
+		if(employertelephone.equals(employertelephone_form)) {
+			
+		
 		SeleniumUtils.highLightelements(employertelephone_form, driver);
+		
+		}
 
 		/***********************Accident Information**********************/
 		String employeejobtitle = jobtitle_form.getText();
@@ -775,65 +834,120 @@ public class Form101Page extends Driverclass {
 		String treatedinemergencyroom = emptreatedinemgroom_form.getText();
 		String hospitalizedovernight = hospitalizedovernight_form.getText();
 		String claimdoubted = claimdoubted_form.getText();
+		
+		WebDriverWait wait=new WebDriverWait(driver, 10);
 
 		/********************Highlighting Employee job title***************************/
+		
+		if(employeejobtitle.equals(jobtitle_form)) {
 
 		SeleniumUtils.highLightelements(jobtitle_form, driver);
+		
+		}
 
 		/********************Highlighting Employee premises***************************/
+		
+		if(employeepremises.equals(premises_form)) {
 
 		SeleniumUtils.highLightelements(premises_form, driver);
+		
+		}
 
 		/********************Highlighting was illnessororinjury***************************/
+		
+		if(injury.equals(injury_form)) {
 
 		SeleniumUtils.highLightelements(injury_form, driver);
+		
+		}
 
 		/********************Highlighting partofbodyinjured***************************/
+		
+		if(partofbodyinjured.equals(partofbody_form)) {
 
 		SeleniumUtils.highLightelements(partofbody_form, driver);
+		
+		}
 
 		/********************Highlighting fatal***************************/
+		
+		if(fatal.equals(fatal_form)) {
+
 
 		SeleniumUtils.highLightelements(fatal_form, driver);
+		
+		}
 
 		/********************Highlighting employeeemergency***************************/
+		
+		if(treatedinemergencyroom.equals(emptreatedinemgroom_form)) {
 
 		SeleniumUtils.highLightelements(emptreatedinemgroom_form, driver);
+		
+		}
 
 		/********************Highlighting treatedovernight***************************/
+		
+		if(hospitalizedovernight.equals(hospitalizedovernight_form)) {
+
 
 		SeleniumUtils.highLightelements(hospitalizedovernight_form, driver);
+		
+		}
 
 		/********************Highlighting employee claim doubted***************************/
+		
+		if(claimdoubted.equals(claimdoubted_form)) {
 
 		SeleniumUtils.highLightelements(claimdoubted_form, driver);
+		
+		}
 
 		/*********************Cause of accident************************/
 		String whathappend = whathappened_form.getText();
-		System.out.println("whathappend"+whathappend);
+	
 		String harmedemployee = harmedemployee_form.getText();
-		System.out.println("harmedemployee"+harmedemployee);
+	
 		String employeebeforeaccident = employeebeforeaccident_form.getText();
-		System.out.println("employeebeforeaccident"+employeebeforeaccident);
+	
 		String employeewheninjured = employeewheninjured_form.getText();
-		System.out.println("employeewheninjured"+employeewheninjured);
-
+	
+		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver)							
+				.withTimeout(30, TimeUnit.SECONDS) 			
+				.pollingEvery(5, TimeUnit.SECONDS) 			
+				.ignoring(NoSuchElementException.class);
 		/********************Highlighting whathappened***************************/
+		
+		if(whathappend.equals(whathappened_form)) {
 
 		SeleniumUtils.highLightelements(whathappened_form, driver);
+		
+		}
 
 
 		/********************harmedemployee***************************/
+		
+		if(harmedemployee.equals(harmedemployee_form)) {
 
 		SeleniumUtils.highLightelements(harmedemployee_form, driver);
+		
+		}
 
 		/********************employeewheninjured***************************/
+		
+		if(employeebeforeaccident.equals(employeebeforeaccident_form)) {
 
 		SeleniumUtils.highLightelements(employeebeforeaccident_form, driver);
+		
+		}
 
 		/********************employeewheninjured***************************/
+		
+		if(employeewheninjured.equals(employeewheninjured_form)) {
 
 		SeleniumUtils.highLightelements(employeewheninjured_form, driver);
+		
+		}
 
 
 	}

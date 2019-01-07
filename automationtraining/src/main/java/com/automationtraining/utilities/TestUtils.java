@@ -24,30 +24,30 @@ public class TestUtils {
 	protected static FileInputStream fileInput;
 	protected static String userType;
 	static {
-	try {
-		fileInput = new FileInputStream(ConstantFile.propertyFilePath);
-	} catch (FileNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		try {
+			fileInput = new FileInputStream(ConstantFile.propertyFilePath);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			prop.load(fileInput);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	try {
-		prop.load(fileInput);
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	}
-	
-public static String getStringFromPropertyFile(String key) {
-	return prop.getProperty(key);
-	
-}
 
- 
-public static Integer getIntegerFromPropertyFile(String key){
+	public static String getStringFromPropertyFile(String key) {
+		return prop.getProperty(key);
+
+	}
+
+
+	public static Integer getIntegerFromPropertyFile(String key){
 		return new Integer(prop.getProperty(key));
 	}
-	
+
 	public static String getUserType(){
 		return userType;
 	}
@@ -55,7 +55,7 @@ public static Integer getIntegerFromPropertyFile(String key){
 	public static void setUserType(String urlString){
 		userType =urlString;
 	} 
- 
+
 
 
 }

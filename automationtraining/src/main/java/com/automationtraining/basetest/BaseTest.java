@@ -33,6 +33,7 @@ public class BaseTest extends ExcelUtilities  {
 	protected String url;
 	protected String sfurl;
 	protected String usertype;
+	protected String browser;
 	protected Form101Page page101; 
 	protected Form101verification page102;
 	protected ReportbyEmail email;
@@ -49,16 +50,15 @@ public class BaseTest extends ExcelUtilities  {
 	@BeforeMethod
 	@Parameters({"browser","env","userType"})
 	public void browserSetup(String browser,String env,@Optional("userType")String userType) throws Exception {
-	
+
 		Log.startLog("Test is Starting");
-		ExcelUtilities.openstream();
+
 		url=TestUtils.getStringFromPropertyFile(env);
-
 		driver=BrowserFactory.getNewdriver(browser);
-		driver.navigate().to(url);
-		Log.info("Chrome Browser Initialized in Headless Mode");
-		driver.manage().window().maximize();
 
+		driver.navigate().to(url);
+		Log.info("Browser Initialized");
+		driver.manage().window().maximize();
 		Loginpages= new Loginpages(driver);
 		Log.info("Opening the browser");
 
@@ -95,15 +95,7 @@ public class BaseTest extends ExcelUtilities  {
 		ExcelUtilities.closeStream();
 		Log.endLog("Test is ending");
 
-
-
-
-
 	}
-
-
-
-
 
 
 }

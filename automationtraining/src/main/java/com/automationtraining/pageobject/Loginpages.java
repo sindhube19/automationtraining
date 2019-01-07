@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.automationtraining.pageobject;
 
 import java.util.concurrent.TimeUnit;
