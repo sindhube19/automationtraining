@@ -40,6 +40,7 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -62,7 +63,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 4, 2019 11:55:46 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 7, 2019 06:37:35 PM</span>
 				</a>
 			</li>
 			<li>
@@ -88,6 +89,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -148,10 +150,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -163,10 +165,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>64</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96%'><span class='strong'>24</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -181,17 +183,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Form101_</span>
-						<span class='test-time'>Jan 4, 2019 11:55:46 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jan 7, 2019 06:37:35 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 4, 2019 11:55:46 AM</span>
-	<span class='label end-time'>Jan 4, 2019 11:55:50 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+21ms</span>
+	<span class='label start-time'>Jan 7, 2019 06:37:35 PM</span>
+	<span class='label end-time'>Jan 7, 2019 06:37:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+875ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -206,8 +208,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the LastName</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:46 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:35 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -223,7 +225,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:46 AM</td>
+													<td class='timestamp'>6:37:35 PM</td>
 													<td class='step-details'>Entering the LastName</td>
 												</tr>
 										</tbody>
@@ -234,8 +236,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Firstname</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:46 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:35 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -251,7 +253,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:46 AM</td>
+													<td class='timestamp'>6:37:35 PM</td>
 													<td class='step-details'>Entering the Firstname</td>
 												</tr>
 										</tbody>
@@ -262,7 +264,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the socialsecuritynumber</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:46 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:35 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -279,7 +281,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:46 AM</td>
+													<td class='timestamp'>6:37:35 PM</td>
 													<td class='step-details'>Entering the socialsecuritynumber</td>
 												</tr>
 										</tbody>
@@ -290,8 +292,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the employee date of birth</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:46 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:35 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -307,7 +309,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:46 AM</td>
+													<td class='timestamp'>6:37:35 PM</td>
 													<td class='step-details'>Entering the employee date of birth</td>
 												</tr>
 										</tbody>
@@ -318,7 +320,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee home address</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:35 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -335,7 +337,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:35 PM</td>
 													<td class='step-details'>Entering the Employee home address</td>
 												</tr>
 										</tbody>
@@ -346,7 +348,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee City</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -363,7 +365,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee City</td>
 												</tr>
 										</tbody>
@@ -374,7 +376,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee State</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -391,7 +393,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee State</td>
 												</tr>
 										</tbody>
@@ -402,7 +404,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee Zipcode</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -419,7 +421,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee Zipcode</td>
 												</tr>
 										</tbody>
@@ -430,7 +432,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee telephone</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -447,7 +449,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee telephone</td>
 												</tr>
 										</tbody>
@@ -458,7 +460,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee gender</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -475,7 +477,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee gender</td>
 												</tr>
 										</tbody>
@@ -486,7 +488,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee maritalstatus</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -503,7 +505,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employee maritalstatus</td>
 												</tr>
 										</tbody>
@@ -514,7 +516,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer Name</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:47 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -531,7 +533,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:47 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employer Name</td>
 												</tr>
 										</tbody>
@@ -542,7 +544,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer FIEN Number</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:48 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:36 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -559,7 +561,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:48 AM</td>
+													<td class='timestamp'>6:37:36 PM</td>
 													<td class='step-details'>Entering the Employer FIEN Number</td>
 												</tr>
 										</tbody>
@@ -570,8 +572,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer office address</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:48 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -587,7 +589,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:48 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Employer office address</td>
 												</tr>
 										</tbody>
@@ -598,8 +600,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer City</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:48 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -615,7 +617,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:48 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Employer City</td>
 												</tr>
 										</tbody>
@@ -626,7 +628,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer State</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:48 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -643,7 +645,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:48 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Employer State</td>
 												</tr>
 										</tbody>
@@ -654,7 +656,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer Zipcode</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:48 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -671,7 +673,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:48 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Employer Zipcode</td>
 												</tr>
 										</tbody>
@@ -682,7 +684,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employer telephone</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -699,7 +701,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Employer telephone</td>
 												</tr>
 										</tbody>
@@ -710,7 +712,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Date of Injury</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -727,7 +729,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Date of Injury</td>
 												</tr>
 										</tbody>
@@ -738,7 +740,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Date notified</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:37 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -755,7 +757,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:37 PM</td>
 													<td class='step-details'>Entering the Date notified</td>
 												</tr>
 										</tbody>
@@ -766,7 +768,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Date of after injury</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:38 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -783,7 +785,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:38 PM</td>
 													<td class='step-details'>Entering the Date of after injury</td>
 												</tr>
 										</tbody>
@@ -794,7 +796,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee occupation</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:38 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -811,7 +813,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:38 PM</td>
 													<td class='step-details'>Entering the Employee occupation</td>
 												</tr>
 										</tbody>
@@ -822,8 +824,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering the Employee premesis</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:49 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:38 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -839,7 +841,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:49 AM</td>
+													<td class='timestamp'>6:37:38 PM</td>
 													<td class='step-details'>Entering the Employee premesis</td>
 												</tr>
 										</tbody>
@@ -850,7 +852,7 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering injury or illness</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:50 AM</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:38 PM</span>
 						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
@@ -867,7 +869,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:50 AM</td>
+													<td class='timestamp'>6:37:38 PM</td>
 													<td class='step-details'>Entering injury or illness</td>
 												</tr>
 										</tbody>
@@ -875,12 +877,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+				<li class='node level-1 leaf fail' status='fail' test-id='26'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Entering body injured</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:55:50 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Jan 7, 2019 06:37:48 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+399ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -895,1130 +897,36 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:55:50 AM</td>
+													<td class='timestamp'>6:37:38 PM</td>
 													<td class='step-details'>Entering body injured</td>
 												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='27'>
-					<div class='test-heading'>
-						<span class='test-name'>Form101_</span>
-						<span class='test-time'>Jan 4, 2019 11:56:05 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 4, 2019 11:56:05 AM</span>
-	<span class='label end-time'>Jan 4, 2019 11:57:09 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 3s+554ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>AutomationAdvanceTraining</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Sindhuja</span>
-			</div>
-	</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='28'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the LastName</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:05 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:05 AM</td>
-													<td class='step-details'>Entering the LastName</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>6:37:48 PM</td>
+													<td class='step-details'><pre>java.lang.Exception
+	at com.automationtraining.abstractclasses.Driverclass.formFilling101(no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="lksrch"]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MSTSYS0194', ip: '10.10.100.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MSTEMP~1\AppData\Local\Temp\scoped_dir22908_31181}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=71.0.3578.98, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d765c635413451338a4e2ba0f90b89dd
+*** Element info: {Using=xpath, value=//*[@id="lksrch"]}:0)
+</pre></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>6:37:48 PM</td>
+													<td class='step-details'>Attached screen shot</td>
 												</tr>
 										</tbody>
 									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='29'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Firstname</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:05 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:05 AM</td>
-													<td class='step-details'>Entering the Firstname</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='30'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the socialsecuritynumber</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the socialsecuritynumber</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='31'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the employee date of birth</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the employee date of birth</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='32'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee home address</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee home address</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='33'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee City</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee City</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='34'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee State</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee State</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='35'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee Zipcode</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee Zipcode</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='36'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee telephone</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee telephone</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='37'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee gender</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:06 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:06 AM</td>
-													<td class='step-details'>Entering the Employee gender</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='38'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee maritalstatus</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employee maritalstatus</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='39'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer Name</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer Name</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='40'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer FIEN Number</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer FIEN Number</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='41'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer office address</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer office address</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='42'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer City</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer City</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='43'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer State</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer State</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='44'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer Zipcode</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:07 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:07 AM</td>
-													<td class='step-details'>Entering the Employer Zipcode</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='45'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employer telephone</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Employer telephone</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='46'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Date of Injury</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Date of Injury</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='47'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Date notified</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Date notified</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='48'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Date of after injury</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Date of after injury</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='49'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee occupation</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Employee occupation</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='50'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the Employee premesis</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering the Employee premesis</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='51'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering injury or illness</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:08 AM</td>
-													<td class='step-details'>Entering injury or illness</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='52'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering body injured</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:09 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:09 AM</td>
-													<td class='step-details'>Entering body injured</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='53'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the fatal detail</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering the fatal detail</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='54'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the employee emergency</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering the employee emergency</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='55'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering was the employee treated overnight</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering was the employee treated overnight</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='56'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering claim doubted</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering claim doubted</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='57'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the detail of what happened</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering the detail of what happened</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='58'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering the info harm happened to emplyee</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:24 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:24 AM</td>
-													<td class='step-details'>Entering the info harm happened to emplyee</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='59'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering incident occured</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Entering incident occured</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='60'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering details of when employee got injured</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Entering details of when employee got injured</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='61'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering employee hiring date</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Entering employee hiring date</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='62'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering employee's gross earnings</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Entering employee's gross earnings</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='63'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Entering employee email</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Entering employee email</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='64'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Accepting the agree</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:55 AM</td>
-													<td class='step-details'>Accepting the agree</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='65'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Submitting the button</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:56:56 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:56:56 AM</td>
-													<td class='step-details'>Submitting the button</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='66'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>Verifying the success message</h5>
-						<span class="node-time label grey lighten-1 white-text">Jan 4, 2019 11:57:09 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:57:09 AM</td>
-													<td class='step-details'>Verifying the success message</td>
-												</tr>
-										</tbody>
-									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='screenshot/formFilling101/formFilling101.jpg' width='10%' src='screenshot/formFilling101/formFilling101.jpg' data-src='screenshot/formFilling101/formFilling101.jpg'></li>
+										</ul>
 								</div>
 						</div>
 				</li>
@@ -2079,13 +987,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>AutomationAdvanceTraining</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -2100,14 +1008,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 4, 2019 11:55:46 AM</td>
+										<td>Jan 7, 2019 06:37:35 PM</td>
 										<td class='linked' test-id='1'>Form101_</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 4, 2019 11:56:05 AM</td>
-										<td class='linked' test-id='27'>Form101_</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -2154,13 +1057,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Sindhuja</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>2</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 2</span>
                                     
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -2175,14 +1078,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jan 4, 2019 11:55:46 AM</td>
+                                                <td>Jan 7, 2019 06:37:35 PM</td>
                                                 <td class='linked' test-id='1'>Form101_</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jan 4, 2019 11:56:05 AM</td>
-                                                <td class='linked' test-id='27'>Form101_</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2200,6 +1098,79 @@
         </div>
     </div>
 </div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.Exception</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jan 7, 2019 06:37:38 PM</td>
+                                                        <td class='linked' test-id='26'>Form101_.Entering body injured</td>
+                                                        <td><pre><pre>java.lang.Exception
+	at com.automationtraining.abstractclasses.Driverclass.formFilling101(no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="lksrch"]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MSTSYS0194', ip: '10.10.100.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MSTEMP~1\AppData\Local\Temp\scoped_dir22908_31181}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=71.0.3578.98, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d765c635413451338a4e2ba0f90b89dd
+*** Element info: {Using=xpath, value=//*[@id="lksrch"]}:0)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -2209,31 +1180,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>64</div>
+					<div class='panel-lead'>25</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 4, 2019 11:55:46 AM</div>
+					<div class='panel-lead'>Jan 7, 2019 06:37:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 4, 2019 11:57:09 AM</div>
+			 		<div class='panel-lead'>Jan 7, 2019 06:37:48 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 23s+395ms</div>
+					<div class='panel-lead'>0h 0m 12s+991ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -2278,11 +1249,11 @@
 						</tr>
 						<tr>
 							<td>AutomationAdvanceTraining</td>
-							<td>2</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -2298,22 +1269,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 64,
-				failChild: 0,
+				passChild: 24,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
